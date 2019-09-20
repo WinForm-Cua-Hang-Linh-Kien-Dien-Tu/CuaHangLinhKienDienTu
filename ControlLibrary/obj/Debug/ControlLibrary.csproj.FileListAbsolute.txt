@@ -10,3 +10,6 @@ E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\obj\D
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\obj\Debug\ControlLibrary.UC.Add_Edit.UC_Add_SanPham.resources
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\obj\Debug\ControlLibrary.UC.UC_SanPham.resources
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\obj\Debug\ControlLibrary.csproj.GenerateResource.cache
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\bin\Debug\EntityFramework.dll
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\bin\Debug\DataLibrary.dll.config
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\bin\Debug\EntityFramework.xml
