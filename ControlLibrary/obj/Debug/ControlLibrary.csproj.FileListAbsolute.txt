@@ -1,0 +1,12 @@
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\bin\Debug\ControlLibrary.dll
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\bin\Debug\ControlLibrary.pdb
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\bin\Debug\DataLibrary.dll
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\bin\Debug\DataLibrary.pdb
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\obj\Debug\ControlLibrary.csprojAssemblyReference.cache
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\obj\Debug\ControlLibrary.csproj.CoreCompileInputs.cache
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\obj\Debug\ControlLibrary.csproj.CopyComplete
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\obj\Debug\ControlLibrary.dll
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\obj\Debug\ControlLibrary.pdb
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\obj\Debug\ControlLibrary.UC.Add_Edit.UC_Add_SanPham.resources
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\obj\Debug\ControlLibrary.UC.UC_SanPham.resources
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\obj\Debug\ControlLibrary.csproj.GenerateResource.cache
