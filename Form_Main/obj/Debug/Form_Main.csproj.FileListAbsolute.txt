@@ -16,3 +16,6 @@ E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\Form_Main\obj\Debug\
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\Form_Main\obj\Debug\Form_Main.exe
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\Form_Main\obj\Debug\Form_Main.pdb
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\Form_Main\obj\Debug\Form_Main.Form_DangNhap.resources
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\Form_Main\bin\Debug\DataLibrary.dll
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\Form_Main\bin\Debug\DataLibrary.pdb
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\Form_Main\bin\Debug\DataLibrary.dll.config

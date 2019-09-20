@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ControlLibrary.UC.Add_Edit;
+using DataLibrary.Dao;
+
 
 namespace ControlLibrary.UC
 {
@@ -24,6 +26,12 @@ namespace ControlLibrary.UC
             panel_Container.Dock = DockStyle.Bottom;
             panel_Container.Controls.Add(add_SanPham);
             dataGV_SanPham.Visible = false;
+        }
+
+        private void UC_SanPham_Load(object sender, EventArgs e)
+        {
+            var dao = new SanPham();
+            dataGV_SanPham.DataSource = dao.loadSanPham();
         }
     }
 }
