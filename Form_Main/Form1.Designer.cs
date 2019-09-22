@@ -42,12 +42,20 @@
             this.btn_Loai = new System.Windows.Forms.Button();
             this.btn_BanHang = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelContainer = new System.Windows.Forms.Panel();
             this.button11 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.btn_Exit = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.panelContainer = new System.Windows.Forms.Panel();
-            this.uC_SanPham1 = new ControlLibrary.UC.UC_SanPham();
+            this.uC_UserProfile1 = new ControlLibrary.UC.Display.UC_UserProfile();
+            this.uC_Quyen1 = new ControlLibrary.UC.Display.UC_Quyen();
+            this.uC_NhanVien1 = new ControlLibrary.UC.Display.UC_NhanVien();
+            this.uC_NhaCungCap1 = new ControlLibrary.UC.Display.UC_NhaCungCap();
+            this.uC_HoaDon1 = new ControlLibrary.UC.Display.UC_HoaDon();
+            this.uC_SanPham21 = new ControlLibrary.UC.Display.UC_SanPham2();
+            this.uC_Loai1 = new ControlLibrary.UC.Display.UC_Loai();
+            this.uC_BanHang1 = new ControlLibrary.UC.Display.UC_BanHang();
+            this.uC_KhachHang1 = new ControlLibrary.UC.Display.UC_KhachHang();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -70,6 +78,7 @@
             this.btn_KhachHang.Text = "Khách Hàng";
             this.btn_KhachHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_KhachHang.UseVisualStyleBackColor = true;
+            this.btn_KhachHang.Click += new System.EventHandler(this.btn_KhachHang_Click);
             // 
             // btn_NhaCC
             // 
@@ -87,6 +96,7 @@
             this.btn_NhaCC.Text = "Nhà Cung Cấp";
             this.btn_NhaCC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_NhaCC.UseVisualStyleBackColor = true;
+            this.btn_NhaCC.Click += new System.EventHandler(this.btn_NhaCC_Click);
             // 
             // btn_Quyen
             // 
@@ -104,6 +114,7 @@
             this.btn_Quyen.Text = "Quyền";
             this.btn_Quyen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Quyen.UseVisualStyleBackColor = true;
+            this.btn_Quyen.Click += new System.EventHandler(this.btn_Quyen_Click);
             // 
             // btn_User
             // 
@@ -122,6 +133,7 @@
             this.btn_User.Text = "User Profile";
             this.btn_User.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_User.UseVisualStyleBackColor = true;
+            this.btn_User.Click += new System.EventHandler(this.btn_User_Click);
             // 
             // panel4
             // 
@@ -157,6 +169,7 @@
             this.btn_NhanVien.Text = "Nhân Viên";
             this.btn_NhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_NhanVien.UseVisualStyleBackColor = true;
+            this.btn_NhanVien.Click += new System.EventHandler(this.btn_NhanVien_Click);
             // 
             // label2
             // 
@@ -197,6 +210,7 @@
             this.btn_HoaDon.Text = "Hóa Đơn";
             this.btn_HoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_HoaDon.UseVisualStyleBackColor = true;
+            this.btn_HoaDon.Click += new System.EventHandler(this.btn_HoaDon_Click);
             // 
             // btn_SanPham
             // 
@@ -214,6 +228,7 @@
             this.btn_SanPham.Text = "Sản Phẩm";
             this.btn_SanPham.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_SanPham.UseVisualStyleBackColor = true;
+            this.btn_SanPham.Click += new System.EventHandler(this.btn_SanPham_Click);
             // 
             // btn_Loai
             // 
@@ -233,6 +248,7 @@
             this.btn_Loai.Text = "Loại";
             this.btn_Loai.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Loai.UseVisualStyleBackColor = true;
+            this.btn_Loai.Click += new System.EventHandler(this.btn_Loai_Click);
             // 
             // btn_BanHang
             // 
@@ -251,6 +267,7 @@
             this.btn_BanHang.Text = "Bán Hàng";
             this.btn_BanHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_BanHang.UseVisualStyleBackColor = true;
+            this.btn_BanHang.Click += new System.EventHandler(this.btn_BanHang_Click);
             // 
             // panel1
             // 
@@ -271,6 +288,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(216, 593);
             this.panel1.TabIndex = 3;
+            // 
+            // panelContainer
+            // 
+            this.panelContainer.Controls.Add(this.uC_KhachHang1);
+            this.panelContainer.Controls.Add(this.uC_UserProfile1);
+            this.panelContainer.Controls.Add(this.uC_Quyen1);
+            this.panelContainer.Controls.Add(this.uC_NhanVien1);
+            this.panelContainer.Controls.Add(this.uC_NhaCungCap1);
+            this.panelContainer.Controls.Add(this.uC_HoaDon1);
+            this.panelContainer.Controls.Add(this.uC_SanPham21);
+            this.panelContainer.Controls.Add(this.uC_Loai1);
+            this.panelContainer.Controls.Add(this.uC_BanHang1);
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelContainer.Location = new System.Drawing.Point(216, 51);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(847, 542);
+            this.panelContainer.TabIndex = 5;
             // 
             // button11
             // 
@@ -335,22 +369,69 @@
             this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button12.UseVisualStyleBackColor = true;
             // 
-            // panelContainer
+            // uC_UserProfile1
             // 
-            this.panelContainer.Controls.Add(this.uC_SanPham1);
-            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelContainer.Location = new System.Drawing.Point(216, 51);
-            this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(847, 542);
-            this.panelContainer.TabIndex = 5;
+            this.uC_UserProfile1.Location = new System.Drawing.Point(-2, -1);
+            this.uC_UserProfile1.Name = "uC_UserProfile1";
+            this.uC_UserProfile1.Size = new System.Drawing.Size(847, 542);
+            this.uC_UserProfile1.TabIndex = 7;
             // 
-            // uC_SanPham1
+            // uC_Quyen1
             // 
-            this.uC_SanPham1.BackColor = System.Drawing.Color.White;
-            this.uC_SanPham1.Location = new System.Drawing.Point(-1, -1);
-            this.uC_SanPham1.Name = "uC_SanPham1";
-            this.uC_SanPham1.Size = new System.Drawing.Size(847, 542);
-            this.uC_SanPham1.TabIndex = 0;
+            this.uC_Quyen1.Location = new System.Drawing.Point(0, -4);
+            this.uC_Quyen1.Name = "uC_Quyen1";
+            this.uC_Quyen1.Size = new System.Drawing.Size(847, 546);
+            this.uC_Quyen1.TabIndex = 6;
+            // 
+            // uC_NhanVien1
+            // 
+            this.uC_NhanVien1.Location = new System.Drawing.Point(-1, -3);
+            this.uC_NhanVien1.Name = "uC_NhanVien1";
+            this.uC_NhanVien1.Size = new System.Drawing.Size(847, 545);
+            this.uC_NhanVien1.TabIndex = 5;
+            // 
+            // uC_NhaCungCap1
+            // 
+            this.uC_NhaCungCap1.Location = new System.Drawing.Point(0, -3);
+            this.uC_NhaCungCap1.Name = "uC_NhaCungCap1";
+            this.uC_NhaCungCap1.Size = new System.Drawing.Size(847, 542);
+            this.uC_NhaCungCap1.TabIndex = 4;
+            // 
+            // uC_HoaDon1
+            // 
+            this.uC_HoaDon1.Location = new System.Drawing.Point(-2, -4);
+            this.uC_HoaDon1.Name = "uC_HoaDon1";
+            this.uC_HoaDon1.Size = new System.Drawing.Size(847, 542);
+            this.uC_HoaDon1.TabIndex = 3;
+            // 
+            // uC_SanPham21
+            // 
+            this.uC_SanPham21.BackColor = System.Drawing.Color.White;
+            this.uC_SanPham21.Location = new System.Drawing.Point(0, 0);
+            this.uC_SanPham21.Name = "uC_SanPham21";
+            this.uC_SanPham21.Size = new System.Drawing.Size(847, 542);
+            this.uC_SanPham21.TabIndex = 2;
+            // 
+            // uC_Loai1
+            // 
+            this.uC_Loai1.Location = new System.Drawing.Point(-1, -4);
+            this.uC_Loai1.Name = "uC_Loai1";
+            this.uC_Loai1.Size = new System.Drawing.Size(847, 542);
+            this.uC_Loai1.TabIndex = 1;
+            // 
+            // uC_BanHang1
+            // 
+            this.uC_BanHang1.Location = new System.Drawing.Point(0, -3);
+            this.uC_BanHang1.Name = "uC_BanHang1";
+            this.uC_BanHang1.Size = new System.Drawing.Size(847, 542);
+            this.uC_BanHang1.TabIndex = 0;
+            // 
+            // uC_KhachHang1
+            // 
+            this.uC_KhachHang1.Location = new System.Drawing.Point(0, -3);
+            this.uC_KhachHang1.Name = "uC_KhachHang1";
+            this.uC_KhachHang1.Size = new System.Drawing.Size(847, 542);
+            this.uC_KhachHang1.TabIndex = 8;
             // 
             // Form1
             // 
@@ -392,7 +473,15 @@
         private System.Windows.Forms.Button btn_BanHang;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelContainer;
-        private ControlLibrary.UC.UC_SanPham uC_SanPham1;
+        private ControlLibrary.UC.Display.UC_Loai uC_Loai1;
+        private ControlLibrary.UC.Display.UC_BanHang uC_BanHang1;
+        private ControlLibrary.UC.Display.UC_NhanVien uC_NhanVien1;
+        private ControlLibrary.UC.Display.UC_NhaCungCap uC_NhaCungCap1;
+        private ControlLibrary.UC.Display.UC_HoaDon uC_HoaDon1;
+        private ControlLibrary.UC.Display.UC_SanPham2 uC_SanPham21;
+        private ControlLibrary.UC.Display.UC_Quyen uC_Quyen1;
+        private ControlLibrary.UC.Display.UC_UserProfile uC_UserProfile1;
+        private ControlLibrary.UC.Display.UC_KhachHang uC_KhachHang1;
     }
 }
 

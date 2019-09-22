@@ -10,3 +10,14 @@ E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\DataLibrary\bin\Debu
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\DataLibrary\bin\Debug\EntityFramework.SqlServer.xml
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\DataLibrary\obj\Debug\DataLibrary.csproj.CopyComplete
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\DataLibrary\obj\Debug\DataLibrary.csprojAssemblyReference.cache
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\bin\Debug\DataLibrary.dll.config
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\bin\Debug\DataLibrary.dll
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\bin\Debug\DataLibrary.pdb
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\bin\Debug\EntityFramework.dll
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\bin\Debug\EntityFramework.SqlServer.dll
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\bin\Debug\EntityFramework.xml
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\bin\Debug\EntityFramework.SqlServer.xml
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\Debug\DataLibrary.csproj.CoreCompileInputs.cache
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\Debug\DataLibrary.csproj.CopyComplete
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\Debug\DataLibrary.dll
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\Debug\DataLibrary.pdb
