@@ -34,11 +34,11 @@
             this.dataGV_SanPham = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel_tool = new System.Windows.Forms.Panel();
-            this.btn_Back = new System.Windows.Forms.Button();
             this.btn_Remove = new System.Windows.Forms.Button();
             this.btn_Edit = new System.Windows.Forms.Button();
             this.btn_Add = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_Back = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -90,7 +90,6 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.panel_tool);
-            this.panel2.Controls.Add(this.btn_Back);
             this.panel2.Controls.Add(this.btn_Remove);
             this.panel2.Controls.Add(this.btn_Edit);
             this.panel2.Controls.Add(this.btn_Add);
@@ -111,19 +110,6 @@
             this.panel_tool.Size = new System.Drawing.Size(847, 3);
             this.panel_tool.TabIndex = 49;
             // 
-            // btn_Back
-            // 
-            this.btn_Back.BackgroundImage = global::ControlLibrary.Properties.Resources._111879652_left_arrow_vector_icon_isolated_on_transparent_background_left_arrow_transparency_logo_concept;
-            this.btn_Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_Back.FlatAppearance.BorderSize = 0;
-            this.btn_Back.Location = new System.Drawing.Point(431, 18);
-            this.btn_Back.Name = "btn_Back";
-            this.btn_Back.Size = new System.Drawing.Size(41, 38);
-            this.btn_Back.TabIndex = 48;
-            this.btn_Back.UseVisualStyleBackColor = true;
-            this.btn_Back.Visible = false;
-            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
-            // 
             // btn_Remove
             // 
             this.btn_Remove.BackColor = System.Drawing.Color.White;
@@ -136,6 +122,7 @@
             this.btn_Remove.TabIndex = 3;
             this.btn_Remove.Text = "Remove";
             this.btn_Remove.UseVisualStyleBackColor = false;
+            this.btn_Remove.Click += new System.EventHandler(this.btn_Remove_Click);
             // 
             // btn_Edit
             // 
@@ -152,6 +139,7 @@
             this.btn_Edit.TabIndex = 2;
             this.btn_Edit.Text = "Edit";
             this.btn_Edit.UseVisualStyleBackColor = false;
+            this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click);
             // 
             // btn_Add
             // 
@@ -181,6 +169,19 @@
             this.label1.Size = new System.Drawing.Size(136, 34);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bán Hàng";
+            // 
+            // btn_Back
+            // 
+            this.btn_Back.BackgroundImage = global::ControlLibrary.Properties.Resources._111879652_left_arrow_vector_icon_isolated_on_transparent_background_left_arrow_transparency_logo_concept;
+            this.btn_Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_Back.FlatAppearance.BorderSize = 0;
+            this.btn_Back.Location = new System.Drawing.Point(0, 3);
+            this.btn_Back.Name = "btn_Back";
+            this.btn_Back.Size = new System.Drawing.Size(41, 38);
+            this.btn_Back.TabIndex = 48;
+            this.btn_Back.UseVisualStyleBackColor = true;
+            this.btn_Back.Visible = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // panel1
             // 
@@ -240,6 +241,7 @@
             // panel_Container
             // 
             this.panel_Container.Controls.Add(this.dataGV_SanPham);
+            this.panel_Container.Controls.Add(this.btn_Back);
             this.panel_Container.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_Container.Location = new System.Drawing.Point(0, 145);
             this.panel_Container.Margin = new System.Windows.Forms.Padding(2);

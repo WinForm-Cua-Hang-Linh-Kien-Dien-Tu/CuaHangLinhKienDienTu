@@ -59,6 +59,7 @@
     <Compile Include="EF\NHASANXUAT.cs" />
     <Compile Include="EF\SANPHAM.cs" />
     <Compile Include="EF\THANHVIEN.cs" />
+    <Compile Include="Model\SanPhamModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
