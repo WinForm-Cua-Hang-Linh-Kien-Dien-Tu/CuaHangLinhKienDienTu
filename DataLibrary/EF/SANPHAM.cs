@@ -51,5 +51,19 @@ namespace DataLibrary.EF
         public virtual LOAI LOAI { get; set; }
 
         public virtual NHASANXUAT NHASANXUAT { get; set; }
+
+        public SANPHAM(int? maNSX, int? maLoai, string tenSP, string moTa, decimal? gia, int? soLuong, string size, string xuatXu, string dacTinh, string hinh)
+        {
+            MaNSX = maNSX;
+            MaLoai = maLoai;
+            TenSP = tenSP;
+            MoTa = moTa;
+            Gia = gia;
+            SoLuong = soLuong;
+            Size = size;
+            XuatXu = xuatXu;
+            DacTinh = dacTinh;
+            Hinh = hinh;
+        }
     }
 }

@@ -21,3 +21,4 @@ E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Die
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\Debug\DataLibrary.csproj.CopyComplete
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\Debug\DataLibrary.dll
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\Debug\DataLibrary.pdb
+E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\Debug\DataLibrary.csprojAssemblyReference.cache

@@ -19,6 +19,8 @@ namespace ControlLibrary.UC.Display
             InitializeComponent();
         }
 
+        private int MaSP;
+
         private void btn_Add_Click(object sender, EventArgs e)
         {
             UC_Add_SanPham add_SanPham = new UC_Add_SanPham();
@@ -34,12 +36,46 @@ namespace ControlLibrary.UC.Display
             dataGV_SanPham.Visible = true;
             add_SanPham.Visible = false;
             btn_Back.Visible = false;
+            UC_SanPham2_Load(sender,e);
         }
 
         private void UC_SanPham2_Load(object sender, EventArgs e)
         {
             var dao = new SanPham();
-            dataGV_SanPham.DataSource = dao.loadSanPham();
+            dataGV_SanPham.DataSource = dao.LoadSanPham();
+        }
+
+        private void btn_Remove_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var dao = new SanPham();
+                if (dataGV_SanPham.SelectedRows.Count > 0)
+                {
+                    MaSP = Convert.ToInt32(dataGV_SanPham.SelectedRows[0].Cells[0].Value);
+                    bool kq = dao.Delete(MaSP);
+                    if (kq == true)
+                    {
+                        MessageBox.Show("Xóa Thành Công");
+                        UC_SanPham2_Load(sender, e);
+                    }
+                    else
+                        MessageBox.Show("Xóa Thất Bại");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Xóa Thất Bại");
+            }
+            
+        }
+
+        private void btn_Edit_Click(object sender, EventArgs e)
+        {
+            UC_Add_SanPham add_SanPham = new UC_Add_SanPham();
+            dataGV_SanPham.Visible = true;
+            add_SanPham.Visible = false;
+            btn_Back.Visible = false;
         }
     }
 }
