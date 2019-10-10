@@ -16,5 +16,6 @@ namespace ControlLibrary.UC.Display
         {
             InitializeComponent();
         }
+
     }
 }

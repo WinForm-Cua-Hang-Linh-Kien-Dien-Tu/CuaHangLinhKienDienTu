@@ -49,11 +49,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UC\Add_Edit\UC_Add_KhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\Add_Edit\UC_Add_KhachHang.Designer.cs">
+      <DependentUpon>UC_Add_KhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC\Add_Edit\UC_Add_SanPham.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC\Add_Edit\UC_Add_SanPham.Designer.cs">
       <DependentUpon>UC_Add_SanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\Add_Edit\UC_Edit_KhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\Add_Edit\UC_Edit_KhachHang.Designer.cs">
+      <DependentUpon>UC_Edit_KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\Add_Edit\UC_Edit_SanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\Add_Edit\UC_Edit_SanPham.Designer.cs">
+      <DependentUpon>UC_Edit_SanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="UC\Display\UC_BanHang.cs">
       <SubType>UserControl</SubType>
@@ -121,8 +139,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC\Add_Edit\UC_Add_KhachHang.resx">
+      <DependentUpon>UC_Add_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC\Add_Edit\UC_Add_SanPham.resx">
       <DependentUpon>UC_Add_SanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\Add_Edit\UC_Edit_KhachHang.resx">
+      <DependentUpon>UC_Edit_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\Add_Edit\UC_Edit_SanPham.resx">
+      <DependentUpon>UC_Edit_SanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC\Display\UC_BanHang.resx">
       <DependentUpon>UC_BanHang.cs</DependentUpon>

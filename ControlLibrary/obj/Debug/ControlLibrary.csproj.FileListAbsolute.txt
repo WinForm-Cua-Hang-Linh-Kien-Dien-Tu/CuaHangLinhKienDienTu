@@ -37,3 +37,28 @@ E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Die
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.UC.Display.UC_UserProfile.resources
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.UC.Display.UC_SanPham2.resources
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.UC.Display.UC_Quyen.resources
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\bin\Debug\ControlLibrary.dll
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\bin\Debug\ControlLibrary.pdb
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\bin\Debug\DataLibrary.dll
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\bin\Debug\EntityFramework.dll
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\bin\Debug\DataLibrary.pdb
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\bin\Debug\EntityFramework.xml
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.Properties.Resources.resources
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.UC.Add_Edit.UC_Add_SanPham.resources
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.UC.Display.UC_BanHang.resources
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.UC.Display.UC_HoaDon.resources
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.UC.Display.UC_KhachHang.resources
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.UC.Display.UC_Loai.resources
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.UC.Display.UC_NhaCungCap.resources
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.UC.Display.UC_NhanVien.resources
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.UC.Display.UC_Quyen.resources
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.UC.Display.UC_SanPham2.resources
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.UC.Display.UC_UserProfile.resources
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.csproj.GenerateResource.cache
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.dll
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.pdb
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.csprojAssemblyReference.cache
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.UC.Add_Edit.UC_Edit_SanPham.resources
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.csproj.CoreCompileInputs.cache
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\bin\Debug\DataLibrary.dll.config
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.csproj.CopyComplete

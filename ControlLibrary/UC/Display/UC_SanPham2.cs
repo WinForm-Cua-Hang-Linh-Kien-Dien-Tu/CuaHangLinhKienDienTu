@@ -72,9 +72,9 @@ namespace ControlLibrary.UC.Display
 
         private void btn_Edit_Click(object sender, EventArgs e)
         {
-            UC_Add_SanPham add_SanPham = new UC_Add_SanPham();
+            UC_Edit_SanPham edit_SanPham = new UC_Edit_SanPham();
             dataGV_SanPham.Visible = true;
-            add_SanPham.Visible = false;
+            edit_SanPham.Visible = false;
             btn_Back.Visible = false;
         }
     }

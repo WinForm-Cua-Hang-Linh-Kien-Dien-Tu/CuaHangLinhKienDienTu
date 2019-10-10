@@ -40,3 +40,24 @@ E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Die
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debug\Form_Main.csproj.CopyComplete
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debug\Form_Main.exe
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debug\Form_Main.pdb
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\bin\Debug\Form_Main.exe.config
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\bin\Debug\Form_Main.exe
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\bin\Debug\Form_Main.pdb
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\bin\Debug\ControlLibrary.dll
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\bin\Debug\EntityFramework.dll
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\bin\Debug\EntityFramework.SqlServer.dll
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\bin\Debug\DataLibrary.dll
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\bin\Debug\ControlLibrary.pdb
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\bin\Debug\EntityFramework.xml
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\bin\Debug\EntityFramework.SqlServer.xml
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\bin\Debug\DataLibrary.pdb
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debug\Form_Main.Form1.resources
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debug\Form_Main.Form_DangNhap.resources
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debug\Form_Main.Properties.Resources.resources
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debug\Form_Main.csproj.GenerateResource.cache
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debug\Form_Main.exe
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debug\Form_Main.pdb
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\bin\Debug\DataLibrary.dll.config
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debug\Form_Main.csprojAssemblyReference.cache
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debug\Form_Main.csproj.CoreCompileInputs.cache
+D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debug\Form_Main.csproj.CopyComplete

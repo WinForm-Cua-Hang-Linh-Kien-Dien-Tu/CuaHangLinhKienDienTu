@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ControlLibrary.UC.Display
+namespace ControlLibrary.UC.Add_Edit
 {
-    public partial class UC_KhachHang : UserControl
+    public partial class UC_Add_KhachHang : UserControl
     {
-        public UC_KhachHang()
+        public UC_Add_KhachHang()
         {
             InitializeComponent();
-        }
-
-        private void btn_Add_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
