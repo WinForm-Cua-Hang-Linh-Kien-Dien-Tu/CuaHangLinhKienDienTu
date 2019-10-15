@@ -62,6 +62,7 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.txt_Gia = new System.Windows.Forms.TextBox();
             this.btn_SaveEdit = new System.Windows.Forms.Button();
+            this.combo_MaNSX = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label6
@@ -404,11 +405,20 @@
             this.btn_SaveEdit.UseVisualStyleBackColor = true;
             this.btn_SaveEdit.Click += new System.EventHandler(this.btn_SaveEdit_Click);
             // 
+            // combo_MaNSX
+            // 
+            this.combo_MaNSX.FormattingEnabled = true;
+            this.combo_MaNSX.Location = new System.Drawing.Point(113, 17);
+            this.combo_MaNSX.Name = "combo_MaNSX";
+            this.combo_MaNSX.Size = new System.Drawing.Size(121, 21);
+            this.combo_MaNSX.TabIndex = 76;
+            // 
             // UC_Add_SanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.combo_MaNSX);
             this.Controls.Add(this.btn_SaveEdit);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel8);
@@ -445,6 +455,7 @@
             this.Controls.Add(this.txt_MLoai);
             this.Name = "UC_Add_SanPham";
             this.Size = new System.Drawing.Size(847, 397);
+            this.Load += new System.EventHandler(this.UC_Add_SanPham_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -485,5 +496,6 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TextBox txt_Gia;
         private System.Windows.Forms.Button btn_SaveEdit;
+        private System.Windows.Forms.ComboBox combo_MaNSX;
     }
 }

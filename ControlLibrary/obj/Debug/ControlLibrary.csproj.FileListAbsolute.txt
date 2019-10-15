@@ -16,10 +16,8 @@ E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienThoai\ControlLibrary\bin\D
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\bin\Debug\ControlLibrary.dll
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\bin\Debug\ControlLibrary.pdb
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\bin\Debug\DataLibrary.dll
-E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\bin\Debug\EntityFramework.dll
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\bin\Debug\DataLibrary.pdb
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\bin\Debug\DataLibrary.dll.config
-E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\bin\Debug\EntityFramework.xml
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.csprojAssemblyReference.cache
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.UC.Add_Edit.UC_Add_SanPham.resources
 E:\Hoc\visual\DoAnWinform\CuaHangDienThoai\CuaHangDienTu2\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.csproj.GenerateResource.cache
