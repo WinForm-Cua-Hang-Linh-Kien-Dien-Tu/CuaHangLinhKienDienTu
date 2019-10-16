@@ -73,9 +73,10 @@ namespace ControlLibrary.UC.Display
         private void btn_Edit_Click(object sender, EventArgs e)
         {
             UC_Add_SanPham add_SanPham = new UC_Add_SanPham();
-            dataGV_SanPham.Visible = true;
-            add_SanPham.Visible = false;
-            btn_Back.Visible = false;
+            panel_Container.Dock = DockStyle.Bottom;
+            panel_Container.Controls.Add(add_SanPham);
+            dataGV_SanPham.Visible = false;
+            btn_Back.Visible = true;
         }
     }
 }

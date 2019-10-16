@@ -9,6 +9,7 @@ namespace DataLibrary.Model
 {
     public class SanPhamModel
     {
+        #region Khai Báo Biến
         [DisplayName("Mã Sản Phẩm")]
         public int MaSP { get; set; }
 
@@ -41,7 +42,9 @@ namespace DataLibrary.Model
 
         [DisplayName("Hình")]
         public string Hinh { get; set; }
+        #endregion
 
+        #region Constructor
         public SanPhamModel( int? maNSX, int? maLoai, string tenSP, string moTa, decimal? gia, int? soLuong, string size, string xuatXu, string dacTinh, string hinh)
         {
             MaNSX = maNSX;
@@ -59,5 +62,6 @@ namespace DataLibrary.Model
         public SanPhamModel()
         {
         }
+        #endregion
     }
 }
