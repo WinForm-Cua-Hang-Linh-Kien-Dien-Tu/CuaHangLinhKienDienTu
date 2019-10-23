@@ -59,9 +59,14 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.txt_Gia = new System.Windows.Forms.TextBox();
+<<<<<<< HEAD
             this.btn_Cancel = new System.Windows.Forms.Button();
             this.comboBox_NSX = new System.Windows.Forms.ComboBox();
             this.comboBox_LoaiSP = new System.Windows.Forms.ComboBox();
+=======
+            this.btn_SaveEdit = new System.Windows.Forms.Button();
+            this.combo_MaNSX = new System.Windows.Forms.ComboBox();
+>>>>>>> 7c3858f7db9f86c4e85cae99f3dde9eff999fab3
             this.SuspendLayout();
             // 
             // label6
@@ -398,14 +403,27 @@
             this.comboBox_LoaiSP.Size = new System.Drawing.Size(248, 21);
             this.comboBox_LoaiSP.TabIndex = 77;
             // 
+            // combo_MaNSX
+            // 
+            this.combo_MaNSX.FormattingEnabled = true;
+            this.combo_MaNSX.Location = new System.Drawing.Point(113, 17);
+            this.combo_MaNSX.Name = "combo_MaNSX";
+            this.combo_MaNSX.Size = new System.Drawing.Size(121, 21);
+            this.combo_MaNSX.TabIndex = 76;
+            // 
             // UC_Add_SanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.Controls.Add(this.comboBox_LoaiSP);
             this.Controls.Add(this.comboBox_NSX);
             this.Controls.Add(this.btn_Cancel);
+=======
+            this.Controls.Add(this.combo_MaNSX);
+            this.Controls.Add(this.btn_SaveEdit);
+>>>>>>> 7c3858f7db9f86c4e85cae99f3dde9eff999fab3
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.txt_Gia);
@@ -477,8 +495,13 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TextBox txt_Gia;
+<<<<<<< HEAD
         private System.Windows.Forms.Button btn_Cancel;
         private System.Windows.Forms.ComboBox comboBox_NSX;
         private System.Windows.Forms.ComboBox comboBox_LoaiSP;
+=======
+        private System.Windows.Forms.Button btn_SaveEdit;
+        private System.Windows.Forms.ComboBox combo_MaNSX;
+>>>>>>> 7c3858f7db9f86c4e85cae99f3dde9eff999fab3
     }
 }

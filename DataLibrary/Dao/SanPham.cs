@@ -32,6 +32,15 @@ namespace DataLibrary.Dao
             return result;
         }
 
+        public List<SanPhamModel> combo()
+        {
+            var result = db.NHASANXUAT.Select(ma => new SanPhamModel()
+            {
+                MaNSX = ma.MaNSX
+            }).ToList();
+            return result;
+        }
+
         public void AddNew(SanPhamModel modelsp)
         {
             SANPHAM sp = new SANPHAM();
@@ -91,4 +100,5 @@ namespace DataLibrary.Dao
             return db.SANPHAM.Where(x => x.MaSP == id).FirstOrDefault();
         }
     }
+
 }

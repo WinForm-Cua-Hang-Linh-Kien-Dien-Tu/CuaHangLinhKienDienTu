@@ -23,6 +23,16 @@ namespace ControlLibrary.UC.Add_Edit
         private int? soLuong;
         private string tenSP, moTa;
         private decimal? gia;
+
+        private void UC_Add_SanPham_Load(object sender, EventArgs e)
+        {
+            var dao = new SanPham();
+            foreach (SanPhamModel item in dao.combo())
+            {
+                combo_MaNSX.Items.Add(item.MaNSX);
+            }
+        }
+
         private string size, xuatXu, dacTinh, hinh;
 
         private void UC_Add_SanPham_Load(object sender, EventArgs e)
