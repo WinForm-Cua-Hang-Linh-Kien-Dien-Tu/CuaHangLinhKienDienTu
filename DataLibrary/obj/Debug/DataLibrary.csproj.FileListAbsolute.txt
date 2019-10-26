@@ -34,3 +34,15 @@ D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\ob
 D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\Debug\DataLibrary.csprojAssemblyReference.cache
 D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\Debug\DataLibrary.csproj.CoreCompileInputs.cache
 D:\Bai\Lap trinh winform nang cao\DeAn\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\Debug\DataLibrary.csproj.CopyComplete
+D:\Bai\Lap trinh winform nang cao\New folder\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\bin\Debug\DataLibrary.dll.config
+D:\Bai\Lap trinh winform nang cao\New folder\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\bin\Debug\DataLibrary.dll
+D:\Bai\Lap trinh winform nang cao\New folder\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\bin\Debug\DataLibrary.pdb
+D:\Bai\Lap trinh winform nang cao\New folder\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\bin\Debug\EntityFramework.dll
+D:\Bai\Lap trinh winform nang cao\New folder\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\Bai\Lap trinh winform nang cao\New folder\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\bin\Debug\EntityFramework.xml
+D:\Bai\Lap trinh winform nang cao\New folder\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\Bai\Lap trinh winform nang cao\New folder\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\Debug\DataLibrary.csprojAssemblyReference.cache
+D:\Bai\Lap trinh winform nang cao\New folder\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\Debug\DataLibrary.csproj.CoreCompileInputs.cache
+D:\Bai\Lap trinh winform nang cao\New folder\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\Debug\DataLibrary.csproj.CopyComplete
+D:\Bai\Lap trinh winform nang cao\New folder\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\Debug\DataLibrary.dll
+D:\Bai\Lap trinh winform nang cao\New folder\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\Debug\DataLibrary.pdb

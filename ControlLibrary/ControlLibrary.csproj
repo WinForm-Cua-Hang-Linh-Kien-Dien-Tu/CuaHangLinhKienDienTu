@@ -59,7 +59,7 @@
     <Compile Include="UC\Add_Edit\UC_Add_SanPham.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UC\Add_Edit\UC_Add_SanPham.Designer.cs">
+    <Compile Include="UC\Add_Edit\UC_Add_SanPham.designer.cs">
       <DependentUpon>UC_Add_SanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="UC\Add_Edit\UC_Edit_KhachHang.cs">

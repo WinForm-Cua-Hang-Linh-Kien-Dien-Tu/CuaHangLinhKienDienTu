@@ -20,7 +20,7 @@ namespace ControlLibrary.UC.Add_Edit
             InitializeComponent();
         }
 
-        private int? soLuong;
+        private int? maNSX, maLoai, soLuong;
         private string tenSP, moTa;
         private decimal? gia;
 
@@ -35,64 +35,60 @@ namespace ControlLibrary.UC.Add_Edit
 
         private string size, xuatXu, dacTinh, hinh;
 
-        private void UC_Add_SanPham_Load(object sender, EventArgs e)
-        {
-            //var dao = new cbb_NSX();
-            //comboBox_NSX.DataSource = dao.Load_cbb_NSX();
-        }
-
         private void btn_SaveEdit_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    tenSP = txt_TenSP.Text.ToString();
+            try
+            {
+                tenSP = txt_TenSP.Text.ToString();
+                maNSX = Convert.ToInt32(txt_MaNSX.Text);
+                maLoai = Convert.ToInt32(txt_MLoai.Text);
                 moTa = txt_MoTa.Text.ToString();
                 gia = Convert.ToInt32(txt_Gia.Text);
                 soLuong = Convert.ToInt32(txt_SoLuong.Text);
-            //    size = txt_Size.Text.ToString();
-            //    xuatXu = txt_XuatXu.Text.ToString();
-            //    dacTinh = txt_DacTinh.Text.ToString();
-            //    hinh = txt_Hinh.Text.ToString();
+                size = txt_Size.Text.ToString();
+                xuatXu = txt_XuatXu.Text.ToString();
+                dacTinh = txt_DacTinh.Text.ToString();
+                hinh = txt_Hinh.Text.ToString();
 
-            //    var dao = new SanPham();
-            //    SANPHAM sp = new SANPHAM(maNSX, maLoai, tenSP, moTa, gia, soLuong, size, xuatXu, dacTinh, hinh);
-            //    dao.Edit(37, sp);
+                var dao = new SanPham();
+                SANPHAM sp = new SANPHAM(maNSX, maLoai, tenSP, moTa, gia, soLuong, size, xuatXu, dacTinh, hinh);
+                dao.Edit(37,sp);
 
-            //    MessageBox.Show("upadte Thành Công", "Tin Nhắn", MessageBoxButtons.OK);
-            //}
-            //catch
-            //{
-            //    MessageBox.Show("Tạo Thành Công", "Tin Nhắn", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-        }
-
-
-
-        private void btn_Save_Click(object sender, EventArgs e)
-        {
-            //try
-            //{
-            //    tenSP = txt_TenSP.Text.ToString();
-            //    moTa = txt_MoTa.Text.ToString();
-            //    gia = Convert.ToInt32(txt_Gia.Text);
-            //    soLuong = Convert.ToInt32(txt_SoLuong.Text);
-            //    size = txt_Size.Text.ToString();
-            //    xuatXu = txt_XuatXu.Text.ToString();
-            //    dacTinh = txt_DacTinh.Text.ToString();
-            //    hinh = txt_Hinh.Text.ToString();
-
-            //    var dao = new SanPham();
-            //    SanPhamModel sp = new SanPhamModel(maNSX, maLoai, tenSP, moTa, gia, soLuong, size, xuatXu, dacTinh, hinh);
-            //    dao.AddNew(sp);
-
-            //    MessageBox.Show("Tạo Thành Công", "Tin Nhắn", MessageBoxButtons.OK);
-            //}
-            //catch
-            //{
-            //    MessageBox.Show("Tạo thất bại", "Tin Nhắn", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+                MessageBox.Show("upadte Thành Công", "Tin Nhắn", MessageBoxButtons.OK);
+            }
+            catch
+            {
+                MessageBox.Show("Tạo Thành Công", "Tin Nhắn", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         
+
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                tenSP = txt_TenSP.Text.ToString();
+                maNSX = Convert.ToInt32(txt_MaNSX.Text);
+                maLoai = Convert.ToInt32(txt_MLoai.Text);
+                moTa = txt_MoTa.Text.ToString();
+                gia = Convert.ToInt32(txt_Gia.Text);
+                soLuong = Convert.ToInt32(txt_SoLuong.Text);
+                size = txt_Size.Text.ToString();
+                xuatXu = txt_XuatXu.Text.ToString();
+                dacTinh = txt_DacTinh.Text.ToString();
+                hinh = txt_Hinh.Text.ToString();
+
+                var dao = new SanPham();
+                SanPhamModel sp = new SanPhamModel(maNSX, maLoai, tenSP, moTa, gia, soLuong, size, xuatXu, dacTinh, hinh);
+                dao.AddNew(sp);
+
+                MessageBox.Show("Tạo Thành Công", "Tin Nhắn", MessageBoxButtons.OK);
+            }
+            catch
+            {
+                MessageBox.Show("Tạo Thành Công", "Tin Nhắn", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
