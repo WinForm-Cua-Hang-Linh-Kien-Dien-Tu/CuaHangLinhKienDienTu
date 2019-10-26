@@ -30,13 +30,15 @@
         {
             this.label6 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.txt_TenSP = new System.Windows.Forms.TextBox();
+            this.txt_MLoai = new System.Windows.Forms.TextBox();
             this.panel_tool = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_MaNSX = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txt_TenSP = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txt_MoTa = new System.Windows.Forms.TextBox();
@@ -59,14 +61,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.txt_Gia = new System.Windows.Forms.TextBox();
-<<<<<<< HEAD
-            this.btn_Cancel = new System.Windows.Forms.Button();
-            this.comboBox_NSX = new System.Windows.Forms.ComboBox();
-            this.comboBox_LoaiSP = new System.Windows.Forms.ComboBox();
-=======
             this.btn_SaveEdit = new System.Windows.Forms.Button();
             this.combo_MaNSX = new System.Windows.Forms.ComboBox();
->>>>>>> 7c3858f7db9f86c4e85cae99f3dde9eff999fab3
             this.SuspendLayout();
             // 
             // label6
@@ -76,9 +72,9 @@
             this.label6.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label6.Location = new System.Drawing.Point(17, 71);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 19);
+            this.label6.Size = new System.Drawing.Size(63, 19);
             this.label6.TabIndex = 44;
-            this.label6.Text = "Tên sản phẩm";
+            this.label6.Text = "Mã Loai";
             // 
             // panel6
             // 
@@ -88,16 +84,16 @@
             this.panel6.Size = new System.Drawing.Size(248, 1);
             this.panel6.TabIndex = 39;
             // 
-            // txt_TenSP
+            // txt_MLoai
             // 
-            this.txt_TenSP.BackColor = System.Drawing.Color.White;
-            this.txt_TenSP.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_TenSP.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TenSP.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_TenSP.Location = new System.Drawing.Point(21, 103);
-            this.txt_TenSP.Name = "txt_TenSP";
-            this.txt_TenSP.Size = new System.Drawing.Size(248, 19);
-            this.txt_TenSP.TabIndex = 34;
+            this.txt_MLoai.BackColor = System.Drawing.Color.White;
+            this.txt_MLoai.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_MLoai.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_MLoai.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_MLoai.Location = new System.Drawing.Point(21, 103);
+            this.txt_MLoai.Name = "txt_MLoai";
+            this.txt_MLoai.Size = new System.Drawing.Size(248, 19);
+            this.txt_MLoai.TabIndex = 34;
             // 
             // panel_tool
             // 
@@ -111,11 +107,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label1.Location = new System.Drawing.Point(338, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 24);
+            this.label1.Size = new System.Drawing.Size(150, 23);
             this.label1.TabIndex = 46;
             this.label1.Text = "Thêm Sản Phẩm";
             // 
@@ -126,9 +122,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label2.Location = new System.Drawing.Point(17, 154);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 19);
+            this.label2.Size = new System.Drawing.Size(63, 19);
             this.label2.TabIndex = 49;
-            this.label2.Text = "Nhà sản xuất";
+            this.label2.Text = "Mã NSX";
             // 
             // panel1
             // 
@@ -138,6 +134,17 @@
             this.panel1.Size = new System.Drawing.Size(248, 1);
             this.panel1.TabIndex = 48;
             // 
+            // txt_MaNSX
+            // 
+            this.txt_MaNSX.BackColor = System.Drawing.Color.White;
+            this.txt_MaNSX.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_MaNSX.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_MaNSX.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_MaNSX.Location = new System.Drawing.Point(21, 186);
+            this.txt_MaNSX.Name = "txt_MaNSX";
+            this.txt_MaNSX.Size = new System.Drawing.Size(248, 19);
+            this.txt_MaNSX.TabIndex = 47;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -145,9 +152,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label3.Location = new System.Drawing.Point(17, 243);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 19);
+            this.label3.Size = new System.Drawing.Size(103, 19);
             this.label3.TabIndex = 52;
-            this.label3.Text = "Loại sản phẩm";
+            this.label3.Text = "Tên Sản Phẩm";
             // 
             // panel2
             // 
@@ -157,6 +164,17 @@
             this.panel2.Size = new System.Drawing.Size(248, 1);
             this.panel2.TabIndex = 51;
             // 
+            // txt_TenSP
+            // 
+            this.txt_TenSP.BackColor = System.Drawing.Color.White;
+            this.txt_TenSP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_TenSP.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_TenSP.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_TenSP.Location = new System.Drawing.Point(21, 275);
+            this.txt_TenSP.Name = "txt_TenSP";
+            this.txt_TenSP.Size = new System.Drawing.Size(248, 19);
+            this.txt_TenSP.TabIndex = 50;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -164,9 +182,9 @@
             this.label4.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label4.Location = new System.Drawing.Point(17, 321);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 19);
+            this.label4.Size = new System.Drawing.Size(51, 19);
             this.label4.TabIndex = 55;
-            this.label4.Text = "Hình ảnh";
+            this.label4.Text = "Mô Tả";
             // 
             // panel3
             // 
@@ -194,9 +212,9 @@
             this.label5.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label5.Location = new System.Drawing.Point(318, 71);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 19);
+            this.label5.Size = new System.Drawing.Size(70, 19);
             this.label5.TabIndex = 58;
-            this.label5.Text = "Mô tả";
+            this.label5.Text = "So Luong";
             // 
             // panel4
             // 
@@ -224,9 +242,9 @@
             this.label7.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label7.Location = new System.Drawing.Point(318, 154);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 19);
+            this.label7.Size = new System.Drawing.Size(34, 19);
             this.label7.TabIndex = 61;
-            this.label7.Text = "Số lượng";
+            this.label7.Text = "Size";
             // 
             // panel5
             // 
@@ -294,9 +312,9 @@
             this.label10.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label10.Location = new System.Drawing.Point(592, 154);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(34, 19);
+            this.label10.Size = new System.Drawing.Size(40, 19);
             this.label10.TabIndex = 71;
-            this.label10.Text = "Size";
+            this.label10.Text = "Hinh";
             // 
             // panel9
             // 
@@ -324,9 +342,9 @@
             this.label11.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label11.Location = new System.Drawing.Point(592, 71);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(33, 19);
+            this.label11.Size = new System.Drawing.Size(69, 19);
             this.label11.TabIndex = 68;
-            this.label11.Text = "Giá";
+            this.label11.Text = "Đặc Tính";
             // 
             // panel10
             // 
@@ -354,9 +372,9 @@
             this.label9.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label9.Location = new System.Drawing.Point(595, 243);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(65, 19);
+            this.label9.Size = new System.Drawing.Size(40, 19);
             this.label9.TabIndex = 74;
-            this.label9.Text = "Đặc tính";
+            this.label9.Text = "Hinh";
             // 
             // panel8
             // 
@@ -377,31 +395,15 @@
             this.txt_Gia.Size = new System.Drawing.Size(248, 19);
             this.txt_Gia.TabIndex = 72;
             // 
-            // btn_Cancel
+            // btn_SaveEdit
             // 
-            this.btn_Cancel.Location = new System.Drawing.Point(413, 353);
-            this.btn_Cancel.Name = "btn_Cancel";
-            this.btn_Cancel.Size = new System.Drawing.Size(75, 23);
-            this.btn_Cancel.TabIndex = 75;
-            this.btn_Cancel.Text = "Cancel";
-            this.btn_Cancel.UseVisualStyleBackColor = true;
-            this.btn_Cancel.Click += new System.EventHandler(this.btn_SaveEdit_Click);
-            // 
-            // comboBox_NSX
-            // 
-            this.comboBox_NSX.FormattingEnabled = true;
-            this.comboBox_NSX.Location = new System.Drawing.Point(21, 187);
-            this.comboBox_NSX.Name = "comboBox_NSX";
-            this.comboBox_NSX.Size = new System.Drawing.Size(248, 21);
-            this.comboBox_NSX.TabIndex = 76;
-            // 
-            // comboBox_LoaiSP
-            // 
-            this.comboBox_LoaiSP.FormattingEnabled = true;
-            this.comboBox_LoaiSP.Location = new System.Drawing.Point(21, 276);
-            this.comboBox_LoaiSP.Name = "comboBox_LoaiSP";
-            this.comboBox_LoaiSP.Size = new System.Drawing.Size(248, 21);
-            this.comboBox_LoaiSP.TabIndex = 77;
+            this.btn_SaveEdit.Location = new System.Drawing.Point(413, 353);
+            this.btn_SaveEdit.Name = "btn_SaveEdit";
+            this.btn_SaveEdit.Size = new System.Drawing.Size(75, 23);
+            this.btn_SaveEdit.TabIndex = 75;
+            this.btn_SaveEdit.Text = "Save";
+            this.btn_SaveEdit.UseVisualStyleBackColor = true;
+            this.btn_SaveEdit.Click += new System.EventHandler(this.btn_SaveEdit_Click);
             // 
             // combo_MaNSX
             // 
@@ -416,14 +418,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.Controls.Add(this.comboBox_LoaiSP);
-            this.Controls.Add(this.comboBox_NSX);
-            this.Controls.Add(this.btn_Cancel);
-=======
             this.Controls.Add(this.combo_MaNSX);
             this.Controls.Add(this.btn_SaveEdit);
->>>>>>> 7c3858f7db9f86c4e85cae99f3dde9eff999fab3
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.txt_Gia);
@@ -448,13 +444,15 @@
             this.Controls.Add(this.txt_MoTa);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.txt_TenSP);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.txt_MaNSX);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel_tool);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel6);
-            this.Controls.Add(this.txt_TenSP);
+            this.Controls.Add(this.txt_MLoai);
             this.Name = "UC_Add_SanPham";
             this.Size = new System.Drawing.Size(847, 397);
             this.Load += new System.EventHandler(this.UC_Add_SanPham_Load);
@@ -466,13 +464,15 @@
         #endregion
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox txt_TenSP;
+        private System.Windows.Forms.TextBox txt_MLoai;
         private System.Windows.Forms.Panel panel_tool;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txt_MaNSX;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox txt_TenSP;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txt_MoTa;
@@ -495,13 +495,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TextBox txt_Gia;
-<<<<<<< HEAD
-        private System.Windows.Forms.Button btn_Cancel;
-        private System.Windows.Forms.ComboBox comboBox_NSX;
-        private System.Windows.Forms.ComboBox comboBox_LoaiSP;
-=======
         private System.Windows.Forms.Button btn_SaveEdit;
         private System.Windows.Forms.ComboBox combo_MaNSX;
->>>>>>> 7c3858f7db9f86c4e85cae99f3dde9eff999fab3
     }
 }
