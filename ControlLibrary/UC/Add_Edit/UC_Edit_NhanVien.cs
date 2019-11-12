@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ControlLibrary.UC.Display
+namespace ControlLibrary.UC.Add_Edit
 {
-    public partial class UC_HoaDon : UserControl
+    public partial class UC_Edit_NhanVien : UserControl
     {
-        public UC_HoaDon()
+        public UC_Edit_NhanVien()
         {
             InitializeComponent();
-        }
-
-        private void txt_TimKiemHoaDon_Click(object sender, EventArgs e)
-        {
-            txt_TimKiemHoaDon.Text = "";
         }
     }
 }

@@ -63,9 +63,9 @@
             // 
             this.panel_tool.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panel_tool.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_tool.Location = new System.Drawing.Point(0, 70);
+            this.panel_tool.Location = new System.Drawing.Point(0, 71);
             this.panel_tool.Name = "panel_tool";
-            this.panel_tool.Size = new System.Drawing.Size(847, 3);
+            this.panel_tool.Size = new System.Drawing.Size(847, 2);
             this.panel_tool.TabIndex = 49;
             // 
             // btn_Remove_KhachHang

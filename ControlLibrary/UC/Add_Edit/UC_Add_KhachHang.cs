@@ -16,5 +16,11 @@ namespace ControlLibrary.UC.Add_Edit
         {
             InitializeComponent();
         }
+
+        private void txt_TenKH_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

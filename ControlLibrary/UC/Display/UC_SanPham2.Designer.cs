@@ -172,9 +172,9 @@
             this.label1.Location = new System.Drawing.Point(12, 19);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 34);
+            this.label1.Size = new System.Drawing.Size(133, 34);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Bán Hàng";
+            this.label1.Text = "Sản phẩm";
             // 
             // btn_Add
             // 

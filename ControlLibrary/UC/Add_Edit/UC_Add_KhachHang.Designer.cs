@@ -195,6 +195,7 @@
             this.txt_TenKH.Name = "txt_TenKH";
             this.txt_TenKH.Size = new System.Drawing.Size(248, 19);
             this.txt_TenKH.TabIndex = 78;
+            this.txt_TenKH.TextChanged += new System.EventHandler(this.txt_TenKH_TextChanged);
             // 
             // radioButton_Nam
             // 
