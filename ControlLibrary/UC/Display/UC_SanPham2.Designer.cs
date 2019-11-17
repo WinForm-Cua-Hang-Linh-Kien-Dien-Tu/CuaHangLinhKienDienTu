@@ -162,6 +162,8 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGV_SanPham.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGV_SanPham.RowHeadersVisible = false;
+            this.dataGV_SanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGV_SanPham.Size = new System.Drawing.Size(847, 397);
             this.dataGV_SanPham.TabIndex = 0;
             // 

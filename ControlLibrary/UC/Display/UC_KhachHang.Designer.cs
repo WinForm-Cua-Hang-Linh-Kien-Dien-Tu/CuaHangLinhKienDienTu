@@ -34,14 +34,15 @@
             this.btn_Edit_KhachHang = new System.Windows.Forms.Button();
             this.btn_Add_KhachHang = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_Search_KhachHang = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGV_KhachHang = new System.Windows.Forms.DataGridView();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_TimKiem_KhachHang = new System.Windows.Forms.TextBox();
+            this.btn_TimKiem_KhachHang = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGV_KhachHang)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -126,65 +127,78 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Khách Hàng";
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btn_Search_KhachHang);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Location = new System.Drawing.Point(0, 73);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(847, 62);
-            this.panel1.TabIndex = 11;
-            // 
-            // btn_Search_KhachHang
-            // 
-            this.btn_Search_KhachHang.BackColor = System.Drawing.Color.White;
-            this.btn_Search_KhachHang.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btn_Search_KhachHang.FlatAppearance.BorderSize = 0;
-            this.btn_Search_KhachHang.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btn_Search_KhachHang.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btn_Search_KhachHang.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Search_KhachHang.Location = new System.Drawing.Point(288, 10);
-            this.btn_Search_KhachHang.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Search_KhachHang.Name = "btn_Search_KhachHang";
-            this.btn_Search_KhachHang.Size = new System.Drawing.Size(95, 34);
-            this.btn_Search_KhachHang.TabIndex = 50;
-            this.btn_Search_KhachHang.Text = "Search";
-            this.btn_Search_KhachHang.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(18, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(255, 23);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "Nhập thông tin khách hàng...";
-            // 
             // dataGV_KhachHang
             // 
             this.dataGV_KhachHang.BackgroundColor = System.Drawing.Color.White;
             this.dataGV_KhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGV_KhachHang.Location = new System.Drawing.Point(4, 142);
+            this.dataGV_KhachHang.Location = new System.Drawing.Point(4, 147);
             this.dataGV_KhachHang.Name = "dataGV_KhachHang";
-            this.dataGV_KhachHang.Size = new System.Drawing.Size(840, 388);
+            this.dataGV_KhachHang.RowHeadersVisible = false;
+            this.dataGV_KhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGV_KhachHang.Size = new System.Drawing.Size(840, 395);
             this.dataGV_KhachHang.TabIndex = 12;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.txt_TimKiem_KhachHang);
+            this.panel1.Controls.Add(this.btn_TimKiem_KhachHang);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Location = new System.Drawing.Point(0, 79);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(847, 62);
+            this.panel1.TabIndex = 51;
+            // 
+            // txt_TimKiem_KhachHang
+            // 
+            this.txt_TimKiem_KhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_TimKiem_KhachHang.ForeColor = System.Drawing.Color.Gray;
+            this.txt_TimKiem_KhachHang.Location = new System.Drawing.Point(20, 19);
+            this.txt_TimKiem_KhachHang.Name = "txt_TimKiem_KhachHang";
+            this.txt_TimKiem_KhachHang.Size = new System.Drawing.Size(255, 23);
+            this.txt_TimKiem_KhachHang.TabIndex = 6;
+            this.txt_TimKiem_KhachHang.Text = "Nhập thông tin khách hàng...";
+            // 
+            // btn_TimKiem_KhachHang
+            // 
+            this.btn_TimKiem_KhachHang.BackColor = System.Drawing.Color.White;
+            this.btn_TimKiem_KhachHang.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_TimKiem_KhachHang.FlatAppearance.BorderSize = 0;
+            this.btn_TimKiem_KhachHang.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btn_TimKiem_KhachHang.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btn_TimKiem_KhachHang.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TimKiem_KhachHang.Location = new System.Drawing.Point(303, 10);
+            this.btn_TimKiem_KhachHang.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_TimKiem_KhachHang.Name = "btn_TimKiem_KhachHang";
+            this.btn_TimKiem_KhachHang.Size = new System.Drawing.Size(135, 34);
+            this.btn_TimKiem_KhachHang.TabIndex = 5;
+            this.btn_TimKiem_KhachHang.Text = "Tìm kiếm";
+            this.btn_TimKiem_KhachHang.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(17, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 16);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Tìm kiếm";
             // 
             // UC_KhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.dataGV_KhachHang);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.dataGV_KhachHang);
             this.Controls.Add(this.panel2);
             this.Name = "UC_KhachHang";
             this.Size = new System.Drawing.Size(847, 542);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGV_KhachHang)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGV_KhachHang)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -197,10 +211,11 @@
         private System.Windows.Forms.Button btn_Edit_KhachHang;
         private System.Windows.Forms.Button btn_Add_KhachHang;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btn_Search_KhachHang;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dataGV_KhachHang;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txt_TimKiem_KhachHang;
+        private System.Windows.Forms.Button btn_TimKiem_KhachHang;
+        private System.Windows.Forms.Label label3;
     }
 }

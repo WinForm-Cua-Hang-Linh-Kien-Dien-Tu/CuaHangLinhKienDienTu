@@ -35,14 +35,13 @@
             this.btn_Add_HoaDon = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_TimKiemHoaDon = new System.Windows.Forms.TextBox();
             this.btn_TimKiemKhachHang = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.dataGV_HoaDon = new System.Windows.Forms.DataGridView();
-            this.txt_TimKiemHoaDon = new System.Windows.Forms.TextBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGV_HoaDon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,6 +136,17 @@
             this.panel1.Size = new System.Drawing.Size(847, 62);
             this.panel1.TabIndex = 11;
             // 
+            // txt_TimKiemHoaDon
+            // 
+            this.txt_TimKiemHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_TimKiemHoaDon.ForeColor = System.Drawing.Color.Gray;
+            this.txt_TimKiemHoaDon.Location = new System.Drawing.Point(20, 19);
+            this.txt_TimKiemHoaDon.Name = "txt_TimKiemHoaDon";
+            this.txt_TimKiemHoaDon.Size = new System.Drawing.Size(255, 23);
+            this.txt_TimKiemHoaDon.TabIndex = 6;
+            this.txt_TimKiemHoaDon.Text = "Nhập tên khách hàng...";
+            this.txt_TimKiemHoaDon.Click += new System.EventHandler(this.txt_TimKiemHoaDon_Click);
+            // 
             // btn_TimKiemKhachHang
             // 
             this.btn_TimKiemKhachHang.BackColor = System.Drawing.Color.White;
@@ -163,41 +173,22 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Tìm kiếm";
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.dataGV_HoaDon);
-            this.panel3.Location = new System.Drawing.Point(0, 148);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(847, 394);
-            this.panel3.TabIndex = 12;
-            // 
             // dataGV_HoaDon
             // 
-            this.dataGV_HoaDon.BackgroundColor = System.Drawing.Color.White;
             this.dataGV_HoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGV_HoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGV_HoaDon.Location = new System.Drawing.Point(0, 0);
+            this.dataGV_HoaDon.Location = new System.Drawing.Point(4, 148);
             this.dataGV_HoaDon.Name = "dataGV_HoaDon";
-            this.dataGV_HoaDon.Size = new System.Drawing.Size(847, 394);
-            this.dataGV_HoaDon.TabIndex = 0;
-            // 
-            // txt_TimKiemHoaDon
-            // 
-            this.txt_TimKiemHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TimKiemHoaDon.ForeColor = System.Drawing.Color.Gray;
-            this.txt_TimKiemHoaDon.Location = new System.Drawing.Point(20, 19);
-            this.txt_TimKiemHoaDon.Name = "txt_TimKiemHoaDon";
-            this.txt_TimKiemHoaDon.Size = new System.Drawing.Size(255, 23);
-            this.txt_TimKiemHoaDon.TabIndex = 6;
-            this.txt_TimKiemHoaDon.Text = "Nhập tên khách hàng...";
-            this.txt_TimKiemHoaDon.Click += new System.EventHandler(this.txt_TimKiemHoaDon_Click);
+            this.dataGV_HoaDon.RowHeadersVisible = false;
+            this.dataGV_HoaDon.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGV_HoaDon.Size = new System.Drawing.Size(840, 406);
+            this.dataGV_HoaDon.TabIndex = 12;
             // 
             // UC_HoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.dataGV_HoaDon);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "UC_HoaDon";
@@ -206,7 +197,6 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGV_HoaDon)).EndInit();
             this.ResumeLayout(false);
 
@@ -221,10 +211,10 @@
         private System.Windows.Forms.Button btn_Add_HoaDon;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView dataGV_HoaDon;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_TimKiemKhachHang;
         private System.Windows.Forms.TextBox txt_TimKiemHoaDon;
+        private System.Windows.Forms.DataGridView dataGV_HoaDon;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
