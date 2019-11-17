@@ -13,11 +13,11 @@ namespace DataLibrary.Model
         [DisplayName("Mã Sản Phẩm")]
         public int MaSP { get; set; }
 
-        [DisplayName("Mã Nhà Sản Xuất")]
-        public int? MaNSX { get; set; }
+        [DisplayName("Tên Nhà Sản Xuất")]
+        public string TenNSX { get; set; }
 
-        [DisplayName("Mã Loại")]
-        public int? MaLoai { get; set; }
+        [DisplayName("Tên Lọai")]
+        public string TenLoai { get; set; }
 
         [DisplayName("Tên Sản Phẩm")]
         public string TenSP { get; set; }
@@ -42,6 +42,12 @@ namespace DataLibrary.Model
 
         [DisplayName("Hình")]
         public string Hinh { get; set; }
+
+        [DisplayName("Mã Nhà Sản Xuất")]
+        public int? MaNSX { get; set; }
+
+        [DisplayName("Mã Loại")]
+        public int? MaLoai { get; set; }
         #endregion
 
         #region Constructor

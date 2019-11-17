@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ControlLibrary.UC.Add_Edit;
 using DataLibrary.Dao;
+using DataLibrary.Model;
 
 namespace ControlLibrary.UC.Display
 {
@@ -19,22 +20,27 @@ namespace ControlLibrary.UC.Display
             InitializeComponent();
         }
 
-        private int MaSP;
+        public int MaSP;
+        UC_Add_SanPham add_SanPham = new UC_Add_SanPham();
+        UC_Edit_SanPham edit_SanPham = new UC_Edit_SanPham();
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
-            UC_Add_SanPham add_SanPham = new UC_Add_SanPham();
+           
             panel_Container.Dock = DockStyle.Bottom;
             panel_Container.Controls.Add(add_SanPham);
             dataGV_SanPham.Visible = false;
+            add_SanPham.Visible = true;
+            edit_SanPham.Visible = false;
             btn_Back.Visible = true;
         }
 
         private void btn_Back_Click(object sender, EventArgs e)
         {
-            UC_Add_SanPham add_SanPham = new UC_Add_SanPham();
+           
             dataGV_SanPham.Visible = true;
             add_SanPham.Visible = false;
+            edit_SanPham.Visible = false;
             btn_Back.Visible = false;
             UC_SanPham2_Load(sender,e);
         }
@@ -43,6 +49,13 @@ namespace ControlLibrary.UC.Display
         {
             var dao = new SanPham();
             dataGV_SanPham.DataSource = dao.LoadSanPham();
+            
+            foreach (SanPhamModel item in dao.loadXuatXu())
+            {
+               comboBox1.Items.Add(item.XuatXu);
+               
+            }
+            
         }
 
         private void btn_Remove_Click(object sender, EventArgs e)
@@ -70,17 +83,38 @@ namespace ControlLibrary.UC.Display
             
         }
 
+
+
         private void btn_Edit_Click(object sender, EventArgs e)
         {
-            UC_Edit_SanPham edit_SanPham = new UC_Edit_SanPham();
-            dataGV_SanPham.Visible = true;
-            edit_SanPham.Visible = false;
-            btn_Back.Visible = false;
-            UC_Add_SanPham add_SanPham = new UC_Add_SanPham();
+            
             panel_Container.Dock = DockStyle.Bottom;
-            panel_Container.Controls.Add(add_SanPham);
+            panel_Container.Controls.Add(edit_SanPham);
             dataGV_SanPham.Visible = false;
+            edit_SanPham.Visible = true;
+            add_SanPham.Visible = false;
             btn_Back.Visible = true;
+            
+        }
+        private void dataGV_SanPham_SelectionChanged(object sender, EventArgs e)
+        {
+           
+            for (int i = 0; i < dataGV_SanPham.Rows.Count - 1; i++)
+            {
+                if (dataGV_SanPham.Rows[i].Selected == true)
+                {
+                    btn_Edit.Enabled = true;
+                    btn_Remove.Enabled = true;
+                    label423.Text = dataGV_SanPham.Rows[i].Cells[2].Value.ToString();
+                }
+                
+               
+            }
+        }
+
+        private void btn_Search_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

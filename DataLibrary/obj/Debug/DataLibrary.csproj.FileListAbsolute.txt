@@ -58,6 +58,7 @@ E:\Study\Lap trinh window nang cao\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\De
 E:\Study\Lap trinh window nang cao\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\Debug\DataLibrary.csproj.CopyComplete
 E:\Study\Lap trinh window nang cao\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\Debug\DataLibrary.dll
 E:\Study\Lap trinh window nang cao\Cua-Hang-Linh-Kien-Dien-Tu\DataLibrary\obj\Debug\DataLibrary.pdb
+
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\DataLibrary.dll.config
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\DataLibrary.dll
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\DataLibrary.pdb
@@ -70,3 +71,17 @@ E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\D
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.csproj.CopyComplete
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.dll
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.pdb
+
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\DataLibrary.dll.config
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\DataLibrary.dll
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\DataLibrary.pdb
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\EntityFramework.dll
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\EntityFramework.SqlServer.dll
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\EntityFramework.xml
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\EntityFramework.SqlServer.xml
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.csprojAssemblyReference.cache
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.csproj.CoreCompileInputs.cache
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.csproj.CopyComplete
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.dll
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.pdb
+

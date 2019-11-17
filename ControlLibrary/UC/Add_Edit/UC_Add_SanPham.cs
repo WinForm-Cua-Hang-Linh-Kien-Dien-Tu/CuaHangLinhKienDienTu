@@ -23,63 +23,40 @@ namespace ControlLibrary.UC.Add_Edit
         private int? maNSX, maLoai, soLuong;
         private string tenSP, moTa;
         private decimal? gia;
+        private string size, xuatXu, dacTinh, hinh;
 
         private void UC_Add_SanPham_Load(object sender, EventArgs e)
         {
             var dao = new SanPham();
-            foreach (SanPhamModel item in dao.combo())
+            foreach (SanPhamModel item in dao.loadTenNSX())
             {
-                combo_MaNSX.Items.Add(item.MaNSX);
+                comboBox_NSX.Items.Add(item.TenNSX);
+            }
+            foreach (SanPhamModel item in dao.loadTenLoai())
+            {
+                comboBox_LoaiSP.Items.Add(item.TenLoai);
             }
         }
 
-        private string size, xuatXu, dacTinh, hinh;
-
-        private void btn_SaveEdit_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                tenSP = txt_TenSP.Text.ToString();
-                maNSX = Convert.ToInt32(txt_MaNSX.Text);
-                maLoai = Convert.ToInt32(txt_MLoai.Text);
-                moTa = txt_MoTa.Text.ToString();
-                gia = Convert.ToInt32(txt_Gia.Text);
-                soLuong = Convert.ToInt32(txt_SoLuong.Text);
-                size = txt_Size.Text.ToString();
-                xuatXu = txt_XuatXu.Text.ToString();
-                dacTinh = txt_DacTinh.Text.ToString();
-                hinh = txt_Hinh.Text.ToString();
-
-                var dao = new SanPham();
-                SANPHAM sp = new SANPHAM(maNSX, maLoai, tenSP, moTa, gia, soLuong, size, xuatXu, dacTinh, hinh);
-                dao.Edit(37,sp);
-
-                MessageBox.Show("upadte Thành Công", "Tin Nhắn", MessageBoxButtons.OK);
-            }
-            catch
-            {
-                MessageBox.Show("Tạo Thành Công", "Tin Nhắn", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        
-
+      
         private void btn_Save_Click(object sender, EventArgs e)
         {
             try
             {
+                var dao = new SanPham();
+
                 tenSP = txt_TenSP.Text.ToString();
-                maNSX = Convert.ToInt32(txt_MaNSX.Text);
-                maLoai = Convert.ToInt32(txt_MLoai.Text);
-                moTa = txt_MoTa.Text.ToString();
+                maNSX = Convert.ToInt32(dao.idMaNSX(comboBox_NSX.Text));
+                maLoai = Convert.ToInt32(dao.idMaLoai(comboBox_LoaiSP.Text));
+                moTa = txt_Mota.Text.ToString();
                 gia = Convert.ToInt32(txt_Gia.Text);
                 soLuong = Convert.ToInt32(txt_SoLuong.Text);
                 size = txt_Size.Text.ToString();
                 xuatXu = txt_XuatXu.Text.ToString();
                 dacTinh = txt_DacTinh.Text.ToString();
-                hinh = txt_Hinh.Text.ToString();
+                hinh = txt_HinhAnh.Text.ToString();
 
-                var dao = new SanPham();
+                
                 SanPhamModel sp = new SanPhamModel(maNSX, maLoai, tenSP, moTa, gia, soLuong, size, xuatXu, dacTinh, hinh);
                 dao.AddNew(sp);
 
@@ -87,7 +64,7 @@ namespace ControlLibrary.UC.Add_Edit
             }
             catch
             {
-                MessageBox.Show("Tạo Thành Công", "Tin Nhắn", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Tạo Thất Bại", "Tin Nhắn", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

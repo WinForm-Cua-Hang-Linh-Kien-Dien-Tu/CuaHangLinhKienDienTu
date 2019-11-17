@@ -103,6 +103,7 @@ E:\Study\Lap trinh window nang cao\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debu
 E:\Study\Lap trinh window nang cao\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debug\Form_Main.csproj.CopyComplete
 E:\Study\Lap trinh window nang cao\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debug\Form_Main.exe
 E:\Study\Lap trinh window nang cao\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debug\Form_Main.pdb
+
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\Form_Main\bin\Debug\Form_Main.exe.config
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\Form_Main\bin\Debug\Form_Main.exe
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\Form_Main\bin\Debug\Form_Main.pdb
@@ -124,3 +125,26 @@ E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\Form_Main\obj\Debug\For
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\Form_Main\obj\Debug\Form_Main.csproj.CopyComplete
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\Form_Main\obj\Debug\Form_Main.exe
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\Form_Main\obj\Debug\Form_Main.pdb
+
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\bin\Debug\Form_Main.exe.config
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\bin\Debug\Form_Main.exe
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\bin\Debug\Form_Main.pdb
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\bin\Debug\ControlLibrary.dll
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\bin\Debug\EntityFramework.dll
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\bin\Debug\EntityFramework.SqlServer.dll
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\bin\Debug\DataLibrary.dll
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\bin\Debug\ControlLibrary.pdb
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\bin\Debug\EntityFramework.xml
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\bin\Debug\EntityFramework.SqlServer.xml
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\bin\Debug\DataLibrary.pdb
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\bin\Debug\DataLibrary.dll.config
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\obj\Debug\Form_Main.csprojAssemblyReference.cache
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\obj\Debug\Form_Main.Form1.resources
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\obj\Debug\Form_Main.Form_DangNhap.resources
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\obj\Debug\Form_Main.Properties.Resources.resources
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\obj\Debug\Form_Main.csproj.GenerateResource.cache
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\obj\Debug\Form_Main.csproj.CoreCompileInputs.cache
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\obj\Debug\Form_Main.csproj.CopyComplete
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\obj\Debug\Form_Main.exe
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\obj\Debug\Form_Main.pdb
+

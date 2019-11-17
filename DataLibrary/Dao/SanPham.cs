@@ -17,26 +17,58 @@ namespace DataLibrary.Dao
             var result = db.SANPHAM.Select(sp => new SanPhamModel()
             {
                 MaSP = sp.MaSP,
-                MaNSX = sp.MaNSX,
-                MaLoai = sp.MaLoai,
                 TenSP = sp.TenSP,
+                TenLoai = (from b in db.LOAI where b.MaLoai == sp.MaLoai select b.TenLoai).FirstOrDefault(),
+                TenNSX = (from b in db.NHASANXUAT where b.MaNSX == sp.MaNSX select b.TenNSX).FirstOrDefault(),
                 MoTa = sp.MoTa,
                 Gia = sp.Gia,
                 SoLuong = sp.SoLuong,
                 Size = sp.Size,
                 XuatXu = sp.XuatXu,
                 DacTinh = sp.DacTinh,
-                Hinh = sp.Hinh
+                Hinh = sp.Hinh,
+                MaNSX = sp.MaNSX,
+                MaLoai = sp.MaLoai
             }).ToList();
 
             return result;
         }
 
-        public List<SanPhamModel> combo()
+        public int idMaNSX(string tenNSX)
+        {
+            var a = Convert.ToInt32((from b in db.NHASANXUAT where b.TenNSX == tenNSX select b.MaNSX).FirstOrDefault());
+            return a;
+        }
+
+        public int idMaLoai(string teLoai)
+        {
+            var a = Convert.ToInt32((from b in db.LOAI where b.TenLoai == teLoai select b.MaLoai).FirstOrDefault());
+            return a;
+        }
+
+        public List<SanPhamModel> loadTenNSX()
         {
             var result = db.NHASANXUAT.Select(ma => new SanPhamModel()
             {
-                MaNSX = ma.MaNSX
+                TenNSX = ma.TenNSX
+            }).ToList();
+            return result;
+        }
+
+        public List<SanPhamModel> loadTenLoai()
+        {
+            var result = db.LOAI.Select(ma => new SanPhamModel()
+            {
+                TenLoai = ma.TenLoai
+            }).ToList();
+            return result;
+        }
+
+        public List<SanPhamModel> loadXuatXu()
+        {
+            var result = db.SANPHAM.Select(ma => new SanPhamModel()
+            {
+               XuatXu = ma.XuatXu
             }).ToList();
             return result;
         }
