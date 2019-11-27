@@ -19,8 +19,7 @@ namespace Form_Main
             pn_Chuyen.Top = btn_User.Top;
             uC_UserProfile1.BringToFront();
 
-            pn_Chuyen.Height = btn_BanHang.Height;
-            pn_Chuyen.Top = btn_BanHang.Top;
+           
             uC_BanHang1.BringToFront();
           
 

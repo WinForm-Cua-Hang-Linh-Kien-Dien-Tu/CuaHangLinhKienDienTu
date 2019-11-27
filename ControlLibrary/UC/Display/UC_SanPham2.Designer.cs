@@ -33,6 +33,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btn_Back = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_Search = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.label423 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -45,12 +47,12 @@
             this.btn_Remove = new System.Windows.Forms.Button();
             this.panel_tool = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btn_Search = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel_Container.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGV_SanPham)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Back
@@ -79,6 +81,36 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(847, 62);
             this.panel1.TabIndex = 10;
+            // 
+            // btn_Search
+            // 
+            this.btn_Search.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_Search.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_Search.FlatAppearance.BorderSize = 0;
+            this.btn_Search.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_Search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Search.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Search.ForeColor = System.Drawing.Color.White;
+            this.btn_Search.Location = new System.Drawing.Point(706, 19);
+            this.btn_Search.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Search.Name = "btn_Search";
+            this.btn_Search.Size = new System.Drawing.Size(118, 34);
+            this.btn_Search.TabIndex = 50;
+            this.btn_Search.Text = "Search";
+            this.btn_Search.UseVisualStyleBackColor = false;
+            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(406, -3);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 21);
+            this.label2.TabIndex = 50;
+            this.label2.Text = "Tìm Kiếm";
             // 
             // label423
             // 
@@ -117,6 +149,7 @@
             // 
             // panel_Container
             // 
+            this.panel_Container.Controls.Add(this.pictureBox1);
             this.panel_Container.Controls.Add(this.dataGV_SanPham);
             this.panel_Container.Controls.Add(this.btn_Back);
             this.panel_Container.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -146,7 +179,6 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGV_SanPham.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGV_SanPham.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGV_SanPham.Location = new System.Drawing.Point(0, 0);
             this.dataGV_SanPham.Name = "dataGV_SanPham";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -159,7 +191,7 @@
             this.dataGV_SanPham.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGV_SanPham.RowHeadersVisible = false;
             this.dataGV_SanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGV_SanPham.Size = new System.Drawing.Size(847, 397);
+            this.dataGV_SanPham.Size = new System.Drawing.Size(566, 397);
             this.dataGV_SanPham.TabIndex = 0;
             this.dataGV_SanPham.SelectionChanged += new System.EventHandler(this.dataGV_SanPham_SelectionChanged);
             // 
@@ -252,35 +284,14 @@
             this.panel2.Size = new System.Drawing.Size(847, 73);
             this.panel2.TabIndex = 8;
             // 
-            // label2
+            // pictureBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(406, -3);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 21);
-            this.label2.TabIndex = 50;
-            this.label2.Text = "Tìm Kiếm";
-            // 
-            // btn_Search
-            // 
-            this.btn_Search.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_Search.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_Search.FlatAppearance.BorderSize = 0;
-            this.btn_Search.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_Search.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Search.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Search.ForeColor = System.Drawing.Color.White;
-            this.btn_Search.Location = new System.Drawing.Point(706, 19);
-            this.btn_Search.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Search.Name = "btn_Search";
-            this.btn_Search.Size = new System.Drawing.Size(118, 34);
-            this.btn_Search.TabIndex = 50;
-            this.btn_Search.Text = "Search";
-            this.btn_Search.UseVisualStyleBackColor = false;
-            this.btn_Search.Click += new System.EventHandler(this.btn_Search_Click);
+            this.pictureBox1.Location = new System.Drawing.Point(593, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(107, 79);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 49;
+            this.pictureBox1.TabStop = false;
             // 
             // UC_SanPham2
             // 
@@ -299,6 +310,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGV_SanPham)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -320,5 +332,6 @@
         private System.Windows.Forms.Label label423;
         private System.Windows.Forms.Button btn_Search;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

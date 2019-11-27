@@ -26,7 +26,7 @@ namespace DataLibrary.Dao
                 Size = sp.Size,
                 XuatXu = sp.XuatXu,
                 DacTinh = sp.DacTinh,
-                Hinh = sp.Hinh,
+                TenHinh = sp.Hinh,
                 MaNSX = sp.MaNSX,
                 MaLoai = sp.MaLoai
             }).ToList();
@@ -73,7 +73,7 @@ namespace DataLibrary.Dao
             return result;
         }
 
-        public void AddNew(SanPhamModel modelsp)
+        public void AddNew(SANPHAM modelsp)
         {
             SANPHAM sp = new SANPHAM();
 
@@ -88,9 +88,10 @@ namespace DataLibrary.Dao
             sp.XuatXu = modelsp.XuatXu;
             sp.DacTinh = modelsp.DacTinh;
             sp.Hinh = modelsp.Hinh;
+            sp.HINH2 = modelsp.HINH2;
 
             db.SANPHAM.Add(sp);
-            db.SaveChanges();
+            db.SaveChangesAsync();
             
         }
 
@@ -121,6 +122,7 @@ namespace DataLibrary.Dao
                 item.Size = sp.Size;
                 item.XuatXu = sp.XuatXu;
                 item.DacTinh = sp.DacTinh;
+                item.HINH2 = sp.HINH2;
                 item.Hinh = sp.Hinh;
 
                 db.SaveChanges();

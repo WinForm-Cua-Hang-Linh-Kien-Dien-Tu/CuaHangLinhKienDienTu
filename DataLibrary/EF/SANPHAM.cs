@@ -12,6 +12,7 @@ namespace DataLibrary.EF
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public SANPHAM()
         {
+            CART_ITEM = new HashSet<CART_ITEM>();
             CHITIETHOADON = new HashSet<CHITIETHOADON>();
         }
 
@@ -42,8 +43,14 @@ namespace DataLibrary.EF
         [StringLength(500)]
         public string DacTinh { get; set; }
 
-        [StringLength(100)]
+        [StringLength(50)]
         public string Hinh { get; set; }
+
+        [Column(TypeName = "image")]
+        public byte[] HINH2 { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CART_ITEM> CART_ITEM { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CHITIETHOADON> CHITIETHOADON { get; set; }
@@ -51,19 +58,5 @@ namespace DataLibrary.EF
         public virtual LOAI LOAI { get; set; }
 
         public virtual NHASANXUAT NHASANXUAT { get; set; }
-
-        public SANPHAM(int? maNSX, int? maLoai, string tenSP, string moTa, decimal? gia, int? soLuong, string size, string xuatXu, string dacTinh, string hinh)
-        {
-            MaNSX = maNSX;
-            MaLoai = maLoai;
-            TenSP = tenSP;
-            MoTa = moTa;
-            Gia = gia;
-            SoLuong = soLuong;
-            Size = size;
-            XuatXu = xuatXu;
-            DacTinh = dacTinh;
-            Hinh = hinh;
-        }
     }
 }

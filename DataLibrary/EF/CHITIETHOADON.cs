@@ -9,14 +9,10 @@ namespace DataLibrary.EF
     [Table("CHITIETHOADON")]
     public partial class CHITIETHOADON
     {
-        [Key]
-        [Column(Order = 0)]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int ID { get; set; }
+
         public int MaHD { get; set; }
 
-        [Key]
-        [Column(Order = 1)]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int MaSP { get; set; }
 
         public int? SoLuong { get; set; }

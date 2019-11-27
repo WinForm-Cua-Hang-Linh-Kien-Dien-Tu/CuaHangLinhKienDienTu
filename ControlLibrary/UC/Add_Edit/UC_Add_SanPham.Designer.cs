@@ -62,6 +62,10 @@
             this.btn_SaveEdit = new System.Windows.Forms.Button();
             this.btn_Save = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_SaveImage = new System.Windows.Forms.Button();
+            this.picBox_1 = new System.Windows.Forms.PictureBox();
+            this.btn_open = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_1)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox_LoaiSP
@@ -175,7 +179,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label8.Location = new System.Drawing.Point(311, 231);
+            this.label8.Location = new System.Drawing.Point(10, 310);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(63, 19);
             this.label8.TabIndex = 199;
@@ -184,7 +188,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel7.Location = new System.Drawing.Point(315, 284);
+            this.panel7.Location = new System.Drawing.Point(14, 363);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(248, 1);
             this.panel7.TabIndex = 198;
@@ -195,7 +199,7 @@
             this.txt_XuatXu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_XuatXu.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_XuatXu.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_XuatXu.Location = new System.Drawing.Point(315, 263);
+            this.txt_XuatXu.Location = new System.Drawing.Point(14, 342);
             this.txt_XuatXu.Name = "txt_XuatXu";
             this.txt_XuatXu.Size = new System.Drawing.Size(248, 19);
             this.txt_XuatXu.TabIndex = 197;
@@ -265,7 +269,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label4.Location = new System.Drawing.Point(10, 309);
+            this.label4.Location = new System.Drawing.Point(311, 231);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 19);
             this.label4.TabIndex = 190;
@@ -274,7 +278,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel3.Location = new System.Drawing.Point(14, 362);
+            this.panel3.Location = new System.Drawing.Point(315, 284);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(248, 1);
             this.panel3.TabIndex = 189;
@@ -285,7 +289,7 @@
             this.txt_HinhAnh.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_HinhAnh.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_HinhAnh.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_HinhAnh.Location = new System.Drawing.Point(14, 341);
+            this.txt_HinhAnh.Location = new System.Drawing.Point(315, 263);
             this.txt_HinhAnh.Name = "txt_HinhAnh";
             this.txt_HinhAnh.Size = new System.Drawing.Size(248, 19);
             this.txt_HinhAnh.TabIndex = 188;
@@ -369,7 +373,7 @@
             // 
             // btn_SaveEdit
             // 
-            this.btn_SaveEdit.Location = new System.Drawing.Point(578, 337);
+            this.btn_SaveEdit.Location = new System.Drawing.Point(762, 341);
             this.btn_SaveEdit.Name = "btn_SaveEdit";
             this.btn_SaveEdit.Size = new System.Drawing.Size(75, 23);
             this.btn_SaveEdit.TabIndex = 179;
@@ -378,7 +382,7 @@
             // 
             // btn_Save
             // 
-            this.btn_Save.Location = new System.Drawing.Point(487, 337);
+            this.btn_Save.Location = new System.Drawing.Point(671, 341);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(75, 23);
             this.btn_Save.TabIndex = 178;
@@ -397,11 +401,44 @@
             this.label1.TabIndex = 177;
             this.label1.Text = "Thêm Sản Phẩm";
             // 
+            // btn_SaveImage
+            // 
+            this.btn_SaveImage.Location = new System.Drawing.Point(578, 341);
+            this.btn_SaveImage.Name = "btn_SaveImage";
+            this.btn_SaveImage.Size = new System.Drawing.Size(75, 23);
+            this.btn_SaveImage.TabIndex = 211;
+            this.btn_SaveImage.Text = "Save Image";
+            this.btn_SaveImage.UseVisualStyleBackColor = true;
+            this.btn_SaveImage.Click += new System.EventHandler(this.btn_SaveImage_Click);
+            // 
+            // picBox_1
+            // 
+            this.picBox_1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picBox_1.Location = new System.Drawing.Point(315, 291);
+            this.picBox_1.Name = "picBox_1";
+            this.picBox_1.Size = new System.Drawing.Size(128, 73);
+            this.picBox_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBox_1.TabIndex = 212;
+            this.picBox_1.TabStop = false;
+            // 
+            // btn_open
+            // 
+            this.btn_open.Location = new System.Drawing.Point(578, 306);
+            this.btn_open.Name = "btn_open";
+            this.btn_open.Size = new System.Drawing.Size(75, 23);
+            this.btn_open.TabIndex = 213;
+            this.btn_open.Text = "open";
+            this.btn_open.UseVisualStyleBackColor = true;
+            this.btn_open.Click += new System.EventHandler(this.btn_open_Click);
+            // 
             // UC_Add_SanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btn_open);
+            this.Controls.Add(this.picBox_1);
+            this.Controls.Add(this.btn_SaveImage);
             this.Controls.Add(this.comboBox_LoaiSP);
             this.Controls.Add(this.comboBox_NSX);
             this.Controls.Add(this.label9);
@@ -439,6 +476,7 @@
             this.Name = "UC_Add_SanPham";
             this.Size = new System.Drawing.Size(847, 397);
             this.Load += new System.EventHandler(this.UC_Add_SanPham_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -480,5 +518,8 @@
         private System.Windows.Forms.Button btn_SaveEdit;
         private System.Windows.Forms.Button btn_Save;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_SaveImage;
+        private System.Windows.Forms.PictureBox picBox_1;
+        private System.Windows.Forms.Button btn_open;
     }
 }

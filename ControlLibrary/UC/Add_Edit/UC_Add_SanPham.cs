@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using DataLibrary.Dao;
 using DataLibrary.Model;
 using DataLibrary.EF;
+using System.IO;
+using System.Drawing.Imaging;
 
 namespace ControlLibrary.UC.Add_Edit
 {
@@ -20,10 +22,22 @@ namespace ControlLibrary.UC.Add_Edit
             InitializeComponent();
         }
 
-        private int? maNSX, maLoai, soLuong;
-        private string tenSP, moTa;
-        private decimal? gia;
-        private string size, xuatXu, dacTinh, hinh;
+        private void btn_open_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "JPEG|*.jpg", ValidateNames = true, Multiselect = false })
+            {
+                if(ofd.ShowDialog() == DialogResult.OK)
+                {
+                    picBox_1.Image = Image.FromFile(ofd.FileName);
+                }
+            }
+        }
+
+        private void btn_SaveImage_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
         private void UC_Add_SanPham_Load(object sender, EventArgs e)
         {
@@ -41,31 +55,44 @@ namespace ControlLibrary.UC.Add_Edit
       
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            try
-            {
+           
                 var dao = new SanPham();
-
-                tenSP = txt_TenSP.Text.ToString();
-                maNSX = Convert.ToInt32(dao.idMaNSX(comboBox_NSX.Text));
-                maLoai = Convert.ToInt32(dao.idMaLoai(comboBox_LoaiSP.Text));
-                moTa = txt_Mota.Text.ToString();
-                gia = Convert.ToInt32(txt_Gia.Text);
-                soLuong = Convert.ToInt32(txt_SoLuong.Text);
-                size = txt_Size.Text.ToString();
-                xuatXu = txt_XuatXu.Text.ToString();
-                dacTinh = txt_DacTinh.Text.ToString();
-                hinh = txt_HinhAnh.Text.ToString();
-
                 
-                SanPhamModel sp = new SanPhamModel(maNSX, maLoai, tenSP, moTa, gia, soLuong, size, xuatXu, dacTinh, hinh);
+                SANPHAM sp = new SANPHAM();
+
+                sp.TenSP = txt_TenSP.Text.ToString();
+                sp.MaNSX = Convert.ToInt32(dao.idMaNSX(comboBox_NSX.Text));
+                sp.MaLoai = Convert.ToInt32(dao.idMaLoai(comboBox_LoaiSP.Text));
+                sp.MoTa = txt_Mota.Text.ToString();
+                sp.Gia = Convert.ToInt32(txt_Gia.Text);
+                sp.SoLuong = Convert.ToInt32(txt_SoLuong.Text);
+                sp.Size = txt_Size.Text.ToString();
+                sp.XuatXu = txt_XuatXu.Text.ToString();
+                sp.DacTinh = txt_DacTinh.Text.ToString();
+                sp.Hinh = txt_HinhAnh.Text.ToString();
+                sp.HINH2 = ConvertImageToBinary(picBox_1.Image);
+                
+                
+
                 dao.AddNew(sp);
 
                 MessageBox.Show("Tạo Thành Công", "Tin Nhắn", MessageBoxButtons.OK);
-            }
-            catch
+           
+        }
+
+        byte[] ConvertImageToBinary(Image img)
+        {
+            using (MemoryStream ms = new MemoryStream())
             {
-                MessageBox.Show("Tạo Thất Bại", "Tin Nhắn", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                img.Save(ms, ImageFormat.Gif);
+                return ms.ToArray();
             }
+        }
+
+        Image ConvertBinaryToImage(byte[] data)
+        {
+            MemoryStream ms = new MemoryStream(data);
+            return Image.FromStream(ms);
         }
     }
 }

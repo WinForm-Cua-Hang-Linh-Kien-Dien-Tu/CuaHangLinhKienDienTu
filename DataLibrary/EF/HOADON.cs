@@ -18,15 +18,16 @@ namespace DataLibrary.EF
         [Key]
         public int MaHD { get; set; }
 
-        public int ID { get; set; }
+        public int? MaKH { get; set; }
+
+        public int? MaNV { get; set; }
 
         [StringLength(100)]
         public string DiaChi { get; set; }
 
         public int? TongMatHang { get; set; }
 
-        [Column(TypeName = "money")]
-        public decimal? TongTien { get; set; }
+        public double? TongTien { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime? NgayLap { get; set; }
@@ -37,6 +38,6 @@ namespace DataLibrary.EF
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CHITIETHOADON> CHITIETHOADON { get; set; }
 
-        public virtual THANHVIEN THANHVIEN { get; set; }
+        public virtual NHANVIEN NHANVIEN { get; set; }
     }
 }

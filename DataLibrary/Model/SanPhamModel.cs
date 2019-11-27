@@ -41,7 +41,10 @@ namespace DataLibrary.Model
         public string DacTinh { get; set; }
 
         [DisplayName("Hình")]
-        public string Hinh { get; set; }
+        public byte[] Hinh2 { get; set; }
+
+        [DisplayName("Tên Hình")]
+        public string TenHinh { get; set; }
 
         [DisplayName("Mã Nhà Sản Xuất")]
         public int? MaNSX { get; set; }
@@ -51,20 +54,7 @@ namespace DataLibrary.Model
         #endregion
 
         #region Constructor
-        public SanPhamModel( int? maNSX, int? maLoai, string tenSP, string moTa, decimal? gia, int? soLuong, string size, string xuatXu, string dacTinh, string hinh)
-        {
-            MaNSX = maNSX;
-            MaLoai = maLoai;
-            TenSP = tenSP;
-            MoTa = moTa;
-            Gia = gia;
-            SoLuong = soLuong;
-            Size = size;
-            XuatXu = xuatXu;
-            DacTinh = dacTinh;
-            Hinh = hinh;
-        }
-
+        
         public SanPhamModel()
         {
         }

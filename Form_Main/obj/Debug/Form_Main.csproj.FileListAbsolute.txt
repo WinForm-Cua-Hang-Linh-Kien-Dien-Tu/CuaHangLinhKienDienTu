@@ -103,7 +103,6 @@ E:\Study\Lap trinh window nang cao\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debu
 E:\Study\Lap trinh window nang cao\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debug\Form_Main.csproj.CopyComplete
 E:\Study\Lap trinh window nang cao\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debug\Form_Main.exe
 E:\Study\Lap trinh window nang cao\Cua-Hang-Linh-Kien-Dien-Tu\Form_Main\obj\Debug\Form_Main.pdb
-
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\Form_Main\bin\Debug\Form_Main.exe.config
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\Form_Main\bin\Debug\Form_Main.exe
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\Form_Main\bin\Debug\Form_Main.pdb
@@ -125,7 +124,6 @@ E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\Form_Main\obj\Debug\For
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\Form_Main\obj\Debug\Form_Main.csproj.CopyComplete
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\Form_Main\obj\Debug\Form_Main.exe
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\Form_Main\obj\Debug\Form_Main.pdb
-
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\bin\Debug\Form_Main.exe.config
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\bin\Debug\Form_Main.exe
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\bin\Debug\Form_Main.pdb
@@ -147,4 +145,3 @@ E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\obj\Debug\Form_Main.cs
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\obj\Debug\Form_Main.csproj.CopyComplete
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\obj\Debug\Form_Main.exe
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\Form_Main\obj\Debug\Form_Main.pdb
-

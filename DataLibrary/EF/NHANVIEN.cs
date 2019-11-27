@@ -6,39 +6,41 @@ namespace DataLibrary.EF
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("THANHVIEN")]
-    public partial class THANHVIEN
+    [Table("NHANVIEN")]
+    public partial class NHANVIEN
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public THANHVIEN()
+        public NHANVIEN()
         {
             HOADON = new HashSet<HOADON>();
+            QUYEN = new HashSet<QUYEN>();
         }
 
-        public int ID { get; set; }
+        [Key]
+        public int MaNV { get; set; }
 
         [StringLength(50)]
-        public string TaiKhoan { get; set; }
-
-        [StringLength(30)]
-        public string MatKhau { get; set; }
-
-        [StringLength(30)]
-        public string TenKH { get; set; }
-
-        [StringLength(100)]
-        public string DiaChi { get; set; }
-
-        [StringLength(3)]
-        public string GioiTinh { get; set; }
-
-        [StringLength(10)]
-        public string SDT { get; set; }
+        public string TenNV { get; set; }
 
         [Column(TypeName = "date")]
         public DateTime? NgaySinh { get; set; }
 
+        [StringLength(5)]
+        public string Phai { get; set; }
+
+        [StringLength(200)]
+        public string DiaChi { get; set; }
+
+        [StringLength(10)]
+        public string SDT { get; set; }
+
+        [StringLength(50)]
+        public string ChucVu { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HOADON> HOADON { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<QUYEN> QUYEN { get; set; }
     }
 }

@@ -21,10 +21,6 @@ namespace ControlLibrary.UC.Add_Edit
             
         }
 
-        private int? maNSX, maLoai, soLuong;
-        private string tenSP, moTa;
-        private decimal? gia;
-        private string size, xuatXu, dacTinh, hinh;
 
         private void UC_Edit_SanPham_Load(object sender, EventArgs e)
         {
@@ -39,19 +35,20 @@ namespace ControlLibrary.UC.Add_Edit
             {
                 var dao = new SanPham();
 
-                tenSP = txt_TenSP.Text.ToString();
-                maNSX = Convert.ToInt32(dao.idMaNSX(comboBox_NSX.Text));
-                maLoai = Convert.ToInt32(dao.idMaLoai(comboBox_LoaiSP.Text));
-                moTa = txt_MoTa.Text.ToString();
-                gia = Convert.ToInt32(txt_Gia.Text);
-                soLuong = Convert.ToInt32(txt_SoLuong.Text);
-                size = txt_Size.Text.ToString();
-                xuatXu = txt_XuatXu.Text.ToString();
-                dacTinh = txt_DacTinh.Text.ToString();
-                hinh = txt_Hinh.Text.ToString();
+               
+                SANPHAM sp = new SANPHAM();
 
-
-                SANPHAM sp = new SANPHAM(maNSX, maLoai, tenSP, moTa, gia, soLuong, size, xuatXu, dacTinh, hinh);
+                sp.TenSP = txt_TenSP.Text.ToString();
+                sp.MaNSX = Convert.ToInt32(dao.idMaNSX(comboBox_NSX.Text));
+                sp.MaLoai = Convert.ToInt32(dao.idMaLoai(comboBox_LoaiSP.Text));
+                sp.MoTa = txt_MoTa.Text.ToString();
+                sp.Gia = Convert.ToInt32(txt_Gia.Text);
+                sp.SoLuong = Convert.ToInt32(txt_SoLuong.Text);
+                sp.Size = txt_Size.Text.ToString();
+                sp.XuatXu = txt_XuatXu.Text.ToString();
+                sp.DacTinh = txt_DacTinh.Text.ToString();
+                sp.Hinh = txt_Hinh.Text.ToString();
+                 
                 dao.Edit(37, sp);
 
                 MessageBox.Show("upadte Thành Công", "Tin Nhắn", MessageBoxButtons.OK);

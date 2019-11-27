@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using ControlLibrary.UC.Add_Edit;
 using DataLibrary.Dao;
 using DataLibrary.Model;
+using System.IO;
 
 namespace ControlLibrary.UC.Display
 {
@@ -18,6 +19,8 @@ namespace ControlLibrary.UC.Display
         public UC_SanPham2()
         {
             InitializeComponent();
+            //pictureBox1.Image = ConvertBinaryToImage(Encoding.ASCII.GetBytes(dataGV_SanPham.Rows[36].Cells[9].Value.ToString()));
+
         }
 
         public int MaSP;
@@ -105,13 +108,16 @@ namespace ControlLibrary.UC.Display
                 {
                     btn_Edit.Enabled = true;
                     btn_Remove.Enabled = true;
+                    pictureBox1.Image = ConvertBinaryToImage(Encoding.ASCII.GetBytes(dataGV_SanPham.Rows[i].Cells[10].Value.ToString()));
                     label423.Text = dataGV_SanPham.Rows[i].Cells[2].Value.ToString();
-                }
-                
-               
+                }                      
             }
         }
-
+        Image ConvertBinaryToImage(byte[] data)
+        {
+            MemoryStream ms = new MemoryStream(data);
+            return Image.FromStream(ms);
+        }
         private void btn_Search_Click(object sender, EventArgs e)
         {
 

@@ -111,7 +111,6 @@ E:\Study\Lap trinh window nang cao\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj
 E:\Study\Lap trinh window nang cao\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.dll
 E:\Study\Lap trinh window nang cao\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.pdb
 E:\Study\Lap trinh window nang cao\Cua-Hang-Linh-Kien-Dien-Tu\ControlLibrary\obj\Debug\ControlLibrary.UC.Add_Edit.UC_Add_HoaDon.resources
-
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\ControlLibrary\bin\Debug\ControlLibrary.dll
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\ControlLibrary\bin\Debug\ControlLibrary.pdb
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\ControlLibrary\bin\Debug\DataLibrary.dll
@@ -140,7 +139,6 @@ E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\ControlLibrary\obj\Debu
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\ControlLibrary\obj\Debug\ControlLibrary.csproj.CopyComplete
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\ControlLibrary\obj\Debug\ControlLibrary.dll
 E:\Study\Lap trinh window nang cao\CuaHangLinhKienDienTu\ControlLibrary\obj\Debug\ControlLibrary.pdb
-
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\bin\Debug\ControlLibrary.dll
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\bin\Debug\ControlLibrary.pdb
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\bin\Debug\DataLibrary.dll
@@ -169,4 +167,3 @@ E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\obj\Debug\Control
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\obj\Debug\ControlLibrary.csproj.CopyComplete
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\obj\Debug\ControlLibrary.dll
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\obj\Debug\ControlLibrary.pdb
-

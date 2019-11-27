@@ -43,6 +43,7 @@
             this.btn_HoaDon = new System.Windows.Forms.Button();
             this.btn_SanPham = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_TaiKhoan = new System.Windows.Forms.Button();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.uC_KhachHang1 = new ControlLibrary.UC.Display.UC_KhachHang();
             this.uC_UserProfile1 = new ControlLibrary.UC.Display.UC_UserProfile();
@@ -53,7 +54,7 @@
             this.uC_SanPham21 = new ControlLibrary.UC.Display.UC_SanPham2();
             this.uC_Loai1 = new ControlLibrary.UC.Display.UC_Loai();
             this.uC_BanHang1 = new ControlLibrary.UC.Display.UC_BanHang();
-            this.btn_TaiKhoan = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -278,6 +279,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btn_TaiKhoan);
             this.panel1.Controls.Add(this.btn_KhachHang);
             this.panel1.Controls.Add(this.btn_Quyen);
@@ -292,6 +294,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(216, 593);
             this.panel1.TabIndex = 3;
+            // 
+            // btn_TaiKhoan
+            // 
+            this.btn_TaiKhoan.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btn_TaiKhoan.FlatAppearance.BorderSize = 0;
+            this.btn_TaiKhoan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btn_TaiKhoan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btn_TaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_TaiKhoan.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TaiKhoan.ForeColor = System.Drawing.Color.White;
+            this.btn_TaiKhoan.Location = new System.Drawing.Point(18, 348);
+            this.btn_TaiKhoan.Name = "btn_TaiKhoan";
+            this.btn_TaiKhoan.Size = new System.Drawing.Size(198, 54);
+            this.btn_TaiKhoan.TabIndex = 10;
+            this.btn_TaiKhoan.Text = "Tài khoản";
+            this.btn_TaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_TaiKhoan.UseVisualStyleBackColor = true;
             // 
             // panelContainer
             // 
@@ -328,6 +347,7 @@
             // 
             // uC_Quyen1
             // 
+            this.uC_Quyen1.BackColor = System.Drawing.Color.White;
             this.uC_Quyen1.Location = new System.Drawing.Point(0, -4);
             this.uC_Quyen1.Name = "uC_Quyen1";
             this.uC_Quyen1.Size = new System.Drawing.Size(847, 546);
@@ -335,6 +355,7 @@
             // 
             // uC_NhanVien1
             // 
+            this.uC_NhanVien1.BackColor = System.Drawing.Color.White;
             this.uC_NhanVien1.Location = new System.Drawing.Point(-1, -3);
             this.uC_NhanVien1.Name = "uC_NhanVien1";
             this.uC_NhanVien1.Size = new System.Drawing.Size(847, 545);
@@ -377,22 +398,22 @@
             this.uC_BanHang1.Size = new System.Drawing.Size(847, 542);
             this.uC_BanHang1.TabIndex = 0;
             // 
-            // btn_TaiKhoan
+            // button1
             // 
-            this.btn_TaiKhoan.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btn_TaiKhoan.FlatAppearance.BorderSize = 0;
-            this.btn_TaiKhoan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btn_TaiKhoan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btn_TaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_TaiKhoan.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_TaiKhoan.ForeColor = System.Drawing.Color.White;
-            this.btn_TaiKhoan.Location = new System.Drawing.Point(18, 348);
-            this.btn_TaiKhoan.Name = "btn_TaiKhoan";
-            this.btn_TaiKhoan.Size = new System.Drawing.Size(198, 54);
-            this.btn_TaiKhoan.TabIndex = 10;
-            this.btn_TaiKhoan.Text = "Tài khoản";
-            this.btn_TaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_TaiKhoan.UseVisualStyleBackColor = true;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(18, 458);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(198, 54);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Đơn Hàng";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -441,6 +462,7 @@
         private ControlLibrary.UC.Display.UC_UserProfile uC_UserProfile1;
         private ControlLibrary.UC.Display.UC_KhachHang uC_KhachHang1;
         private System.Windows.Forms.Button btn_TaiKhoan;
+        private System.Windows.Forms.Button button1;
     }
 }
 
