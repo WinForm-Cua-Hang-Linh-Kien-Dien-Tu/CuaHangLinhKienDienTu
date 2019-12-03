@@ -17,11 +17,9 @@ namespace DataLibrary.EF
 
         public int? SoLuong { get; set; }
 
-        [Column(TypeName = "money")]
-        public decimal? DonGia { get; set; }
+        public double? DonGia { get; set; }
 
-        [Column(TypeName = "money")]
-        public decimal? ThanhTien { get; set; }
+        public double? ThanhTien { get; set; }
 
         public virtual HOADON HOADON { get; set; }
 

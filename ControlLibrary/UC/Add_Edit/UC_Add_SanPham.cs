@@ -70,9 +70,7 @@ namespace ControlLibrary.UC.Add_Edit
                 sp.XuatXu = txt_XuatXu.Text.ToString();
                 sp.DacTinh = txt_DacTinh.Text.ToString();
                 sp.Hinh = txt_HinhAnh.Text.ToString();
-                sp.HINH2 = ConvertImageToBinary(picBox_1.Image);
-                
-                
+                   
 
                 dao.AddNew(sp);
 

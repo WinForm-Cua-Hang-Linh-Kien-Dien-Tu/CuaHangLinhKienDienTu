@@ -26,7 +26,7 @@ namespace DataLibrary.Model
         public string MoTa { get; set; }
 
         [DisplayName("Giá")]
-        public decimal? Gia { get; set; }
+        public double? Gia { get; set; }
 
         [DisplayName("Số Lượng")]
         public int? SoLuong { get; set; }
