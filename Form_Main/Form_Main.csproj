@@ -101,6 +101,10 @@
       <Project>{aae0b8b3-0207-4ed2-815b-8c6778d55094}</Project>
       <Name>ControlLibrary</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DataLibrary\DataLibrary.csproj">
+      <Project>{980b5f5b-0170-4af0-be93-8b1addeb5c7d}</Project>
+      <Name>DataLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logo.jpg" />

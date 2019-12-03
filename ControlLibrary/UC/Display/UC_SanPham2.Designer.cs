@@ -47,12 +47,10 @@
             this.btn_Remove = new System.Windows.Forms.Button();
             this.panel_tool = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel_Container.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGV_SanPham)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Back
@@ -149,7 +147,6 @@
             // 
             // panel_Container
             // 
-            this.panel_Container.Controls.Add(this.pictureBox1);
             this.panel_Container.Controls.Add(this.dataGV_SanPham);
             this.panel_Container.Controls.Add(this.btn_Back);
             this.panel_Container.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -179,6 +176,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGV_SanPham.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGV_SanPham.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGV_SanPham.Location = new System.Drawing.Point(0, 0);
             this.dataGV_SanPham.Name = "dataGV_SanPham";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -191,7 +189,7 @@
             this.dataGV_SanPham.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGV_SanPham.RowHeadersVisible = false;
             this.dataGV_SanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGV_SanPham.Size = new System.Drawing.Size(566, 397);
+            this.dataGV_SanPham.Size = new System.Drawing.Size(847, 397);
             this.dataGV_SanPham.TabIndex = 0;
             this.dataGV_SanPham.SelectionChanged += new System.EventHandler(this.dataGV_SanPham_SelectionChanged);
             // 
@@ -284,15 +282,6 @@
             this.panel2.Size = new System.Drawing.Size(847, 73);
             this.panel2.TabIndex = 8;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(593, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(107, 79);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 49;
-            this.pictureBox1.TabStop = false;
-            // 
             // UC_SanPham2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -310,7 +299,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGV_SanPham)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -332,6 +320,5 @@
         private System.Windows.Forms.Label label423;
         private System.Windows.Forms.Button btn_Search;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

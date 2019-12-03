@@ -19,7 +19,7 @@ namespace ControlLibrary.UC.Display
         public UC_SanPham2()
         {
             InitializeComponent();
-            //pictureBox1.Image = ConvertBinaryToImage(Encoding.ASCII.GetBytes(dataGV_SanPham.Rows[36].Cells[9].Value.ToString()));
+          
 
         }
 
@@ -52,12 +52,7 @@ namespace ControlLibrary.UC.Display
         {
             var dao = new SanPham();
             dataGV_SanPham.DataSource = dao.LoadSanPham();
-            
-            foreach (SanPhamModel item in dao.loadXuatXu())
-            {
-               comboBox1.Items.Add(item.XuatXu);
-               
-            }
+           
             
         }
 
@@ -108,7 +103,7 @@ namespace ControlLibrary.UC.Display
                 {
                     btn_Edit.Enabled = true;
                     btn_Remove.Enabled = true;
-                    pictureBox1.Image = ConvertBinaryToImage(Encoding.ASCII.GetBytes(dataGV_SanPham.Rows[i].Cells[10].Value.ToString()));
+                    
                     label423.Text = dataGV_SanPham.Rows[i].Cells[2].Value.ToString();
                 }                      
             }

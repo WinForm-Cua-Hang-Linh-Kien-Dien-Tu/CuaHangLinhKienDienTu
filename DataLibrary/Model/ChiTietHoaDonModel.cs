@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataLibrary.Model
 {
-    class ChiTietHoaDonModel
+    public class ChiTietHoaDonModel
     {
         [DisplayName("Mã Hóa Đơn")]
         public int MaHD { get; set; }

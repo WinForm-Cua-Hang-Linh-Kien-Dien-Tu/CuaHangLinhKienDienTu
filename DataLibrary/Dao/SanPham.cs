@@ -12,6 +12,11 @@ namespace DataLibrary.Dao
     {
         ModelCuaHang db = new ModelCuaHang();
 
+        public List<SANPHAM> GetList()
+        {
+            return db.SANPHAM.ToList();
+        }
+
         public List<SanPhamModel> LoadSanPham()
         {
             var result = db.SANPHAM.Select(sp => new SanPhamModel()
@@ -88,7 +93,7 @@ namespace DataLibrary.Dao
             sp.XuatXu = modelsp.XuatXu;
             sp.DacTinh = modelsp.DacTinh;
             sp.Hinh = modelsp.Hinh;
-            sp.HINH2 = modelsp.HINH2;
+            
 
             db.SANPHAM.Add(sp);
             db.SaveChangesAsync();
@@ -122,7 +127,6 @@ namespace DataLibrary.Dao
                 item.Size = sp.Size;
                 item.XuatXu = sp.XuatXu;
                 item.DacTinh = sp.DacTinh;
-                item.HINH2 = sp.HINH2;
                 item.Hinh = sp.Hinh;
 
                 db.SaveChanges();
@@ -132,6 +136,13 @@ namespace DataLibrary.Dao
         public SANPHAM GetID(int id)
         {
             return db.SANPHAM.Where(x => x.MaSP == id).FirstOrDefault();
+        }
+
+        public SANPHAM GetDVByMa(int pMa)
+        {
+            SANPHAM result = new SANPHAM();
+            result = db.SANPHAM.FirstOrDefault(m => m.MaSP == pMa);
+            return result;
         }
     }
 

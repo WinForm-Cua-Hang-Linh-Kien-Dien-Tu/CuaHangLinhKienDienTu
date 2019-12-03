@@ -54,5 +54,12 @@ namespace DataLibrary.Dao
             result = context.KHACHHANG.FirstOrDefault(m => m.MaKH == pMa);
             return result;
         }
+
+        public KHACHHANG Login_KH(string userName, string pass)
+        {
+            KHACHHANG result = new KHACHHANG();
+            result = context.KHACHHANG.FirstOrDefault(m => m.TaiKhoan == userName && m.MatKhau == pass);
+            return result;
+        }
     }
 }

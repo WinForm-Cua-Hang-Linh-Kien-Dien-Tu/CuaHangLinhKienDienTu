@@ -29,8 +29,7 @@ namespace DataLibrary.EF
         [StringLength(500)]
         public string MoTa { get; set; }
 
-        [Column(TypeName = "money")]
-        public decimal? Gia { get; set; }
+        public double? Gia { get; set; }
 
         public int? SoLuong { get; set; }
 
@@ -45,9 +44,6 @@ namespace DataLibrary.EF
 
         [StringLength(50)]
         public string Hinh { get; set; }
-
-        [Column(TypeName = "image")]
-        public byte[] HINH2 { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CART_ITEM> CART_ITEM { get; set; }

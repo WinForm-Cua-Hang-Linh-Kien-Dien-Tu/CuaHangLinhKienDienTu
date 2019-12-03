@@ -24,14 +24,6 @@ namespace DataLibrary.EF
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<CHITIETHOADON>()
-                .Property(e => e.DonGia)
-                .HasPrecision(19, 4);
-
-            modelBuilder.Entity<CHITIETHOADON>()
-                .Property(e => e.ThanhTien)
-                .HasPrecision(19, 4);
-
             modelBuilder.Entity<HOADON>()
                 .HasMany(e => e.CHITIETHOADON)
                 .WithRequired(e => e.HOADON)
@@ -52,6 +44,16 @@ namespace DataLibrary.EF
                 .IsUnicode(false);
 
             modelBuilder.Entity<KHACHHANG>()
+                .Property(e => e.TaiKhoan)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<KHACHHANG>()
+                .Property(e => e.MatKhau)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<KHACHHANG>()
                 .HasMany(e => e.CART_ITEM)
                 .WithOptional(e => e.KHACHHANG)
                 .HasForeignKey(e => e.MA_KH);
@@ -68,10 +70,6 @@ namespace DataLibrary.EF
             modelBuilder.Entity<QUYEN>()
                 .Property(e => e.PassWord)
                 .IsFixedLength();
-
-            modelBuilder.Entity<SANPHAM>()
-                .Property(e => e.Gia)
-                .HasPrecision(19, 4);
 
             modelBuilder.Entity<SANPHAM>()
                 .Property(e => e.Hinh)
