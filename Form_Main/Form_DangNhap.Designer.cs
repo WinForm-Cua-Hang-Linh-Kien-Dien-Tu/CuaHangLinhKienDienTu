@@ -33,9 +33,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_passWord = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_userName = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -47,9 +47,9 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txt_passWord);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txt_userName);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 166);
             this.panel2.Name = "panel2";
@@ -69,6 +69,7 @@
             this.btn_login.TabIndex = 7;
             this.btn_login.Text = "Login";
             this.btn_login.UseVisualStyleBackColor = false;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // label2
             // 
@@ -100,17 +101,17 @@
             this.panel4.Size = new System.Drawing.Size(248, 1);
             this.panel4.TabIndex = 4;
             // 
-            // textBox2
+            // txt_passWord
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox2.Location = new System.Drawing.Point(27, 142);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(248, 19);
-            this.textBox2.TabIndex = 3;
+            this.txt_passWord.BackColor = System.Drawing.Color.White;
+            this.txt_passWord.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_passWord.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_passWord.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_passWord.Location = new System.Drawing.Point(27, 142);
+            this.txt_passWord.Name = "txt_passWord";
+            this.txt_passWord.PasswordChar = '*';
+            this.txt_passWord.Size = new System.Drawing.Size(248, 19);
+            this.txt_passWord.TabIndex = 3;
             // 
             // panel3
             // 
@@ -120,16 +121,16 @@
             this.panel3.Size = new System.Drawing.Size(248, 1);
             this.panel3.TabIndex = 2;
             // 
-            // textBox1
+            // txt_userName
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox1.Location = new System.Drawing.Point(27, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(248, 19);
-            this.textBox1.TabIndex = 0;
+            this.txt_userName.BackColor = System.Drawing.Color.White;
+            this.txt_userName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_userName.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_userName.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_userName.Location = new System.Drawing.Point(27, 63);
+            this.txt_userName.Name = "txt_userName";
+            this.txt_userName.Size = new System.Drawing.Size(248, 19);
+            this.txt_userName.TabIndex = 0;
             // 
             // panel1
             // 
@@ -164,9 +165,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_passWord;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_userName;
         private System.Windows.Forms.Panel panel1;
     }
 }

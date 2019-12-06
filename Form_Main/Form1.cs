@@ -19,7 +19,7 @@ namespace Form_Main
             pn_Chuyen.Top = btn_User.Top;
             uC_UserProfile1.BringToFront();
 
-           
+            string a= k();
             uC_BanHang1.BringToFront();
           
 
@@ -70,6 +70,16 @@ namespace Form_Main
             uC_UserProfile1.BringToFront();
         }
         #endregion
+
+        Form_DangNhap f = new Form_DangNhap();
+        public string k()
+        {
+            
+            string a = f.UserName;
+            return a;
+            
+        }
+
 
         private void btn_LogOut_Click(object sender, EventArgs e)
         {
