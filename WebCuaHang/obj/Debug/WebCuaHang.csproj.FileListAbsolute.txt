@@ -30,6 +30,10 @@ E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\roslyn\VBCSCompil
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\Antlr3.Runtime.dll
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\AspNet.ScriptManager.bootstrap.dll
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\AspNet.ScriptManager.jQuery.dll
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\ControlLibrary.dll
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\DataLibrary.dll
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\EntityFramework.dll
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\EntityFramework.SqlServer.dll
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\Microsoft.AspNet.FriendlyUrls.dll
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
@@ -39,6 +43,11 @@ E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\Microsoft.Web.Inf
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\Newtonsoft.Json.dll
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\System.Web.Optimization.dll
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\WebGrease.dll
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\ControlLibrary.pdb
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\DataLibrary.pdb
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\DataLibrary.dll.config
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\EntityFramework.xml
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\EntityFramework.SqlServer.xml
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\System.Web.Optimization.xml
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\Newtonsoft.Json.xml
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\Antlr3.Runtime.pdb
@@ -49,10 +58,3 @@ E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\obj\Debug\WebCuaHang.
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\obj\Debug\WebCuaHang.csproj.CopyComplete
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\obj\Debug\WebCuaHang.dll
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\obj\Debug\WebCuaHang.pdb
-E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\DataLibrary.dll
-E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\EntityFramework.dll
-E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\DataLibrary.pdb
-E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\DataLibrary.dll.config
-E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\EntityFramework.xml
-E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\EntityFramework.SqlServer.dll
-E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\WebCuaHang\bin\EntityFramework.SqlServer.xml

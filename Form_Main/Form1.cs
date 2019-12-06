@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataLibrary.Dao;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,19 +13,37 @@ namespace Form_Main
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        //string UserName = "";
+        quyenDao _quyenDao = new quyenDao();
+
+        public Form1(/*string UserName*/)
         {
             InitializeComponent();
             pn_Chuyen.Height = btn_User.Height;
             pn_Chuyen.Top = btn_User.Top;
             uC_UserProfile1.BringToFront();
 
-            string a= k();
-            uC_BanHang1.BringToFront();
-          
-
+            //this.UserName = UserName;
         }
 
+        /// <summary>
+        /// Phần Quyền User
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Form1_Load(object sender, EventArgs e)
+        {
+           /* var item = _quyenDao.GetDVByMa(UserName);
+            if(item != null)
+            {
+                if(item.Quyen1 == "Nhân Viên")
+                {
+                    btn_Quyen.Visible = false;
+                    btn_TaiKhoan.Visible = false;
+                    btn_NhanVien.Visible = false;
+                }
+            }*/
+        }
 
         #region Chuyển UserControl
 
@@ -69,18 +88,30 @@ namespace Form_Main
             pn_Chuyen.Top = btn_User.Top;
             uC_UserProfile1.BringToFront();
         }
-        #endregion
 
-        Form_DangNhap f = new Form_DangNhap();
-        public string k()
+        private void btn_ThongKe_Click(object sender, EventArgs e)
         {
-            
-            string a = f.UserName;
-            return a;
-            
+            pn_Chuyen.Height = btn_User.Height;
+            pn_Chuyen.Top = btn_ThongKe.Top;
+            uC_UserProfile1.BringToFront();
         }
 
+        private void btn_DonHang_Click(object sender, EventArgs e)
+        {
+            pn_Chuyen.Height = btn_User.Height;
+            pn_Chuyen.Top = btn_DonHang.Top;
+            uC_UserProfile1.BringToFront();
+        }
 
+        private void btn_TaiKhoan_Click(object sender, EventArgs e)
+        {
+            pn_Chuyen.Height = btn_User.Height;
+            pn_Chuyen.Top = btn_TaiKhoan.Top;
+            uC_UserProfile1.BringToFront();
+        }
+        #endregion
+
+        #region Chức Năng Button trên góc phải
         private void btn_LogOut_Click(object sender, EventArgs e)
         {
             Form_DangNhap dangNhap = new Form_DangNhap();
@@ -92,5 +123,8 @@ namespace Form_Main
         {
             this.Close();
         }
+        #endregion
+
+        
     }
 }

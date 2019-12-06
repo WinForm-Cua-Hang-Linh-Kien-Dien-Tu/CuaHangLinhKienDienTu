@@ -6,7 +6,6 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using DataLibrary.Dao;
 using DataLibrary.EF;
-using DataLibrary.Model;
 
 namespace WebCuaHang
 {
@@ -17,7 +16,7 @@ namespace WebCuaHang
 
         } 
        
-        public List<DataLibrary.EF.SANPHAM> SanPhamList_GetData1()
+        public List<SANPHAM> SanPhamList_GetData1()
         {
             SanPham sp = new SanPham();
             return sp.GetList();

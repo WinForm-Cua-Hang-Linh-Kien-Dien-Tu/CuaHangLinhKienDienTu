@@ -1,6 +1,6 @@
-﻿using DataLibrary.Dao;
+﻿using ControlLibrary.Model;
+using DataLibrary.Dao;
 using DataLibrary.EF;
-using DataLibrary.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,7 +23,7 @@ namespace WebCuaHang
         public SANPHAM sanPhamDetail_GetItem([QueryString("MaSP")] int id)
         {
             SanPham sp = new SanPham();
-            var result = sp.GetID(id);
+            var result = sp.GetDVByMa(id);
             return result;
         }
 
@@ -33,8 +33,8 @@ namespace WebCuaHang
             TextBox t = (TextBox)sanPhamDetail.Row.FindControl("txt_soLuong");
             if (Session["cart"] == null)
             {
-                List<CartModel> listcart = new List<CartModel>();
-                CartModel cart = new CartModel();
+                List<Model_CartItem> listcart = new List<Model_CartItem>();
+                Model_CartItem cart = new Model_CartItem();
                 cart.CartID = 0;
                 cart.MA_SP = id;
                 cart.SoLuong = Convert.ToInt32(t.Text);
@@ -45,7 +45,7 @@ namespace WebCuaHang
             else
             {
                 bool check = true;
-                List<CartModel> list = (List<CartModel>)Session["cart"];
+                List<Model_CartItem> list = (List<Model_CartItem>)Session["cart"];
                 int lenght = list.Count;
                 foreach(var i in list){
                     if(i.MA_SP == id)
@@ -56,7 +56,7 @@ namespace WebCuaHang
                 }
                 if (check)
                 {
-                    CartModel cart = new CartModel();
+                    Model_CartItem cart = new Model_CartItem();
                     cart.CartID = lenght;
                     cart.MA_SP = id;
                     cart.SoLuong = Convert.ToInt32(t.Text);

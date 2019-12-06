@@ -1,4 +1,6 @@
-﻿namespace Form_Main
+﻿using System;
+
+namespace Form_Main
 {
     partial class Form1
     {
@@ -43,18 +45,18 @@
             this.btn_HoaDon = new System.Windows.Forms.Button();
             this.btn_SanPham = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_DonHang = new System.Windows.Forms.Button();
             this.btn_TaiKhoan = new System.Windows.Forms.Button();
             this.panelContainer = new System.Windows.Forms.Panel();
+            this.uC_NhanVien1 = new ControlLibrary.UC.Display.UC_NhanVien();
             this.uC_KhachHang1 = new ControlLibrary.UC.Display.UC_KhachHang();
             this.uC_UserProfile1 = new ControlLibrary.UC.Display.UC_UserProfile();
             this.uC_Quyen1 = new ControlLibrary.UC.Display.UC_Quyen();
-            this.uC_NhanVien1 = new ControlLibrary.UC.Display.UC_NhanVien();
             this.uC_NhaCungCap1 = new ControlLibrary.UC.Display.UC_NhaCungCap();
             this.uC_HoaDon1 = new ControlLibrary.UC.Display.UC_HoaDon();
             this.uC_SanPham21 = new ControlLibrary.UC.Display.UC_SanPham2();
             this.uC_Loai1 = new ControlLibrary.UC.Display.UC_Loai();
-            this.uC_BanHang1 = new ControlLibrary.UC.Display.UC_BanHang();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_ThongKe = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -70,7 +72,7 @@
             this.btn_KhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_KhachHang.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_KhachHang.ForeColor = System.Drawing.Color.White;
-            this.btn_KhachHang.Location = new System.Drawing.Point(18, 228);
+            this.btn_KhachHang.Location = new System.Drawing.Point(18, 230);
             this.btn_KhachHang.Name = "btn_KhachHang";
             this.btn_KhachHang.Size = new System.Drawing.Size(198, 54);
             this.btn_KhachHang.TabIndex = 5;
@@ -88,7 +90,7 @@
             this.btn_Quyen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Quyen.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Quyen.ForeColor = System.Drawing.Color.White;
-            this.btn_Quyen.Location = new System.Drawing.Point(18, 408);
+            this.btn_Quyen.Location = new System.Drawing.Point(18, 470);
             this.btn_Quyen.Name = "btn_Quyen";
             this.btn_Quyen.Size = new System.Drawing.Size(198, 54);
             this.btn_Quyen.TabIndex = 9;
@@ -163,7 +165,7 @@
             this.btn_NhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_NhanVien.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_NhanVien.ForeColor = System.Drawing.Color.White;
-            this.btn_NhanVien.Location = new System.Drawing.Point(18, 288);
+            this.btn_NhanVien.Location = new System.Drawing.Point(18, 350);
             this.btn_NhanVien.Name = "btn_NhanVien";
             this.btn_NhanVien.Size = new System.Drawing.Size(198, 54);
             this.btn_NhanVien.TabIndex = 4;
@@ -249,7 +251,7 @@
             this.btn_HoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_HoaDon.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_HoaDon.ForeColor = System.Drawing.Color.White;
-            this.btn_HoaDon.Location = new System.Drawing.Point(18, 168);
+            this.btn_HoaDon.Location = new System.Drawing.Point(18, 170);
             this.btn_HoaDon.Name = "btn_HoaDon";
             this.btn_HoaDon.Size = new System.Drawing.Size(198, 54);
             this.btn_HoaDon.TabIndex = 3;
@@ -267,7 +269,7 @@
             this.btn_SanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_SanPham.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SanPham.ForeColor = System.Drawing.Color.White;
-            this.btn_SanPham.Location = new System.Drawing.Point(18, 108);
+            this.btn_SanPham.Location = new System.Drawing.Point(18, 110);
             this.btn_SanPham.Name = "btn_SanPham";
             this.btn_SanPham.Size = new System.Drawing.Size(198, 54);
             this.btn_SanPham.TabIndex = 2;
@@ -279,7 +281,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btn_ThongKe);
+            this.panel1.Controls.Add(this.btn_DonHang);
             this.panel1.Controls.Add(this.btn_TaiKhoan);
             this.panel1.Controls.Add(this.btn_KhachHang);
             this.panel1.Controls.Add(this.btn_Quyen);
@@ -295,6 +298,24 @@
             this.panel1.Size = new System.Drawing.Size(216, 593);
             this.panel1.TabIndex = 3;
             // 
+            // btn_DonHang
+            // 
+            this.btn_DonHang.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btn_DonHang.FlatAppearance.BorderSize = 0;
+            this.btn_DonHang.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btn_DonHang.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btn_DonHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_DonHang.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_DonHang.ForeColor = System.Drawing.Color.White;
+            this.btn_DonHang.Location = new System.Drawing.Point(18, 290);
+            this.btn_DonHang.Name = "btn_DonHang";
+            this.btn_DonHang.Size = new System.Drawing.Size(198, 54);
+            this.btn_DonHang.TabIndex = 11;
+            this.btn_DonHang.Text = "Đơn Hàng";
+            this.btn_DonHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_DonHang.UseVisualStyleBackColor = true;
+            this.btn_DonHang.Click += new System.EventHandler(this.btn_DonHang_Click);
+            // 
             // btn_TaiKhoan
             // 
             this.btn_TaiKhoan.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
@@ -304,30 +325,38 @@
             this.btn_TaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_TaiKhoan.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_TaiKhoan.ForeColor = System.Drawing.Color.White;
-            this.btn_TaiKhoan.Location = new System.Drawing.Point(18, 348);
+            this.btn_TaiKhoan.Location = new System.Drawing.Point(18, 410);
             this.btn_TaiKhoan.Name = "btn_TaiKhoan";
             this.btn_TaiKhoan.Size = new System.Drawing.Size(198, 54);
             this.btn_TaiKhoan.TabIndex = 10;
             this.btn_TaiKhoan.Text = "Tài khoản";
             this.btn_TaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_TaiKhoan.UseVisualStyleBackColor = true;
+            this.btn_TaiKhoan.Click += new System.EventHandler(this.btn_TaiKhoan_Click);
             // 
             // panelContainer
             // 
+            this.panelContainer.Controls.Add(this.uC_NhanVien1);
             this.panelContainer.Controls.Add(this.uC_KhachHang1);
             this.panelContainer.Controls.Add(this.uC_UserProfile1);
             this.panelContainer.Controls.Add(this.uC_Quyen1);
-            this.panelContainer.Controls.Add(this.uC_NhanVien1);
             this.panelContainer.Controls.Add(this.uC_NhaCungCap1);
             this.panelContainer.Controls.Add(this.uC_HoaDon1);
             this.panelContainer.Controls.Add(this.uC_SanPham21);
             this.panelContainer.Controls.Add(this.uC_Loai1);
-            this.panelContainer.Controls.Add(this.uC_BanHang1);
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelContainer.Location = new System.Drawing.Point(216, 51);
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(847, 542);
             this.panelContainer.TabIndex = 5;
+            // 
+            // uC_NhanVien1
+            // 
+            this.uC_NhanVien1.BackColor = System.Drawing.Color.White;
+            this.uC_NhanVien1.Location = new System.Drawing.Point(3, -3);
+            this.uC_NhanVien1.Name = "uC_NhanVien1";
+            this.uC_NhanVien1.Size = new System.Drawing.Size(844, 542);
+            this.uC_NhanVien1.TabIndex = 9;
             // 
             // uC_KhachHang1
             // 
@@ -352,14 +381,6 @@
             this.uC_Quyen1.Name = "uC_Quyen1";
             this.uC_Quyen1.Size = new System.Drawing.Size(847, 546);
             this.uC_Quyen1.TabIndex = 6;
-            // 
-            // uC_NhanVien1
-            // 
-            this.uC_NhanVien1.BackColor = System.Drawing.Color.White;
-            this.uC_NhanVien1.Location = new System.Drawing.Point(-1, -3);
-            this.uC_NhanVien1.Name = "uC_NhanVien1";
-            this.uC_NhanVien1.Size = new System.Drawing.Size(847, 545);
-            this.uC_NhanVien1.TabIndex = 5;
             // 
             // uC_NhaCungCap1
             // 
@@ -391,29 +412,23 @@
             this.uC_Loai1.Size = new System.Drawing.Size(847, 542);
             this.uC_Loai1.TabIndex = 1;
             // 
-            // uC_BanHang1
+            // btn_ThongKe
             // 
-            this.uC_BanHang1.Location = new System.Drawing.Point(0, -3);
-            this.uC_BanHang1.Name = "uC_BanHang1";
-            this.uC_BanHang1.Size = new System.Drawing.Size(847, 542);
-            this.uC_BanHang1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(18, 458);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(198, 54);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Đơn Hàng";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_ThongKe.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btn_ThongKe.FlatAppearance.BorderSize = 0;
+            this.btn_ThongKe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btn_ThongKe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btn_ThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ThongKe.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ThongKe.ForeColor = System.Drawing.Color.White;
+            this.btn_ThongKe.Location = new System.Drawing.Point(18, 527);
+            this.btn_ThongKe.Name = "btn_ThongKe";
+            this.btn_ThongKe.Size = new System.Drawing.Size(198, 54);
+            this.btn_ThongKe.TabIndex = 12;
+            this.btn_ThongKe.Text = "Thống Kê";
+            this.btn_ThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_ThongKe.UseVisualStyleBackColor = true;
+            this.btn_ThongKe.Click += new System.EventHandler(this.btn_ThongKe_Click);
             // 
             // Form1
             // 
@@ -426,6 +441,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -434,6 +450,7 @@
             this.ResumeLayout(false);
 
         }
+
 
         #endregion
         private System.Windows.Forms.Button btn_KhachHang;
@@ -453,8 +470,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelContainer;
         private ControlLibrary.UC.Display.UC_Loai uC_Loai1;
-        private ControlLibrary.UC.Display.UC_BanHang uC_BanHang1;
-        private ControlLibrary.UC.Display.UC_NhanVien uC_NhanVien1;
         private ControlLibrary.UC.Display.UC_NhaCungCap uC_NhaCungCap1;
         private ControlLibrary.UC.Display.UC_HoaDon uC_HoaDon1;
         private ControlLibrary.UC.Display.UC_SanPham2 uC_SanPham21;
@@ -462,7 +477,9 @@
         private ControlLibrary.UC.Display.UC_UserProfile uC_UserProfile1;
         private ControlLibrary.UC.Display.UC_KhachHang uC_KhachHang1;
         private System.Windows.Forms.Button btn_TaiKhoan;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_DonHang;
+        private ControlLibrary.UC.Display.UC_NhanVien uC_NhanVien1;
+        private System.Windows.Forms.Button btn_ThongKe;
     }
 }
 

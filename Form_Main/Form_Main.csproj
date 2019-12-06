@@ -32,6 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ControlLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ControlLibrary\bin\Debug\ControlLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="DataLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DataLibrary\bin\Debug\DataLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -95,16 +103,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ControlLibrary\ControlLibrary.csproj">
-      <Project>{aae0b8b3-0207-4ed2-815b-8c6778d55094}</Project>
-      <Name>ControlLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataLibrary\DataLibrary.csproj">
-      <Project>{980b5f5b-0170-4af0-be93-8b1addeb5c7d}</Project>
-      <Name>DataLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logo.jpg" />

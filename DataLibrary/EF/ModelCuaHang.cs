@@ -8,7 +8,7 @@ namespace DataLibrary.EF
     public partial class ModelCuaHang : DbContext
     {
         public ModelCuaHang()
-            : base("name=ModelCuaHang")
+            : base("ModelCuaHang")
         {
         }
 

@@ -43,11 +43,24 @@ namespace DataLibrary.Dao
                 return list;
             }
 
-            public LOAI GetDVByMa(int pMa)
+        public List<string> GetDSTen()
+        {
+            var list = from a in context.LOAI select a.TenLoai;
+            return list.ToList();
+        }
+
+        public LOAI GetDVByMa(int? pMa)
             {
                 LOAI result = new LOAI();
                 result = context.LOAI.FirstOrDefault(m => m.MaLoai == pMa);
                 return result;
             }
+        public LOAI GetDVByMa(string pTen)
+        {
+            LOAI result = new LOAI();
+            result = context.LOAI.FirstOrDefault(m => m.TenLoai == pTen);
+            return result;
         }
+
+    }
 }
