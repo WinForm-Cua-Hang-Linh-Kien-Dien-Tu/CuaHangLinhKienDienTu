@@ -43,10 +43,10 @@ namespace DataLibrary.Dao
             return list;
         }
 
-        public QUYEN GetDVByMa(int pMa)
+        public QUYEN GetDVByMa(string userName, string pass)
         {
             QUYEN result = new QUYEN();
-            result = context.QUYEN.FirstOrDefault(m => m.MaNV == pMa);
+            result = context.QUYEN.FirstOrDefault(m => m.User == userName && m.PassWord == pass);
             return result;
         }
     }

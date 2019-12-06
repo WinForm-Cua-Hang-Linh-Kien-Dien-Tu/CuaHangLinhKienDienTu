@@ -29,13 +29,9 @@ namespace ControlLibrary.UC.Display
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
-           
-            panel_Container.Dock = DockStyle.Bottom;
-            panel_Container.Controls.Add(add_SanPham);
+
+            panel3.Visible = true;
             dataGV_SanPham.Visible = false;
-            add_SanPham.Visible = true;
-            edit_SanPham.Visible = false;
-            btn_Back.Visible = true;
         }
 
         private void btn_Back_Click(object sender, EventArgs e)
