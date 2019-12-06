@@ -16,6 +16,7 @@ namespace DataLibrary.Dao
             result = context.SaveChanges();
             return result;
         }
+
         public int Update(NHANVIEN pma)
         {
             int result = 0;
@@ -33,6 +34,24 @@ namespace DataLibrary.Dao
             return result;
         }
 
+        public int Update(NHANVIEN pma, int ma)
+        {
+            int result = 0;
+            NHANVIEN k = context.NHANVIEN.FirstOrDefault(m => m.MaNV == ma);
+            if (k != null)
+            {
+                k.TenNV = pma.TenNV;
+                k.NgaySinh = pma.NgaySinh;
+                k.Phai = pma.Phai;
+                k.DiaChi = pma.DiaChi;
+                k.ChucVu = pma.ChucVu;
+                k.SDT = pma.SDT;
+            }
+            result = context.SaveChanges();
+            return result;
+        }
+
+
         public int Delete(int pMa)
         {
             int result = 0;
@@ -45,6 +64,13 @@ namespace DataLibrary.Dao
         {
             List<NHANVIEN> list = new List<NHANVIEN>();
             list = context.NHANVIEN.ToList();
+            return list;
+        }
+
+        public List<NHANVIEN> GetList(string pTen)
+        {
+            List<NHANVIEN> list = new List<NHANVIEN>();
+            list = context.NHANVIEN.Where(t => t.TenNV == pTen).ToList();
             return list;
         }
 

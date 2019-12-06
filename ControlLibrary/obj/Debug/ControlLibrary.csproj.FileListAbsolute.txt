@@ -146,13 +146,6 @@ E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\bin\Debug\DataLib
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\bin\Debug\DataLibrary.dll.config
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\obj\Debug\ControlLibrary.csprojAssemblyReference.cache
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\obj\Debug\ControlLibrary.Properties.Resources.resources
-E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\obj\Debug\ControlLibrary.UC.Add_Edit.UC_Add_HoaDon.resources
-E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\obj\Debug\ControlLibrary.UC.Add_Edit.UC_Add_KhachHang.resources
-E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\obj\Debug\ControlLibrary.UC.Add_Edit.UC_Add_NhanVien.resources
-E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\obj\Debug\ControlLibrary.UC.Add_Edit.UC_Add_SanPham.resources
-E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\obj\Debug\ControlLibrary.UC.Add_Edit.UC_Edit_KhachHang.resources
-E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\obj\Debug\ControlLibrary.UC.Add_Edit.UC_Edit_NhanVien.resources
-E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\obj\Debug\ControlLibrary.UC.Add_Edit.UC_Edit_SanPham.resources
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\obj\Debug\ControlLibrary.UC.Display.UC_BanHang.resources
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\obj\Debug\ControlLibrary.UC.Display.UC_HoaDon.resources
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\ControlLibrary\obj\Debug\ControlLibrary.UC.Display.UC_KhachHang.resources

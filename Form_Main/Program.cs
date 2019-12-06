@@ -16,7 +16,7 @@ namespace Form_Main
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_DangNhap());
+            Application.Run(new Form1());
         }
     }
 }

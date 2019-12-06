@@ -4,9 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using ControlLibrary.Model;
 using DataLibrary.Dao;
 using DataLibrary.EF;
-using DataLibrary.Model;
 
 namespace WebCuaHang
 {
@@ -28,7 +28,7 @@ namespace WebCuaHang
             {
                 btn_datHang.Visible = true;
                 double tong = 0;
-                List<CartModel> list = (List<CartModel>)Session["cart"];
+                List<Model_CartItem> list = (List<Model_CartItem>)Session["cart"];
                 foreach (var i in list)
                 {
                     SANPHAM sp = sanPham.GetDVByMa(i.MA_SP);
@@ -46,11 +46,11 @@ namespace WebCuaHang
         //     int startRowIndex
         //     out int totalRowCount
         //     string sortByExpression
-        public List<CartModel> CartItemGridView_GetData()
+        public List<Model_CartItem> CartItemGridView_GetData()
         {
             if (Session["cart"] != null)
             {
-                List<CartModel> list = (List<CartModel>)Session["cart"];
+                List<Model_CartItem> list = (List<Model_CartItem>)Session["cart"];
                 foreach (var i in list)
                 {
                     SANPHAM sp = sanPham.GetDVByMa(i.MA_SP);
@@ -65,7 +65,7 @@ namespace WebCuaHang
 
         protected void btn_xoaCartItem_Click(object sender, EventArgs e)
         {
-            List<CartModel> list = (List<CartModel>)Session["cart"];
+            List<Model_CartItem> list = (List<Model_CartItem>)Session["cart"];
             lb_notify.Visible = true;
             if (CartItemGridView.Rows.Count > 0)
             {
@@ -73,7 +73,7 @@ namespace WebCuaHang
                 GridViewRow row = (GridViewRow)btn.NamingContainer;
                 int cartID = Convert.ToInt32(row.Cells[0].Text);
               
-                CartModel c = new CartModel();
+                Model_CartItem c = new Model_CartItem();
                 foreach (var i in list)
                 {
                     if (i.MA_SP == cartID)

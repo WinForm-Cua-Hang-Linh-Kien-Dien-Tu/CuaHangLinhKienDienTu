@@ -4,146 +4,83 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DataLibrary.EF;
-using DataLibrary.Model;
 
 namespace DataLibrary.Dao
 {
-    public class SanPham
+    public class SanPham : DBContext
     {
-        ModelCuaHang db = new ModelCuaHang();
+        public int Add(SANPHAM p)
+        {
+            int result = 0;
+            context.SANPHAM.Add(p);
+            result = context.SaveChanges();
+            return result;
+        }
+
+        public int Update(SANPHAM pma, int ma)
+        {
+            int result = 0;
+            SANPHAM k = context.SANPHAM.FirstOrDefault(m => m.MaSP == ma);
+            if (k != null)
+            {
+                k.MaNSX = pma.MaNSX;
+                k.MaLoai = pma.MaLoai;
+                k.TenSP = pma.MoTa;
+                k.Gia = pma.Gia;
+                k.SoLuong = pma.SoLuong;
+                k.Size = pma.Size;
+                k.XuatXu = pma.XuatXu;
+                k.DacTinh = pma.DacTinh;
+                k.Hinh = pma.Hinh;
+            }
+            result = context.SaveChanges();
+            return result;
+        }
+
+        public int Delete(int pMa)
+        {
+            int result = 0;
+            SANPHAM k = context.SANPHAM.FirstOrDefault(m => m.MaSP == pMa);
+            context.SANPHAM.Remove(k);
+            result = context.SaveChanges();
+            return result;
+        }
 
         public List<SANPHAM> GetList()
         {
-            return db.SANPHAM.ToList();
+            List<SANPHAM> list = new List<SANPHAM>();
+            list = context.SANPHAM.ToList();
+            return list;
         }
 
-        public List<SanPhamModel> LoadSanPham()
+        public List<SANPHAM> GetList(string pTen)
         {
-            var result = db.SANPHAM.Select(sp => new SanPhamModel()
-            {
-                MaSP = sp.MaSP,
-                TenSP = sp.TenSP,
-                TenLoai = (from b in db.LOAI where b.MaLoai == sp.MaLoai select b.TenLoai).FirstOrDefault(),
-                TenNSX = (from b in db.NHASANXUAT where b.MaNSX == sp.MaNSX select b.TenNSX).FirstOrDefault(),
-                MoTa = sp.MoTa,
-                Gia = sp.Gia,
-                SoLuong = sp.SoLuong,
-                Size = sp.Size,
-                XuatXu = sp.XuatXu,
-                DacTinh = sp.DacTinh,
-                TenHinh = sp.Hinh,
-                MaNSX = sp.MaNSX,
-                MaLoai = sp.MaLoai
-            }).ToList();
-
-            return result;
+            List<SANPHAM> list = new List<SANPHAM>();
+            list = context.SANPHAM.Where(t => t.TenSP == pTen).ToList();
+            return list;
         }
 
-        public int idMaNSX(string tenNSX)
+        public List<SANPHAM> GetListLoai(int pMaLoai)
         {
-            var a = Convert.ToInt32((from b in db.NHASANXUAT where b.TenNSX == tenNSX select b.MaNSX).FirstOrDefault());
-            return a;
+            List<SANPHAM> list = new List<SANPHAM>();
+            list = context.SANPHAM.Where(t =>t.MaLoai == pMaLoai).ToList();
+            return list;
         }
 
-        public int idMaLoai(string teLoai)
+        public List<SANPHAM> GetListNSX(int pMaNSX)
         {
-            var a = Convert.ToInt32((from b in db.LOAI where b.TenLoai == teLoai select b.MaLoai).FirstOrDefault());
-            return a;
-        }
-
-        public List<SanPhamModel> loadTenNSX()
-        {
-            var result = db.NHASANXUAT.Select(ma => new SanPhamModel()
-            {
-                TenNSX = ma.TenNSX
-            }).ToList();
-            return result;
-        }
-
-        public List<SanPhamModel> loadTenLoai()
-        {
-            var result = db.LOAI.Select(ma => new SanPhamModel()
-            {
-                TenLoai = ma.TenLoai
-            }).ToList();
-            return result;
-        }
-
-        public List<SanPhamModel> loadXuatXu()
-        {
-            var result = db.SANPHAM.Select(ma => new SanPhamModel()
-            {
-               XuatXu = ma.XuatXu
-            }).ToList();
-            return result;
-        }
-
-        public void AddNew(SANPHAM modelsp)
-        {
-            SANPHAM sp = new SANPHAM();
-
-            sp.MaSP = modelsp.MaSP;
-            sp.MaNSX = modelsp.MaNSX;
-            sp.MaLoai = modelsp.MaLoai;
-            sp.TenSP = modelsp.TenSP;
-            sp.MoTa = modelsp.MoTa;
-            sp.Gia = modelsp.Gia;
-            sp.SoLuong = modelsp.SoLuong;
-            sp.Size = modelsp.Size;
-            sp.XuatXu = modelsp.XuatXu;
-            sp.DacTinh = modelsp.DacTinh;
-            sp.Hinh = modelsp.Hinh;
-            
-
-            db.SANPHAM.Add(sp);
-            db.SaveChangesAsync();
-            
-        }
-
-        public bool Delete(int id)
-        {
-            var item = GetID(id);
-            if (item != null)
-            {
-                db.SANPHAM.Remove(item);
-                db.SaveChanges();
-                
-                return true;
-            }
-            return false;
-        }
-
-        public void Edit(int id, SANPHAM sp)
-        {
-            var item = GetID(id);
-            if(item != null)
-            {
-                item.MaNSX = sp.MaNSX;
-                item.MaLoai = sp.MaLoai;
-                item.TenSP = sp.TenSP;
-                item.MoTa = sp.MoTa;
-                item.Gia = sp.Gia;
-                item.SoLuong = sp.SoLuong;
-                item.Size = sp.Size;
-                item.XuatXu = sp.XuatXu;
-                item.DacTinh = sp.DacTinh;
-                item.Hinh = sp.Hinh;
-
-                db.SaveChanges();
-            }
-        }
-
-        public SANPHAM GetID(int id)
-        {
-            return db.SANPHAM.Where(x => x.MaSP == id).FirstOrDefault();
+            List<SANPHAM> list = new List<SANPHAM>();
+            list = context.SANPHAM.Where(t => t.MaNSX == pMaNSX).ToList();
+            return list;
         }
 
         public SANPHAM GetDVByMa(int pMa)
         {
             SANPHAM result = new SANPHAM();
-            result = db.SANPHAM.FirstOrDefault(m => m.MaSP == pMa);
+            result = context.SANPHAM.FirstOrDefault(m => m.MaSP == pMa);
             return result;
         }
+        
     }
 
 }

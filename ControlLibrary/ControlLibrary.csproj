@@ -44,53 +44,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Model_CartItem.cs" />
+    <Compile Include="Model\Model_NhanVien.cs" />
+    <Compile Include="Model\Model_SanPham.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="UC\Add_Edit\UC_Add_HoaDon.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC\Add_Edit\UC_Add_HoaDon.Designer.cs">
-      <DependentUpon>UC_Add_HoaDon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UC\Add_Edit\UC_Add_KhachHang.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC\Add_Edit\UC_Add_KhachHang.Designer.cs">
-      <DependentUpon>UC_Add_KhachHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UC\Add_Edit\UC_Add_NhanVien.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC\Add_Edit\UC_Add_NhanVien.Designer.cs">
-      <DependentUpon>UC_Add_NhanVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UC\Add_Edit\UC_Add_SanPham.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC\Add_Edit\UC_Add_SanPham.designer.cs">
-      <DependentUpon>UC_Add_SanPham.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UC\Add_Edit\UC_Edit_KhachHang.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC\Add_Edit\UC_Edit_KhachHang.Designer.cs">
-      <DependentUpon>UC_Edit_KhachHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UC\Add_Edit\UC_Edit_NhanVien.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC\Add_Edit\UC_Edit_NhanVien.Designer.cs">
-      <DependentUpon>UC_Edit_NhanVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UC\Add_Edit\UC_Edit_SanPham.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC\Add_Edit\UC_Edit_SanPham.Designer.cs">
-      <DependentUpon>UC_Edit_SanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="UC\Display\UC_BanHang.cs">
       <SubType>UserControl</SubType>
@@ -148,36 +109,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataLibrary\DataLibrary.csproj">
-      <Project>{980b5f5b-0170-4af0-be93-8b1addeb5c7d}</Project>
-      <Name>DataLibrary</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC\Add_Edit\UC_Add_HoaDon.resx">
-      <DependentUpon>UC_Add_HoaDon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC\Add_Edit\UC_Add_KhachHang.resx">
-      <DependentUpon>UC_Add_KhachHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC\Add_Edit\UC_Add_NhanVien.resx">
-      <DependentUpon>UC_Add_NhanVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC\Add_Edit\UC_Add_SanPham.resx">
-      <DependentUpon>UC_Add_SanPham.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC\Add_Edit\UC_Edit_KhachHang.resx">
-      <DependentUpon>UC_Edit_KhachHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC\Add_Edit\UC_Edit_NhanVien.resx">
-      <DependentUpon>UC_Edit_NhanVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC\Add_Edit\UC_Edit_SanPham.resx">
-      <DependentUpon>UC_Edit_SanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC\Display\UC_BanHang.resx">
       <DependentUpon>UC_BanHang.cs</DependentUpon>
@@ -207,7 +141,12 @@
       <DependentUpon>UC_UserProfile.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DataLibrary\DataLibrary.csproj">
+      <Project>{980b5f5b-0170-4af0-be93-8b1addeb5c7d}</Project>
+      <Name>DataLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\111879652-left-arrow-vector-icon-isolated-on-transparent-background-left-arrow-transparency-logo-concept.jpg" />
   </ItemGroup>

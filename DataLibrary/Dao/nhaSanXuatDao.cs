@@ -43,10 +43,23 @@ namespace DataLibrary.Dao
             return list;
         }
 
-        public NHASANXUAT GetDVByMa(int pMa)
+        public List<string> GetDSTen()
+        {
+            var list = from a in context.NHASANXUAT select a.TenNSX;
+            return list.ToList();
+        }
+
+        public NHASANXUAT GetDVByMa(int? pMa)
         {
             NHASANXUAT result = new NHASANXUAT();
             result = context.NHASANXUAT.FirstOrDefault(m => m.MaNSX == pMa);
+            return result;
+        }
+
+        public NHASANXUAT GetDVByMa(string pten)
+        {
+            NHASANXUAT result = new NHASANXUAT();
+            result = context.NHASANXUAT.FirstOrDefault(m => m.TenNSX == pten);
             return result;
         }
     }

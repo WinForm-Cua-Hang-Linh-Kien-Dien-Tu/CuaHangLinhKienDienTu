@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DataLibrary.Dao;
 
 namespace ControlLibrary.UC.Display
 {
@@ -16,10 +17,15 @@ namespace ControlLibrary.UC.Display
         {
             InitializeComponent();
         }
-
+        khachHangDao _khachHangDao = new khachHangDao();
         private void btn_Add_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void UC_KhachHang_Load(object sender, EventArgs e)
+        {
+            dataGV_KhachHang.DataSource = _khachHangDao.GetList();
         }
     }
 }

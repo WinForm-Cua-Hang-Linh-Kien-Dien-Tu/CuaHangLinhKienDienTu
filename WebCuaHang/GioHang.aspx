@@ -10,7 +10,7 @@
             </hgroup>
             <asp:GridView runat="server" ID="CartItemGridView" CellPadding="4"
                 AutoGenerateColumns="false" ShowFooter="true" GridLines="Vertical"
-                ItemType="DataLibrary.Model.CartModel" SelectMethod="CartItemGridView_GetData" CssClass="table table-bordered table-hover table-responsive">
+                ItemType="ControlLibrary.Model.Model_CartItem" SelectMethod="CartItemGridView_GetData" CssClass="table table-bordered table-hover table-responsive">
                  <Columns>
                     <asp:BoundField DataField="MA_SP" HeaderText="Mã sản phẩm" />
                     <asp:BoundField DataField="TEN_SP" HeaderText="Tên Sản Phẩm" />

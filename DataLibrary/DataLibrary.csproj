@@ -71,14 +71,6 @@
     <Compile Include="EF\NHASANXUAT.cs" />
     <Compile Include="EF\QUYEN.cs" />
     <Compile Include="EF\SANPHAM.cs" />
-    <Compile Include="Model\AdminModel.cs" />
-    <Compile Include="Model\CartModel.cs" />
-    <Compile Include="Model\ChiTietHoaDonModel.cs" />
-    <Compile Include="Model\HoaDonModel.cs" />
-    <Compile Include="Model\LoaiModel.cs" />
-    <Compile Include="Model\NhaSanXuatModel.cs" />
-    <Compile Include="Model\SanPhamModel.cs" />
-    <Compile Include="Model\ThanhVienModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

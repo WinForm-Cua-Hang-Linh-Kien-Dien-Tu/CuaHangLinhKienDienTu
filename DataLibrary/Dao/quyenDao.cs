@@ -49,5 +49,19 @@ namespace DataLibrary.Dao
             result = context.QUYEN.FirstOrDefault(m => m.User == userName && m.PassWord == pass);
             return result;
         }
+
+        public QUYEN GetQuyenByMaNV(int pMa)
+        {
+            QUYEN result = new QUYEN();
+            result = context.QUYEN.FirstOrDefault(m => m.MaNV == pMa);
+            return result;
+        }
+
+        public QUYEN GetDVByMa(string userName)
+        {
+            QUYEN result = new QUYEN();
+            result = context.QUYEN.FirstOrDefault(m => m.User == userName);
+            return result;
+        }
     }
 }

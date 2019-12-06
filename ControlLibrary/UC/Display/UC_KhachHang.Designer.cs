@@ -35,7 +35,6 @@
             this.btn_Add_KhachHang = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGV_KhachHang = new System.Windows.Forms.DataGridView();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txt_TimKiem_KhachHang = new System.Windows.Forms.TextBox();
             this.btn_TimKiem_KhachHang = new System.Windows.Forms.Button();
@@ -145,7 +144,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(0, 79);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(847, 62);
+            this.panel1.Size = new System.Drawing.Size(844, 62);
             this.panel1.TabIndex = 51;
             // 
             // txt_TimKiem_KhachHang
@@ -194,6 +193,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "UC_KhachHang";
             this.Size = new System.Drawing.Size(847, 542);
+            this.Load += new System.EventHandler(this.UC_KhachHang_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGV_KhachHang)).EndInit();
@@ -212,7 +212,6 @@
         private System.Windows.Forms.Button btn_Add_KhachHang;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGV_KhachHang;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txt_TimKiem_KhachHang;
         private System.Windows.Forms.Button btn_TimKiem_KhachHang;

@@ -1,13 +1,12 @@
-﻿using DataLibrary.EF;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataLibrary.Model
+namespace ControlLibrary.Model
 {
-    public class CartModel
+    public class Model_CartItem
     {
         public int CartID { get; set; }
 
