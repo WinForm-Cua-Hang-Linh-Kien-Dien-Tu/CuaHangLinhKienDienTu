@@ -48,6 +48,7 @@ namespace Form_Main
             this.btn_ThongKe = new System.Windows.Forms.Button();
             this.btn_DonHang = new System.Windows.Forms.Button();
             this.panelContainer = new System.Windows.Forms.Panel();
+            this.uC_DonHang1 = new ControlLibrary.UC.Display.UC_DonHang();
             this.uC_NhanVien1 = new ControlLibrary.UC.Display.UC_NhanVien();
             this.uC_KhachHang1 = new ControlLibrary.UC.Display.UC_KhachHang();
             this.uC_UserProfile1 = new ControlLibrary.UC.Display.UC_UserProfile();
@@ -56,7 +57,7 @@ namespace Form_Main
             this.uC_HoaDon1 = new ControlLibrary.UC.Display.UC_HoaDon();
             this.uC_SanPham21 = new ControlLibrary.UC.Display.UC_SanPham2();
             this.uC_Loai1 = new ControlLibrary.UC.Display.UC_Loai();
-            this.uC_DonHang1 = new ControlLibrary.UC.Display.UC_DonHang();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -187,6 +188,7 @@ namespace Form_Main
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.btn_LogOut);
             this.panel2.Controls.Add(this.button9);
             this.panel2.Controls.Add(this.label2);
@@ -349,6 +351,14 @@ namespace Form_Main
             this.panelContainer.Size = new System.Drawing.Size(847, 542);
             this.panelContainer.TabIndex = 5;
             // 
+            // uC_DonHang1
+            // 
+            this.uC_DonHang1.BackColor = System.Drawing.Color.White;
+            this.uC_DonHang1.Location = new System.Drawing.Point(0, 0);
+            this.uC_DonHang1.Name = "uC_DonHang1";
+            this.uC_DonHang1.Size = new System.Drawing.Size(847, 542);
+            this.uC_DonHang1.TabIndex = 10;
+            // 
             // uC_NhanVien1
             // 
             this.uC_NhanVien1.BackColor = System.Drawing.Color.White;
@@ -411,13 +421,15 @@ namespace Form_Main
             this.uC_Loai1.Size = new System.Drawing.Size(847, 542);
             this.uC_Loai1.TabIndex = 1;
             // 
-            // uC_DonHang1
+            // label1
             // 
-            this.uC_DonHang1.BackColor = System.Drawing.Color.White;
-            this.uC_DonHang1.Location = new System.Drawing.Point(0, 0);
-            this.uC_DonHang1.Name = "uC_DonHang1";
-            this.uC_DonHang1.Size = new System.Drawing.Size(847, 542);
-            this.uC_DonHang1.TabIndex = 10;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 23);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Quản Lý ";
             // 
             // Form1
             // 
@@ -470,6 +482,7 @@ namespace Form_Main
         private ControlLibrary.UC.Display.UC_NhanVien uC_NhanVien1;
         private System.Windows.Forms.Button btn_ThongKe;
         private ControlLibrary.UC.Display.UC_DonHang uC_DonHang1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
