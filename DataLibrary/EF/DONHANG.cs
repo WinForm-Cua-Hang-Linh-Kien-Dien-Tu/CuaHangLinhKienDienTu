@@ -14,6 +14,7 @@ namespace DataLibrary.EF
         public int? MaKH { get; set; }
 
         public int? MaHD { get; set; }
+        public DateTime NgayDat { get; set; }
 
         [StringLength(100)]
         public string TrangThai { get; set; }

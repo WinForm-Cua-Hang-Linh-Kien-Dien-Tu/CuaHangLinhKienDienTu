@@ -13,17 +13,17 @@ namespace Form_Main
 {
     public partial class Form1 : Form
     {
-        //string UserName = "";
+        string UserName = "";
         quyenDao _quyenDao = new quyenDao();
 
-        public Form1(/*string UserName*/)
+        public Form1(string UserName)
         {
             InitializeComponent();
             pn_Chuyen.Height = btn_User.Height;
             pn_Chuyen.Top = btn_User.Top;
             uC_UserProfile1.BringToFront();
 
-            //this.UserName = UserName;
+            this.UserName = UserName;
         }
 
         /// <summary>
@@ -33,16 +33,16 @@ namespace Form_Main
         /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
-           /* var item = _quyenDao.GetDVByMa(UserName);
+            var item = _quyenDao.GetDVByMa(UserName);
             if(item != null)
             {
                 if(item.Quyen1 == "Nhân Viên")
                 {
                     btn_Quyen.Visible = false;
-                    btn_TaiKhoan.Visible = false;
+                    btn_ThongKe.Visible = false;
                     btn_NhanVien.Visible = false;
                 }
-            }*/
+            }
         }
 
         #region Chuyển UserControl
@@ -100,7 +100,7 @@ namespace Form_Main
         {
             pn_Chuyen.Height = btn_User.Height;
             pn_Chuyen.Top = btn_DonHang.Top;
-            uC_UserProfile1.BringToFront();
+            uC_DonHang1.BringToFront();
         }
 
        

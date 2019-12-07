@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Model_CartItem.cs" />
+    <Compile Include="Model\Model_DonHang.cs" />
     <Compile Include="Model\Model_NhanVien.cs" />
     <Compile Include="Model\Model_Quyen.cs" />
     <Compile Include="Model\Model_SanPham.cs" />
@@ -59,6 +60,12 @@
     </Compile>
     <Compile Include="UC\Display\UC_BanHang.Designer.cs">
       <DependentUpon>UC_BanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\Display\UC_DonHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\Display\UC_DonHang.Designer.cs">
+      <DependentUpon>UC_DonHang.cs</DependentUpon>
     </Compile>
     <Compile Include="UC\Display\UC_HoaDon.cs">
       <SubType>UserControl</SubType>
@@ -116,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC\Display\UC_BanHang.resx">
       <DependentUpon>UC_BanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\Display\UC_DonHang.resx">
+      <DependentUpon>UC_DonHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC\Display\UC_HoaDon.resx">
       <DependentUpon>UC_HoaDon.cs</DependentUpon>
