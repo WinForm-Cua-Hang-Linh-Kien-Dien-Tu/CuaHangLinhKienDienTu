@@ -168,5 +168,10 @@ namespace ControlLibrary.UC.Display
                 MessageBox.Show("Đường Truyền Bị Lỗi Rồi Đại Vương Ơi","Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UC_DonHang_Load(sender,e);
+        }
     }
 }

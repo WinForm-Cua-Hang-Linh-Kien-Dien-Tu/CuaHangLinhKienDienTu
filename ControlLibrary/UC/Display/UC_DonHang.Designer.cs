@@ -32,24 +32,25 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGV_DonHang = new System.Windows.Forms.DataGridView();
-            this.btn_Search = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btn_GiaoHang = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_TimKiem = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel_tool = new System.Windows.Forms.Panel();
-            this.panel_Container = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_XacNhan = new System.Windows.Forms.Button();
-            this.btn_HoanThanh = new System.Windows.Forms.Button();
-            this.btn_Remove = new System.Windows.Forms.Button();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayDat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_Search = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btn_GiaoHang = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txt_TimKiem = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_HoanThanh = new System.Windows.Forms.Button();
+            this.btn_XacNhan = new System.Windows.Forms.Button();
+            this.panel_tool = new System.Windows.Forms.Panel();
+            this.panel_Container = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_Remove = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGV_DonHang)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel_Container.SuspendLayout();
@@ -100,6 +101,42 @@
             this.dataGV_DonHang.Size = new System.Drawing.Size(847, 397);
             this.dataGV_DonHang.TabIndex = 0;
             this.dataGV_DonHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGV_DonHang_CellContentClick);
+            // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "ID";
+            this.ID.HeaderText = "Mã Đơn Hàng";
+            this.ID.Name = "ID";
+            // 
+            // MaHD
+            // 
+            this.MaHD.DataPropertyName = "MaHD";
+            this.MaHD.HeaderText = "Mã Hóa Đơn";
+            this.MaHD.Name = "MaHD";
+            // 
+            // MaKH
+            // 
+            this.MaKH.DataPropertyName = "MaKH";
+            this.MaKH.HeaderText = "Mã Khách Hàng";
+            this.MaKH.Name = "MaKH";
+            // 
+            // TenKH
+            // 
+            this.TenKH.DataPropertyName = "TenKH";
+            this.TenKH.HeaderText = "Tên Khách Hàng";
+            this.TenKH.Name = "TenKH";
+            // 
+            // NgayDat
+            // 
+            this.NgayDat.DataPropertyName = "NgayDat";
+            this.NgayDat.HeaderText = "Ngày Đặt";
+            this.NgayDat.Name = "NgayDat";
+            // 
+            // TrangThai
+            // 
+            this.TrangThai.DataPropertyName = "TrangThai";
+            this.TrangThai.HeaderText = "Trạng Thái";
+            this.TrangThai.Name = "TrangThai";
             // 
             // btn_Search
             // 
@@ -184,35 +221,25 @@
             this.panel2.Size = new System.Drawing.Size(847, 73);
             this.panel2.TabIndex = 14;
             // 
-            // panel_tool
+            // btn_HoanThanh
             // 
-            this.panel_tool.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.panel_tool.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_tool.Location = new System.Drawing.Point(0, 70);
-            this.panel_tool.Name = "panel_tool";
-            this.panel_tool.Size = new System.Drawing.Size(847, 3);
-            this.panel_tool.TabIndex = 49;
-            // 
-            // panel_Container
-            // 
-            this.panel_Container.Controls.Add(this.dataGV_DonHang);
-            this.panel_Container.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel_Container.Location = new System.Drawing.Point(0, 145);
-            this.panel_Container.Margin = new System.Windows.Forms.Padding(2);
-            this.panel_Container.Name = "panel_Container";
-            this.panel_Container.Size = new System.Drawing.Size(847, 397);
-            this.panel_Container.TabIndex = 15;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btn_Remove);
-            this.panel1.Controls.Add(this.btn_Search);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.txt_TimKiem);
-            this.panel1.Location = new System.Drawing.Point(0, 78);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(847, 62);
-            this.panel1.TabIndex = 16;
+            this.btn_HoanThanh.BackColor = System.Drawing.Color.LimeGreen;
+            this.btn_HoanThanh.Enabled = false;
+            this.btn_HoanThanh.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_HoanThanh.FlatAppearance.BorderSize = 0;
+            this.btn_HoanThanh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_HoanThanh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_HoanThanh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_HoanThanh.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_HoanThanh.ForeColor = System.Drawing.Color.White;
+            this.btn_HoanThanh.Location = new System.Drawing.Point(680, 19);
+            this.btn_HoanThanh.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_HoanThanh.Name = "btn_HoanThanh";
+            this.btn_HoanThanh.Size = new System.Drawing.Size(147, 34);
+            this.btn_HoanThanh.TabIndex = 51;
+            this.btn_HoanThanh.Text = "Hoàn Thành";
+            this.btn_HoanThanh.UseVisualStyleBackColor = false;
+            this.btn_HoanThanh.Click += new System.EventHandler(this.btn_HoanThanh_Click);
             // 
             // btn_XacNhan
             // 
@@ -234,25 +261,36 @@
             this.btn_XacNhan.UseVisualStyleBackColor = false;
             this.btn_XacNhan.Click += new System.EventHandler(this.btn_XacNhan_Click);
             // 
-            // btn_HoanThanh
+            // panel_tool
             // 
-            this.btn_HoanThanh.BackColor = System.Drawing.Color.LimeGreen;
-            this.btn_HoanThanh.Enabled = false;
-            this.btn_HoanThanh.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_HoanThanh.FlatAppearance.BorderSize = 0;
-            this.btn_HoanThanh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_HoanThanh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btn_HoanThanh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_HoanThanh.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_HoanThanh.ForeColor = System.Drawing.Color.White;
-            this.btn_HoanThanh.Location = new System.Drawing.Point(680, 19);
-            this.btn_HoanThanh.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_HoanThanh.Name = "btn_HoanThanh";
-            this.btn_HoanThanh.Size = new System.Drawing.Size(147, 34);
-            this.btn_HoanThanh.TabIndex = 51;
-            this.btn_HoanThanh.Text = "Hoàn Thành";
-            this.btn_HoanThanh.UseVisualStyleBackColor = false;
-            this.btn_HoanThanh.Click += new System.EventHandler(this.btn_HoanThanh_Click);
+            this.panel_tool.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel_tool.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_tool.Location = new System.Drawing.Point(0, 70);
+            this.panel_tool.Name = "panel_tool";
+            this.panel_tool.Size = new System.Drawing.Size(847, 3);
+            this.panel_tool.TabIndex = 49;
+            // 
+            // panel_Container
+            // 
+            this.panel_Container.Controls.Add(this.dataGV_DonHang);
+            this.panel_Container.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_Container.Location = new System.Drawing.Point(0, 145);
+            this.panel_Container.Margin = new System.Windows.Forms.Padding(2);
+            this.panel_Container.Name = "panel_Container";
+            this.panel_Container.Size = new System.Drawing.Size(847, 397);
+            this.panel_Container.TabIndex = 15;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btn_Remove);
+            this.panel1.Controls.Add(this.btn_Search);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.txt_TimKiem);
+            this.panel1.Location = new System.Drawing.Point(0, 78);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(847, 62);
+            this.panel1.TabIndex = 16;
             // 
             // btn_Remove
             // 
@@ -270,41 +308,24 @@
             this.btn_Remove.UseVisualStyleBackColor = false;
             this.btn_Remove.Click += new System.EventHandler(this.btn_Remove_Click);
             // 
-            // ID
+            // button1
             // 
-            this.ID.DataPropertyName = "ID";
-            this.ID.HeaderText = "Mã Đơn Hàng";
-            this.ID.Name = "ID";
-            // 
-            // MaHD
-            // 
-            this.MaHD.DataPropertyName = "MaHD";
-            this.MaHD.HeaderText = "Mã Hóa Đơn";
-            this.MaHD.Name = "MaHD";
-            // 
-            // MaKH
-            // 
-            this.MaKH.DataPropertyName = "MaKH";
-            this.MaKH.HeaderText = "Mã Khách Hàng";
-            this.MaKH.Name = "MaKH";
-            // 
-            // TenKH
-            // 
-            this.TenKH.DataPropertyName = "TenKH";
-            this.TenKH.HeaderText = "Tên Khách Hàng";
-            this.TenKH.Name = "TenKH";
-            // 
-            // NgayDat
-            // 
-            this.NgayDat.DataPropertyName = "NgayDat";
-            this.NgayDat.HeaderText = "Ngày Đặt";
-            this.NgayDat.Name = "NgayDat";
-            // 
-            // TrangThai
-            // 
-            this.TrangThai.DataPropertyName = "TrangThai";
-            this.TrangThai.HeaderText = "Trạng Thái";
-            this.TrangThai.Name = "TrangThai";
+            this.button1.BackColor = System.Drawing.Color.LightCoral;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(558, 13);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(118, 34);
+            this.button1.TabIndex = 241;
+            this.button1.Text = "Load";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // UC_DonHang
             // 
@@ -348,5 +369,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayDat;
         private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
+        private System.Windows.Forms.Button button1;
     }
 }

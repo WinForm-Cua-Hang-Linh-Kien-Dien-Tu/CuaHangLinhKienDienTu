@@ -22,7 +22,7 @@ namespace Form_Main
             pn_Chuyen.Height = btn_User.Height;
             pn_Chuyen.Top = btn_User.Top;
             uC_UserProfile1.BringToFront();
-
+            label1.Text = UserName;
             this.UserName = UserName;
         }
 
