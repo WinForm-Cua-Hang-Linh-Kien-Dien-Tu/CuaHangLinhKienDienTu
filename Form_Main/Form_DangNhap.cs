@@ -19,7 +19,7 @@ namespace Form_Main
         }
         quyenDao _quyenDao = new quyenDao();
 
-        //public static string UserName="";
+        public static string UserName="";
 
         /// <summary>
         /// Login 
@@ -30,13 +30,13 @@ namespace Form_Main
         {
             try
             {
-                //string UserName;
+                string UserName;
                 var item = _quyenDao.GetDVByMa(txt_userName.Text, txt_passWord.Text);
                 if (item != null)
                 {
-                    //UserName = txt_userName.Text;
-                    //Form1 f = new Form1(UserName);
-                    Form1 f = new Form1();
+                    UserName = txt_userName.Text;
+                    Form1 f = new Form1(UserName);
+                    
                     f.ShowDialog(this);
                     this.Visible = false;
                 }

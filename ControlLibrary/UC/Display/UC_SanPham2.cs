@@ -130,9 +130,20 @@ namespace ControlLibrary.UC.Display
         {
             if (txt_TimKiem.Text != "")
             {
-                var ds = _sanPhamDao.GetList(txt_TimKiem.Text);
+                if (btn_Search.Text == "Search")
+                {
+                    var ds = _sanPhamDao.GetList(txt_TimKiem.Text);
 
-                dataGV_SanPham.DataSource = ListModel(ds);
+                    dataGV_SanPham.DataSource = ListModel(ds);
+                    btn_Search.Text = "Back";
+                }
+                else
+                {
+                    var ds = _sanPhamDao.GetList();
+
+                    dataGV_SanPham.DataSource = ListModel(ds);
+                    btn_Search.Text = "Search";
+                }
             }
         }
 
@@ -203,18 +214,23 @@ namespace ControlLibrary.UC.Display
 
         private void dataGV_SanPham_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(dataGV_SanPham.Rows.Count > 0)
+            try
             {
-                label_maSP.Text = dataGV_SanPham.CurrentRow.Cells[0].Value.ToString();
-                comboBox_NSX.Text = dataGV_SanPham.CurrentRow.Cells[1].Value.ToString();
-                comboBox_LoaiSP.Text = dataGV_SanPham.CurrentRow.Cells[2].Value.ToString();
-                txt_TenSP.Text = dataGV_SanPham.CurrentRow.Cells[3].Value.ToString();
-                txt_Gia.Text = dataGV_SanPham.CurrentRow.Cells[4].Value.ToString();
-                txt_SoLuong.Text = dataGV_SanPham.CurrentRow.Cells[5].Value.ToString();
-                txt_Size.Text = dataGV_SanPham.CurrentRow.Cells[6].Value.ToString();
-                txt_XuatXu.Text = dataGV_SanPham.CurrentRow.Cells[7].Value.ToString();
-                txt_DacTinh.Text = dataGV_SanPham.CurrentRow.Cells[8].Value.ToString();
+                if (dataGV_SanPham.Rows.Count > 0)
+                {
+                    label_maSP.Text = dataGV_SanPham.CurrentRow.Cells[0].Value.ToString();
+                    comboBox_NSX.Text = dataGV_SanPham.CurrentRow.Cells[1].Value.ToString();
+                    comboBox_LoaiSP.Text = dataGV_SanPham.CurrentRow.Cells[2].Value.ToString();
+                    txt_TenSP.Text = dataGV_SanPham.CurrentRow.Cells[3].Value.ToString();
+                    txt_Gia.Text = dataGV_SanPham.CurrentRow.Cells[4].Value.ToString();
+                    txt_SoLuong.Text = dataGV_SanPham.CurrentRow.Cells[5].Value.ToString();
+                    txt_Size.Text = dataGV_SanPham.CurrentRow.Cells[6].Value.ToString();
+                    txt_XuatXu.Text = dataGV_SanPham.CurrentRow.Cells[7].Value.ToString();
+                    txt_DacTinh.Text = dataGV_SanPham.CurrentRow.Cells[8].Value.ToString();
+                }
             }
+            catch
+            { }
         }
 
         private void combo_TimKiemLoai_SelectedIndexChanged(object sender, EventArgs e)

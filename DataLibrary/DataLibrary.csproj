@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Dao\chiTietHoaDonDao.cs" />
     <Compile Include="Dao\DBContext.cs" />
+    <Compile Include="Dao\donHangDao.cs" />
     <Compile Include="Dao\hoaDonDao.cs" />
     <Compile Include="Dao\khachHangDao.cs" />
     <Compile Include="Dao\loaiDao.cs" />

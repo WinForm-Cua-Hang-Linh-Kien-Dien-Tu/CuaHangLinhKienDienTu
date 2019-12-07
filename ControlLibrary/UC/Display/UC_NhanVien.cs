@@ -174,7 +174,7 @@ namespace ControlLibrary.UC.Display
             if(txt_TimKiem.Text != "")
             {
                 var ds = _nhanVienDao.GetList(txt_TimKiem.Text);
-
+                btn_Search.Text = "Back";
                 dataGV_NhanVien.DataSource = ListModel(ds);
             }
         }

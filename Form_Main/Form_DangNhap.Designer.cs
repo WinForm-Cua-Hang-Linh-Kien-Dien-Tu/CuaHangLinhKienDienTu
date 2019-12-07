@@ -51,9 +51,9 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.txt_userName);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 166);
+            this.panel2.Location = new System.Drawing.Point(0, 164);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(300, 276);
+            this.panel2.Size = new System.Drawing.Size(300, 278);
             this.panel2.TabIndex = 1;
             // 
             // btn_login
@@ -151,6 +151,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_DangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_DangNhap";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

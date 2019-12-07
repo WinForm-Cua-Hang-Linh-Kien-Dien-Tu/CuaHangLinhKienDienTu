@@ -56,6 +56,7 @@ namespace Form_Main
             this.uC_HoaDon1 = new ControlLibrary.UC.Display.UC_HoaDon();
             this.uC_SanPham21 = new ControlLibrary.UC.Display.UC_SanPham2();
             this.uC_Loai1 = new ControlLibrary.UC.Display.UC_Loai();
+            this.uC_DonHang1 = new ControlLibrary.UC.Display.UC_DonHang();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -190,7 +191,6 @@ namespace Form_Main
             this.panel2.Controls.Add(this.button9);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.btn_Exit);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(216, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(847, 49);
@@ -334,6 +334,7 @@ namespace Form_Main
             // 
             // panelContainer
             // 
+            this.panelContainer.Controls.Add(this.uC_DonHang1);
             this.panelContainer.Controls.Add(this.uC_NhanVien1);
             this.panelContainer.Controls.Add(this.uC_KhachHang1);
             this.panelContainer.Controls.Add(this.uC_UserProfile1);
@@ -410,6 +411,14 @@ namespace Form_Main
             this.uC_Loai1.Size = new System.Drawing.Size(847, 542);
             this.uC_Loai1.TabIndex = 1;
             // 
+            // uC_DonHang1
+            // 
+            this.uC_DonHang1.BackColor = System.Drawing.Color.White;
+            this.uC_DonHang1.Location = new System.Drawing.Point(0, 0);
+            this.uC_DonHang1.Name = "uC_DonHang1";
+            this.uC_DonHang1.Size = new System.Drawing.Size(847, 542);
+            this.uC_DonHang1.TabIndex = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -420,6 +429,7 @@ namespace Form_Main
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel4.ResumeLayout(false);
@@ -459,6 +469,7 @@ namespace Form_Main
         private System.Windows.Forms.Button btn_DonHang;
         private ControlLibrary.UC.Display.UC_NhanVien uC_NhanVien1;
         private System.Windows.Forms.Button btn_ThongKe;
+        private ControlLibrary.UC.Display.UC_DonHang uC_DonHang1;
     }
 }
 

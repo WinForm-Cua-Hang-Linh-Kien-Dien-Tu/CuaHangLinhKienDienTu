@@ -83,3 +83,16 @@ E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrar
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.pdb
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.Migrations.InitialCreate.resources
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\DataLibrary.dll.config
+C:\Users\DELL\Desktop\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\DataLibrary.dll
+C:\Users\DELL\Desktop\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\DataLibrary.pdb
+C:\Users\DELL\Desktop\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\EntityFramework.dll
+C:\Users\DELL\Desktop\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL\Desktop\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\EntityFramework.xml
+C:\Users\DELL\Desktop\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL\Desktop\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.Migrations.InitialCreate.resources
+C:\Users\DELL\Desktop\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.csproj.CopyComplete
+C:\Users\DELL\Desktop\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.dll
+C:\Users\DELL\Desktop\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.pdb

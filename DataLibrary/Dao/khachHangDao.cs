@@ -48,7 +48,7 @@ namespace DataLibrary.Dao
             return list;
         }
 
-        public KHACHHANG GetDVByMa(int pMa)
+        public KHACHHANG GetDVByMa(int? pMa)
         {
             KHACHHANG result = new KHACHHANG();
             result = context.KHACHHANG.FirstOrDefault(m => m.MaKH == pMa);

@@ -15,6 +15,7 @@ namespace WebCuaHang
         SanPham sanPham = new SanPham();
         hoaDonDao hdDao = new hoaDonDao();
         chiTietHoaDonDao chiTietHoaDonDao = new chiTietHoaDonDao();
+        donHangDao _donHangDao = new donHangDao();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -101,7 +102,10 @@ namespace WebCuaHang
             else
             {
                 HOADON hd = new HOADON();
-                hd.MaKH = Convert.ToInt32(Session["User"]);
+                DONHANG donHang = new DONHANG();
+                int maKH = Convert.ToInt32(Session["User"]); ;
+                hd.MaKH = maKH;
+
                 if (hdDao.Add(hd) == 1)
                 {
                     double tongtien = 0;
@@ -133,7 +137,18 @@ namespace WebCuaHang
                     }
                     hd.TongTien = tongtien;
                     hdDao.Update(hd);
+                    //Thêm Hóa Đơn
+                    hdDao.Update(hd);
+
+                    // Thêm đơn hàng
+                    donHang.MaHD = hd.MaHD;
+                    donHang.MaKH = maKH;
+                    donHang.TrangThai = "Chưa Xác Nhận";
+                    donHang.NgayDat = DateTime.Now;
+                    _donHangDao.Add(donHang);
+
                     Session.Remove("cart");
+
                    
                     Page.ClientScript.RegisterClientScriptBlock(typeof(Page), "Alert", "alert('Đặt Hàng thành công')", true);
                 }
