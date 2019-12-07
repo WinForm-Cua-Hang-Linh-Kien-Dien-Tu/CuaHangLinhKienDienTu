@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Model\Model_CartItem.cs" />
     <Compile Include="Model\Model_NhanVien.cs" />
+    <Compile Include="Model\Model_Quyen.cs" />
     <Compile Include="Model\Model_SanPham.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -142,13 +143,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\111879652-left-arrow-vector-icon-isolated-on-transparent-background-left-arrow-transparency-logo-concept.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\DataLibrary\DataLibrary.csproj">
       <Project>{980b5f5b-0170-4af0-be93-8b1addeb5c7d}</Project>
       <Name>DataLibrary</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\111879652-left-arrow-vector-icon-isolated-on-transparent-background-left-arrow-transparency-logo-concept.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

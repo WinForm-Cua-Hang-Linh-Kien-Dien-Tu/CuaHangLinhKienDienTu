@@ -14,6 +14,7 @@ namespace DataLibrary.EF
 
         public virtual DbSet<CART_ITEM> CART_ITEM { get; set; }
         public virtual DbSet<CHITIETHOADON> CHITIETHOADON { get; set; }
+        public virtual DbSet<DONHANG> DONHANG { get; set; }
         public virtual DbSet<HOADON> HOADON { get; set; }
         public virtual DbSet<KHACHHANG> KHACHHANG { get; set; }
         public virtual DbSet<LOAI> LOAI { get; set; }
@@ -73,6 +74,7 @@ namespace DataLibrary.EF
 
             modelBuilder.Entity<SANPHAM>()
                 .Property(e => e.Hinh)
+                .IsFixedLength()
                 .IsUnicode(false);
 
             modelBuilder.Entity<SANPHAM>()

@@ -30,6 +30,7 @@ namespace ControlLibrary.UC.Display
             dataGV_NhanVien.DataSource = ListModel(ds);
         }
 
+        #region Chuyển Danh Sách Qua Dạng Model
         public List<Model_NhanVien> ListModel(List<NHANVIEN> ds)
         {
             List<Model_NhanVien> DS_NhanVien = new List<Model_NhanVien>();
@@ -49,15 +50,19 @@ namespace ControlLibrary.UC.Display
             }
             return DS_NhanVien;
         }
+        #endregion
 
-        public bool KiemTra_Control()
+        #region Hàm Kiểm Tra
+        private bool KiemTra_Control()
         {
             if (txt_DiaChi.Text != "" && txt_NgaySinh.Text != "" && txt_SDT.Text != "" && txt_TenNV.Text != "")
                 return true;
             else
                 return false;
         }
+        #endregion
 
+        #region Thêm Xóa Sửa Nhân Viên
         private void btn_Add_Click(object sender, EventArgs e)
         {
             label14.Text = "Thêm Nhân Viên";
@@ -125,10 +130,14 @@ namespace ControlLibrary.UC.Display
         {
             try
             {
-                var dao = new SanPham();
-                if (dataGV_NhanVien.SelectedRows.Count > 0)
+                if (dataGV_NhanVien.Rows.Count > 0)
                 {
-                    int MaSP = Convert.ToInt32(dataGV_NhanVien.SelectedRows[0].Cells[0].Value);
+                    int MaSP = Convert.ToInt32(dataGV_NhanVien.CurrentRow.Cells[0].Value);
+                    var DSQuyen = _quyenDao.GetList(MaSP);
+                    if (DSQuyen.Count() > 0)
+                    {
+                        _quyenDao.Delete(MaSP);
+                    }
                     int kq = _nhanVienDao.Delete(MaSP);
                     if (kq == 1)
                     {
@@ -144,6 +153,7 @@ namespace ControlLibrary.UC.Display
                 MessageBox.Show("Xóa Thất Bại");
             }
         }
+        #endregion
 
         private void dataGV_NhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -158,6 +168,7 @@ namespace ControlLibrary.UC.Display
             }
         }
 
+        #region Hàm Tìm Kiếm
         private void btn_Search_Click(object sender, EventArgs e)
         {
             if(txt_TimKiem.Text != "")
@@ -167,6 +178,7 @@ namespace ControlLibrary.UC.Display
                 dataGV_NhanVien.DataSource = ListModel(ds);
             }
         }
+        #endregion
 
         private void btn_Back_Click(object sender, EventArgs e)
         {

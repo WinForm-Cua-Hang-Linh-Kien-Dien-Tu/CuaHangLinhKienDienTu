@@ -32,12 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ControlLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ControlLibrary\bin\Debug\ControlLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="DataLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="DataLibrary">
       <HintPath>..\DataLibrary\bin\Debug\DataLibrary.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -118,6 +113,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControlLibrary\ControlLibrary.csproj">
+      <Project>{aae0b8b3-0207-4ed2-815b-8c6778d55094}</Project>
+      <Name>ControlLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

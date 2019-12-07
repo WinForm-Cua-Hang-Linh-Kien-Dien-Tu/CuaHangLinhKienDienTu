@@ -81,3 +81,5 @@ E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrar
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.csproj.CopyComplete
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.dll
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.pdb
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.Migrations.InitialCreate.resources
+E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.csproj.GenerateResource.cache

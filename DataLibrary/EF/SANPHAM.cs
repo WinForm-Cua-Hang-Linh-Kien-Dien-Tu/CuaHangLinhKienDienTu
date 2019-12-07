@@ -42,7 +42,7 @@ namespace DataLibrary.EF
         [StringLength(500)]
         public string DacTinh { get; set; }
 
-        [StringLength(50)]
+        [StringLength(500)]
         public string Hinh { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

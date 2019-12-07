@@ -45,8 +45,8 @@ namespace Form_Main
             this.btn_HoaDon = new System.Windows.Forms.Button();
             this.btn_SanPham = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_ThongKe = new System.Windows.Forms.Button();
             this.btn_DonHang = new System.Windows.Forms.Button();
-            this.btn_TaiKhoan = new System.Windows.Forms.Button();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.uC_NhanVien1 = new ControlLibrary.UC.Display.UC_NhanVien();
             this.uC_KhachHang1 = new ControlLibrary.UC.Display.UC_KhachHang();
@@ -56,7 +56,6 @@ namespace Form_Main
             this.uC_HoaDon1 = new ControlLibrary.UC.Display.UC_HoaDon();
             this.uC_SanPham21 = new ControlLibrary.UC.Display.UC_SanPham2();
             this.uC_Loai1 = new ControlLibrary.UC.Display.UC_Loai();
-            this.btn_ThongKe = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -90,7 +89,7 @@ namespace Form_Main
             this.btn_Quyen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Quyen.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Quyen.ForeColor = System.Drawing.Color.White;
-            this.btn_Quyen.Location = new System.Drawing.Point(18, 470);
+            this.btn_Quyen.Location = new System.Drawing.Point(18, 410);
             this.btn_Quyen.Name = "btn_Quyen";
             this.btn_Quyen.Size = new System.Drawing.Size(198, 54);
             this.btn_Quyen.TabIndex = 9;
@@ -283,7 +282,6 @@ namespace Form_Main
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.panel1.Controls.Add(this.btn_ThongKe);
             this.panel1.Controls.Add(this.btn_DonHang);
-            this.panel1.Controls.Add(this.btn_TaiKhoan);
             this.panel1.Controls.Add(this.btn_KhachHang);
             this.panel1.Controls.Add(this.btn_Quyen);
             this.panel1.Controls.Add(this.btn_User);
@@ -297,6 +295,24 @@ namespace Form_Main
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(216, 593);
             this.panel1.TabIndex = 3;
+            // 
+            // btn_ThongKe
+            // 
+            this.btn_ThongKe.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btn_ThongKe.FlatAppearance.BorderSize = 0;
+            this.btn_ThongKe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btn_ThongKe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btn_ThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ThongKe.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ThongKe.ForeColor = System.Drawing.Color.White;
+            this.btn_ThongKe.Location = new System.Drawing.Point(18, 467);
+            this.btn_ThongKe.Name = "btn_ThongKe";
+            this.btn_ThongKe.Size = new System.Drawing.Size(198, 54);
+            this.btn_ThongKe.TabIndex = 12;
+            this.btn_ThongKe.Text = "Thống Kê";
+            this.btn_ThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_ThongKe.UseVisualStyleBackColor = true;
+            this.btn_ThongKe.Click += new System.EventHandler(this.btn_ThongKe_Click);
             // 
             // btn_DonHang
             // 
@@ -315,24 +331,6 @@ namespace Form_Main
             this.btn_DonHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_DonHang.UseVisualStyleBackColor = true;
             this.btn_DonHang.Click += new System.EventHandler(this.btn_DonHang_Click);
-            // 
-            // btn_TaiKhoan
-            // 
-            this.btn_TaiKhoan.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btn_TaiKhoan.FlatAppearance.BorderSize = 0;
-            this.btn_TaiKhoan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btn_TaiKhoan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btn_TaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_TaiKhoan.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_TaiKhoan.ForeColor = System.Drawing.Color.White;
-            this.btn_TaiKhoan.Location = new System.Drawing.Point(18, 410);
-            this.btn_TaiKhoan.Name = "btn_TaiKhoan";
-            this.btn_TaiKhoan.Size = new System.Drawing.Size(198, 54);
-            this.btn_TaiKhoan.TabIndex = 10;
-            this.btn_TaiKhoan.Text = "Tài khoản";
-            this.btn_TaiKhoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_TaiKhoan.UseVisualStyleBackColor = true;
-            this.btn_TaiKhoan.Click += new System.EventHandler(this.btn_TaiKhoan_Click);
             // 
             // panelContainer
             // 
@@ -412,24 +410,6 @@ namespace Form_Main
             this.uC_Loai1.Size = new System.Drawing.Size(847, 542);
             this.uC_Loai1.TabIndex = 1;
             // 
-            // btn_ThongKe
-            // 
-            this.btn_ThongKe.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btn_ThongKe.FlatAppearance.BorderSize = 0;
-            this.btn_ThongKe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btn_ThongKe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btn_ThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ThongKe.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ThongKe.ForeColor = System.Drawing.Color.White;
-            this.btn_ThongKe.Location = new System.Drawing.Point(18, 527);
-            this.btn_ThongKe.Name = "btn_ThongKe";
-            this.btn_ThongKe.Size = new System.Drawing.Size(198, 54);
-            this.btn_ThongKe.TabIndex = 12;
-            this.btn_ThongKe.Text = "Thống Kê";
-            this.btn_ThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ThongKe.UseVisualStyleBackColor = true;
-            this.btn_ThongKe.Click += new System.EventHandler(this.btn_ThongKe_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -476,7 +456,6 @@ namespace Form_Main
         private ControlLibrary.UC.Display.UC_Quyen uC_Quyen1;
         private ControlLibrary.UC.Display.UC_UserProfile uC_UserProfile1;
         private ControlLibrary.UC.Display.UC_KhachHang uC_KhachHang1;
-        private System.Windows.Forms.Button btn_TaiKhoan;
         private System.Windows.Forms.Button btn_DonHang;
         private ControlLibrary.UC.Display.UC_NhanVien uC_NhanVien1;
         private System.Windows.Forms.Button btn_ThongKe;

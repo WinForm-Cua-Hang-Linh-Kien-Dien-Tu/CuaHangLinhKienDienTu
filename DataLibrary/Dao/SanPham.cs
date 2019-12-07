@@ -37,6 +37,18 @@ namespace DataLibrary.Dao
             return result;
         }
 
+        public int UpdateSoLuong(SANPHAM pma)
+        {
+            int result = 0;
+            SANPHAM k = context.SANPHAM.FirstOrDefault(m => m.MaSP == pma.MaSP);
+            if (k != null)
+            {
+                k.SoLuong = pma.SoLuong;
+            }
+            result = context.SaveChanges();
+            return result;
+        }
+
         public int Delete(int pMa)
         {
             int result = 0;

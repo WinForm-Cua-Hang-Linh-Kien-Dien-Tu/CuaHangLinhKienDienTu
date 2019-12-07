@@ -67,6 +67,12 @@ namespace DataLibrary.Dao
             return list;
         }
 
+        public List<string> GetDSTenNV()
+        {
+            var list = from a in context.NHANVIEN select a.TenNV;
+            return list.ToList();
+        }
+
         public List<NHANVIEN> GetList(string pTen)
         {
             List<NHANVIEN> list = new List<NHANVIEN>();
@@ -74,10 +80,17 @@ namespace DataLibrary.Dao
             return list;
         }
 
-        public NHANVIEN GetDVByMa(int pMa)
+        public NHANVIEN GetDVByMa(int? pMa)
         {
             NHANVIEN result = new NHANVIEN();
             result = context.NHANVIEN.FirstOrDefault(m => m.MaNV == pMa);
+            return result;
+        }
+
+        public NHANVIEN GetDVByMa(string pTen)
+        {
+            NHANVIEN result = new NHANVIEN();
+            result = context.NHANVIEN.FirstOrDefault(m => m.TenNV == pTen);
             return result;
         }
     }
