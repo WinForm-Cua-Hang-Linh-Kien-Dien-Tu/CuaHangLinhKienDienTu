@@ -13,6 +13,7 @@ namespace DataLibrary.EF
         public HOADON()
         {
             CHITIETHOADON = new HashSet<CHITIETHOADON>();
+            DONHANG = new HashSet<DONHANG>();
         }
 
         [Key]
@@ -37,6 +38,9 @@ namespace DataLibrary.EF
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CHITIETHOADON> CHITIETHOADON { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DONHANG> DONHANG { get; set; }
 
         public virtual NHANVIEN NHANVIEN { get; set; }
     }

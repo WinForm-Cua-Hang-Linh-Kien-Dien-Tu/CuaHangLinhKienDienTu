@@ -103,12 +103,7 @@ namespace Form_Main
             uC_UserProfile1.BringToFront();
         }
 
-        private void btn_TaiKhoan_Click(object sender, EventArgs e)
-        {
-            pn_Chuyen.Height = btn_User.Height;
-            pn_Chuyen.Top = btn_TaiKhoan.Top;
-            uC_UserProfile1.BringToFront();
-        }
+       
         #endregion
 
         #region Chức Năng Button trên góc phải

@@ -16,13 +16,27 @@ namespace DataLibrary.Dao
             result = context.SaveChanges();
             return result;
         }
-        public int Update(QUYEN pma)
+
+        public int Update(QUYEN pma, int ma)
         {
             int result = 0;
-            QUYEN k = context.QUYEN.FirstOrDefault(m => m.MaNV == pma.MaNV);
+            QUYEN k = context.QUYEN.FirstOrDefault(m => m.MaNV == ma);
             if (k != null)
             {
                 k.Quyen1 = pma.Quyen1;
+            }
+            result = context.SaveChanges();
+            return result;
+        }
+
+        public int UpdateHoanChinh(QUYEN pma, int ma)
+        {
+            int result = 0;
+            QUYEN k = context.QUYEN.FirstOrDefault(m => m.MaNV == ma);
+            if (k != null)
+            {
+                k.User = pma.User;
+                k.PassWord = pma.PassWord;
             }
             result = context.SaveChanges();
             return result;
@@ -40,6 +54,27 @@ namespace DataLibrary.Dao
         {
             List<QUYEN> list = new List<QUYEN>();
             list = context.QUYEN.ToList();
+            return list;
+        }
+
+        public List<string> GetTenQuyen()
+        {
+            var list = from a in context.QUYEN select a.Quyen1;
+            return list.ToList();
+
+        }
+
+        public List<QUYEN> GetList(string pTenQuyen)
+        {
+            List<QUYEN> list = new List<QUYEN>();
+            list = context.QUYEN.Where(t=>t.Quyen1 == pTenQuyen).ToList();
+            return list;
+        }
+
+        public List<QUYEN> GetList(int pMA)
+        {
+            List<QUYEN> list = new List<QUYEN>();
+            list = context.QUYEN.Where(t => t.MaNV == pMA).ToList();
             return list;
         }
 

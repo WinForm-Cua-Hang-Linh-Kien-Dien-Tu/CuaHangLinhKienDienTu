@@ -13,6 +13,7 @@ namespace DataLibrary.EF
         public KHACHHANG()
         {
             CART_ITEM = new HashSet<CART_ITEM>();
+            DONHANG = new HashSet<DONHANG>();
         }
 
         [Key]
@@ -44,5 +45,8 @@ namespace DataLibrary.EF
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CART_ITEM> CART_ITEM { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DONHANG> DONHANG { get; set; }
     }
 }

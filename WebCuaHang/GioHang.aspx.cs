@@ -110,6 +110,8 @@ namespace WebCuaHang
                         foreach (GridViewRow row in CartItemGridView.Rows)
                         {
                             CHITIETHOADON ct = new CHITIETHOADON();
+                            SANPHAM sp = new SANPHAM();
+
                             ct.MaHD = hd.MaHD;
                             ct.MaSP = Convert.ToInt32(row.Cells[0].Text);
                             TextBox sl = (TextBox)row.FindControl("txt_SoLuong");
@@ -119,6 +121,13 @@ namespace WebCuaHang
                             ct.ThanhTien = Convert.ToDouble(ct.SoLuong * gia);
                             chiTietHoaDonDao.Add(ct);
                             tongtien += ct.ThanhTien.GetValueOrDefault();
+
+                            // Cập Nhật Lại Số Lượng Sản Phẩm
+                            sp.MaSP = Convert.ToInt32(row.Cells[0].Text); // Gán giá trị cho MaSP
+
+                            // SoLuong = số Lượng Hiện Tại - Số Lượng Bán
+                            sp.SoLuong = sanPham.GetDVByMa(Convert.ToInt32(row.Cells[0].Text)).SoLuong - Convert.ToInt32(sl.Text);
+                            sanPham.UpdateSoLuong(sp);
                         }
 
                     }

@@ -63,6 +63,7 @@
     <Compile Include="Dao\SanPham.cs" />
     <Compile Include="EF\CART_ITEM.cs" />
     <Compile Include="EF\CHITIETHOADON.cs" />
+    <Compile Include="EF\DONHANG.cs" />
     <Compile Include="EF\HOADON.cs" />
     <Compile Include="EF\KHACHHANG.cs" />
     <Compile Include="EF\LOAI.cs" />
@@ -71,12 +72,21 @@
     <Compile Include="EF\NHASANXUAT.cs" />
     <Compile Include="EF\QUYEN.cs" />
     <Compile Include="EF\SANPHAM.cs" />
+    <Compile Include="Migrations\201912070228325_InitialCreate.cs" />
+    <Compile Include="Migrations\201912070228325_InitialCreate.Designer.cs">
+      <DependentUpon>201912070228325_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201912070228325_InitialCreate.resx">
+      <DependentUpon>201912070228325_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
