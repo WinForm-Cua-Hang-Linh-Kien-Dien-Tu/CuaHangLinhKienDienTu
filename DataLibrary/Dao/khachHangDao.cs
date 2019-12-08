@@ -33,6 +33,23 @@ namespace DataLibrary.Dao
             return result;
         }
 
+        public int Update(KHACHHANG pma,int ma)
+        {
+            int result = 0;
+            KHACHHANG k = context.KHACHHANG.FirstOrDefault(m => m.MaKH == ma);
+            if (k != null)
+            {
+                k.TenKH = pma.TenKH;
+                k.Phai = pma.Phai;
+                k.DiaChi = pma.DiaChi;
+                k.SDT = pma.SDT;
+                k.LoaiKH = pma.LoaiKH;
+                k.SoTaiKhoan = pma.SoTaiKhoan;
+            }
+            result = context.SaveChanges();
+            return result;
+        }
+
         public int Delete(int pMa)
         {
             int result = 0;
@@ -48,6 +65,13 @@ namespace DataLibrary.Dao
             return list;
         }
 
+        public List<KHACHHANG> GetList(string sdt)
+        {
+            List<KHACHHANG> list = new List<KHACHHANG>();
+            list = context.KHACHHANG.Where(t => t.SDT == sdt).ToList();
+            return list;
+        }
+
         public KHACHHANG GetDVByMa(int pMa)
         {
             KHACHHANG result = new KHACHHANG();
@@ -60,6 +84,14 @@ namespace DataLibrary.Dao
             KHACHHANG result = new KHACHHANG();
             result = context.KHACHHANG.FirstOrDefault(m => m.TaiKhoan == userName && m.MatKhau == pass);
             return result;
+        }
+
+        public int GetMaKH(string sdt)
+        {
+            int ma;
+            KHACHHANG k = context.KHACHHANG.FirstOrDefault(m => m.SDT == sdt);
+            ma = Convert.ToInt32(k.MaKH.ToString());
+            return ma;
         }
     }
 }
