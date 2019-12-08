@@ -172,9 +172,6 @@ namespace ControlLibrary.UC.Display
                     DacTinh = txt_DacTinh.Text,
                     Hinh = txt_HinhAnh.Text,
                 };
-
-                int i = Convert.ToInt32(_sanPhamDao.GetDVByMa(3).SoLuong);
-                  
                 if (label14.Text == "Cập Nhật Sản Phẩm")
                 {
                     int kq = _sanPhamDao.Update(sp, Convert.ToInt32(label_maSP.Text));
@@ -252,12 +249,6 @@ namespace ControlLibrary.UC.Display
             }
            
             dataGV_SanPham.DataSource = ListModel(ds);
-        }
-
-        private void btn_Cancel_Click(object sender, EventArgs e)
-        {
-            panel3.Visible = false;
-            dataGV_SanPham.Visible = true;
         }
     }
 }

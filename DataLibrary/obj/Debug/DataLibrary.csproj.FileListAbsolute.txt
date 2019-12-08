@@ -81,14 +81,3 @@ E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrar
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.csproj.CopyComplete
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.dll
 E:\Hoc\visual\DoAnWinform\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.pdb
-E:\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\EntityFramework.dll
-E:\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\DataLibrary.dll.config
-E:\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\DataLibrary.dll
-E:\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\DataLibrary.pdb
-E:\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\EntityFramework.SqlServer.dll
-E:\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\EntityFramework.xml
-E:\CuaHangLinhKienDienTu\DataLibrary\bin\Debug\EntityFramework.SqlServer.xml
-E:\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.csproj.CoreCompileInputs.cache
-E:\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.csproj.CopyComplete
-E:\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.dll
-E:\CuaHangLinhKienDienTu\DataLibrary\obj\Debug\DataLibrary.pdb

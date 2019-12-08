@@ -8,8 +8,6 @@ namespace Form_Main
 {
     static class Program
     {
-        static Form_DangNhap frmDN = null;
-        static Form1 frm1 = null;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -18,9 +16,7 @@ namespace Form_Main
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            frmDN = new Form_DangNhap();
-            frm1 = new Form1();
-            Application.Run(frm1);
+            Application.Run(new Form1());
         }
     }
 }

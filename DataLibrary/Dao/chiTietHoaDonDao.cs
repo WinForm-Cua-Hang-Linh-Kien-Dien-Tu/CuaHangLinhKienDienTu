@@ -24,7 +24,8 @@ namespace DataLibrary.Dao
             {
                 k.SoLuong = pma.SoLuong;
                 k.DonGia = pma.DonGia;
-                k.ThanhTien = pma.ThanhTien;              
+                k.ThanhTien = pma.ThanhTien;
+               
             }
             result = context.SaveChanges();
             return result;
@@ -42,13 +43,6 @@ namespace DataLibrary.Dao
         {
             List<CHITIETHOADON> list = new List<CHITIETHOADON>();
             list = context.CHITIETHOADON.ToList();
-            return list;
-        }
-
-        public List<CHITIETHOADON> GetList(int ma)
-        {
-            List<CHITIETHOADON> list = new List<CHITIETHOADON>();
-            list = context.CHITIETHOADON.Where(t => t.MaHD == ma).ToList();
             return list;
         }
 

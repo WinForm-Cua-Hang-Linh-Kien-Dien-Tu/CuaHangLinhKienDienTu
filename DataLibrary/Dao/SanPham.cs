@@ -37,18 +37,6 @@ namespace DataLibrary.Dao
             return result;
         }
 
-        public int Update2(SANPHAM pma, int ma)
-        {
-            int result = 0;
-            SANPHAM k = context.SANPHAM.FirstOrDefault(m => m.MaSP == ma);
-            if (k != null)
-            {
-                k.SoLuong = pma.SoLuong;
-            }
-            result = context.SaveChanges();
-            return result;
-        }
-
         public int Delete(int pMa)
         {
             int result = 0;
@@ -86,46 +74,13 @@ namespace DataLibrary.Dao
             return list;
         }
 
-        public List<string> GetDSTen()
-        {
-            var list = from a in context.SANPHAM select a.TenSP;
-            return list.ToList();
-        }
-
         public SANPHAM GetDVByMa(int pMa)
         {
             SANPHAM result = new SANPHAM();
             result = context.SANPHAM.FirstOrDefault(m => m.MaSP == pMa);
             return result;
         }
-
-        public int UpdateSoLuong(SANPHAM pMa)
-        {
-            int result = 0;
-            SANPHAM k = context.SANPHAM.FirstOrDefault(m => m.MaSP == pMa.MaSP);
-            if (k != null)
-            {
-                k.SoLuong = pMa.SoLuong;
-            }
-            result = context.SaveChanges();
-            return result;
-        }
-
-        public double GetGiaSP(string ten)
-        {
-            double gia;
-            SANPHAM k = context.SANPHAM.FirstOrDefault(m => m.TenSP == ten);
-            gia = Convert.ToDouble(k.Gia);         
-            return gia;
-        }
-
-        public int GetMaSP(string ten)
-        {
-            int ma;
-            SANPHAM k = context.SANPHAM.FirstOrDefault(m => m.TenSP == ten);
-            ma = Convert.ToInt32(k.MaSP);
-            return ma;
-        }
+        
     }
 
 }
