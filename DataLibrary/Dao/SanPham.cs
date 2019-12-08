@@ -86,13 +86,34 @@ namespace DataLibrary.Dao
             return list;
         }
 
+        public int GetMaSP(string ten)
+        {
+            int ma;
+            SANPHAM k = context.SANPHAM.FirstOrDefault(m => m.TenSP == ten);
+            ma = Convert.ToInt32(k.MaSP);
+            return ma;
+        }
+
         public SANPHAM GetDVByMa(int pMa)
         {
             SANPHAM result = new SANPHAM();
             result = context.SANPHAM.FirstOrDefault(m => m.MaSP == pMa);
             return result;
         }
-        
+
+        public List<string> GetDSTen()
+        {
+            var list = from a in context.SANPHAM select a.TenSP;
+            return list.ToList();
+        }
+
+        public double GetGiaSP(string ten)
+        {
+            double gia;
+            SANPHAM k = context.SANPHAM.FirstOrDefault(m => m.TenSP == ten);
+            gia = Convert.ToDouble(k.Gia);
+            return gia;
+        }
     }
 
 }

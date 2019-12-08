@@ -52,5 +52,12 @@ namespace DataLibrary.Dao
             result = context.CHITIETHOADON.FirstOrDefault(m => m.MaHD == pMa && m.MaSP == maSP);
             return result;
         }
+
+        public List<CHITIETHOADON> GetList(int ma)
+        {
+            List<CHITIETHOADON> list = new List<CHITIETHOADON>();
+            list = context.CHITIETHOADON.Where(t => t.MaHD == ma).ToList();
+            return list;
+        }
     }
 }
