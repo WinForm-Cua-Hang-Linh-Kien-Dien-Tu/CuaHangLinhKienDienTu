@@ -32,13 +32,13 @@ namespace Form_Main
         {
             this.btn_KhachHang = new System.Windows.Forms.Button();
             this.btn_Quyen = new System.Windows.Forms.Button();
-            this.btn_User = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button12 = new System.Windows.Forms.Button();
             this.pn_Chuyen = new System.Windows.Forms.Panel();
             this.btn_NhanVien = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btn_LogOut = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.btn_Exit = new System.Windows.Forms.Button();
@@ -57,7 +57,6 @@ namespace Form_Main
             this.uC_HoaDon1 = new ControlLibrary.UC.Display.UC_HoaDon();
             this.uC_SanPham21 = new ControlLibrary.UC.Display.UC_SanPham2();
             this.uC_Loai1 = new ControlLibrary.UC.Display.UC_Loai();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -73,7 +72,7 @@ namespace Form_Main
             this.btn_KhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_KhachHang.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_KhachHang.ForeColor = System.Drawing.Color.White;
-            this.btn_KhachHang.Location = new System.Drawing.Point(18, 230);
+            this.btn_KhachHang.Location = new System.Drawing.Point(11, 175);
             this.btn_KhachHang.Name = "btn_KhachHang";
             this.btn_KhachHang.Size = new System.Drawing.Size(198, 54);
             this.btn_KhachHang.TabIndex = 5;
@@ -91,7 +90,7 @@ namespace Form_Main
             this.btn_Quyen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Quyen.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Quyen.ForeColor = System.Drawing.Color.White;
-            this.btn_Quyen.Location = new System.Drawing.Point(18, 410);
+            this.btn_Quyen.Location = new System.Drawing.Point(11, 355);
             this.btn_Quyen.Name = "btn_Quyen";
             this.btn_Quyen.Size = new System.Drawing.Size(198, 54);
             this.btn_Quyen.TabIndex = 9;
@@ -99,25 +98,6 @@ namespace Form_Main
             this.btn_Quyen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Quyen.UseVisualStyleBackColor = true;
             this.btn_Quyen.Click += new System.EventHandler(this.btn_Quyen_Click);
-            // 
-            // btn_User
-            // 
-            this.btn_User.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btn_User.FlatAppearance.BorderSize = 0;
-            this.btn_User.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btn_User.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.btn_User.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_User.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_User.ForeColor = System.Drawing.Color.White;
-            this.btn_User.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_User.Location = new System.Drawing.Point(18, 50);
-            this.btn_User.Name = "btn_User";
-            this.btn_User.Size = new System.Drawing.Size(198, 54);
-            this.btn_User.TabIndex = 8;
-            this.btn_User.Text = "User Profile";
-            this.btn_User.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_User.UseVisualStyleBackColor = true;
-            this.btn_User.Click += new System.EventHandler(this.btn_User_Click);
             // 
             // panel4
             // 
@@ -166,7 +146,7 @@ namespace Form_Main
             this.btn_NhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_NhanVien.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_NhanVien.ForeColor = System.Drawing.Color.White;
-            this.btn_NhanVien.Location = new System.Drawing.Point(18, 350);
+            this.btn_NhanVien.Location = new System.Drawing.Point(11, 295);
             this.btn_NhanVien.Name = "btn_NhanVien";
             this.btn_NhanVien.Size = new System.Drawing.Size(198, 54);
             this.btn_NhanVien.TabIndex = 4;
@@ -197,6 +177,16 @@ namespace Form_Main
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(847, 49);
             this.panel2.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 23);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Quản Lý ";
             // 
             // btn_LogOut
             // 
@@ -252,7 +242,7 @@ namespace Form_Main
             this.btn_HoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_HoaDon.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_HoaDon.ForeColor = System.Drawing.Color.White;
-            this.btn_HoaDon.Location = new System.Drawing.Point(18, 170);
+            this.btn_HoaDon.Location = new System.Drawing.Point(11, 115);
             this.btn_HoaDon.Name = "btn_HoaDon";
             this.btn_HoaDon.Size = new System.Drawing.Size(198, 54);
             this.btn_HoaDon.TabIndex = 3;
@@ -270,7 +260,7 @@ namespace Form_Main
             this.btn_SanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_SanPham.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SanPham.ForeColor = System.Drawing.Color.White;
-            this.btn_SanPham.Location = new System.Drawing.Point(18, 110);
+            this.btn_SanPham.Location = new System.Drawing.Point(11, 55);
             this.btn_SanPham.Name = "btn_SanPham";
             this.btn_SanPham.Size = new System.Drawing.Size(198, 54);
             this.btn_SanPham.TabIndex = 2;
@@ -286,7 +276,6 @@ namespace Form_Main
             this.panel1.Controls.Add(this.btn_DonHang);
             this.panel1.Controls.Add(this.btn_KhachHang);
             this.panel1.Controls.Add(this.btn_Quyen);
-            this.panel1.Controls.Add(this.btn_User);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.pn_Chuyen);
             this.panel1.Controls.Add(this.btn_NhanVien);
@@ -307,7 +296,7 @@ namespace Form_Main
             this.btn_ThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ThongKe.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ThongKe.ForeColor = System.Drawing.Color.White;
-            this.btn_ThongKe.Location = new System.Drawing.Point(18, 467);
+            this.btn_ThongKe.Location = new System.Drawing.Point(11, 412);
             this.btn_ThongKe.Name = "btn_ThongKe";
             this.btn_ThongKe.Size = new System.Drawing.Size(198, 54);
             this.btn_ThongKe.TabIndex = 12;
@@ -325,7 +314,7 @@ namespace Form_Main
             this.btn_DonHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_DonHang.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DonHang.ForeColor = System.Drawing.Color.White;
-            this.btn_DonHang.Location = new System.Drawing.Point(18, 290);
+            this.btn_DonHang.Location = new System.Drawing.Point(11, 235);
             this.btn_DonHang.Name = "btn_DonHang";
             this.btn_DonHang.Size = new System.Drawing.Size(198, 54);
             this.btn_DonHang.TabIndex = 11;
@@ -421,16 +410,6 @@ namespace Form_Main
             this.uC_Loai1.Size = new System.Drawing.Size(847, 542);
             this.uC_Loai1.TabIndex = 1;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 23);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Quản Lý ";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -457,7 +436,6 @@ namespace Form_Main
         #endregion
         private System.Windows.Forms.Button btn_KhachHang;
         private System.Windows.Forms.Button btn_Quyen;
-        private System.Windows.Forms.Button btn_User;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button btn_Exit;

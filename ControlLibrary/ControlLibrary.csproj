@@ -45,7 +45,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Model_CartItem.cs" />
+    <Compile Include="Model\Model_ChiTietHoaDon.cs" />
     <Compile Include="Model\Model_DonHang.cs" />
+    <Compile Include="Model\Model_HoaDon.cs" />
+    <Compile Include="Model\Model_KhachHang.cs" />
     <Compile Include="Model\Model_NhanVien.cs" />
     <Compile Include="Model\Model_Quyen.cs" />
     <Compile Include="Model\Model_SanPham.cs" />

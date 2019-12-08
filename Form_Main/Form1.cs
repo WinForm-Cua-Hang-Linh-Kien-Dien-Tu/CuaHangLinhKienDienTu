@@ -19,9 +19,9 @@ namespace Form_Main
         public Form1(string UserName)
         {
             InitializeComponent();
-            pn_Chuyen.Height = btn_User.Height;
-            pn_Chuyen.Top = btn_User.Top;
-            uC_UserProfile1.BringToFront();
+            pn_Chuyen.Height = btn_SanPham.Height;
+            pn_Chuyen.Top = btn_SanPham.Top;
+            uC_SanPham21.BringToFront();
             label1.Text = UserName;
             this.UserName = UserName;
         }
@@ -82,23 +82,17 @@ namespace Form_Main
             uC_Quyen1.BringToFront();
         }
 
-        private void btn_User_Click(object sender, EventArgs e)
-        {
-            pn_Chuyen.Height = btn_User.Height;
-            pn_Chuyen.Top = btn_User.Top;
-            uC_UserProfile1.BringToFront();
-        }
 
         private void btn_ThongKe_Click(object sender, EventArgs e)
         {
-            pn_Chuyen.Height = btn_User.Height;
+            pn_Chuyen.Height = btn_ThongKe.Height;
             pn_Chuyen.Top = btn_ThongKe.Top;
             uC_UserProfile1.BringToFront();
         }
 
         private void btn_DonHang_Click(object sender, EventArgs e)
         {
-            pn_Chuyen.Height = btn_User.Height;
+            pn_Chuyen.Height = btn_DonHang.Height;
             pn_Chuyen.Top = btn_DonHang.Top;
             uC_DonHang1.BringToFront();
         }
