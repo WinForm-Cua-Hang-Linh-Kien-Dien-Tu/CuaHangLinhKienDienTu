@@ -30,6 +30,8 @@ namespace ControlLibrary.UC.Display
         SanPham _sanPham = new SanPham();
         khachHangDao _khachHangDao = new khachHangDao();
 
+        List<CHITIETHOADON> dsChthd = new List<CHITIETHOADON>();
+
         public List<Model_HoaDon> ListModel_HD(List<HOADON> ds)
         {
             List<Model_HoaDon> DS_HoaDon = new List<Model_HoaDon>();
@@ -153,23 +155,24 @@ namespace ControlLibrary.UC.Display
                     TongTien = Convert.ToDouble(txt_ThanhTien.Text),
                     NgayLap = today
                 };
-
-
                 int kq = _hoaDonDao.Add(hd);
 
                 dataGV_HoaDon.DataSource = ListModel_HD(_hoaDonDao.GetList());
 
-                CHITIETHOADON cthd = new CHITIETHOADON
+                if (kq == 1)
                 {
-                    MaHD = Convert.ToInt32(dataGV_HoaDon.Rows[dataGV_HoaDon.Rows.Count - 1].Cells[0].Value.ToString()),
-                    MaSP = masp,
-                    SoLuong = Convert.ToInt32(txt_SoLuong.Text),
-                    DonGia = Convert.ToInt32(txt_DonGia.Text),
-                    ThanhTien = Convert.ToInt32(txt_ThanhTien.Text)
-                };
-                int kq_cthd = _chiTietHoaDonDao.Add(cthd);
-                if (kq == 1 && kq_cthd == 1)
-                {
+                    // add Chi Tiết Hóa Đơn
+                    foreach (var item in dsChthd)
+                    {
+                        item.MaHD = hd.MaHD;
+                        _chiTietHoaDonDao.Add(item);
+                        SANPHAM sp = new SANPHAM {
+                            MaSP = item.MaSP,
+                            SoLuong = item.SoLuong
+                        };
+                        _sanPham.UpdateSoLuong(sp);
+                    }
+                    // ===============================
                     MessageBox.Show("Thêm Hóa đơn Thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     panel_themhoadon.Visible = false;
                     panel_dshoadon.Visible = true;
@@ -214,6 +217,66 @@ namespace ControlLibrary.UC.Display
         {
             int ma = Convert.ToInt32(dataGV_HoaDon.CurrentRow.Cells[0].Value.ToString());
             dataGV_CTHD.DataSource = ListModel_CTHD(_chiTietHoaDonDao.GetList(ma));
+        }
+
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string tensp = cbb_TenSP.SelectedItem.ToString();
+            string sdt = txt_SDT.Text;
+            int ma = _khachHangDao.GetMaKH(sdt);
+            int masp = _sanPham.GetMaSP(tensp);
+
+            var item = dsChthd.FirstOrDefault(m => m.MaSP == masp);
+            int soLuongKho = Convert.ToInt32(_sanPham.GetDVByMa(masp).SoLuong);
+            if (item == null)
+            {
+                if (Convert.ToInt32(txt_SoLuong.Text) <= soLuongKho)
+                {
+                    CHITIETHOADON cthd = new CHITIETHOADON
+                    {
+                        MaSP = masp,
+                        SoLuong = Convert.ToInt32(txt_SoLuong.Text),
+                        DonGia = Convert.ToInt32(txt_DonGia.Text),
+                        ThanhTien = Convert.ToInt32(txt_SoLuong.Text) * Convert.ToInt32(txt_DonGia.Text),
+                    };
+                    dsChthd.Add(cthd);
+                }
+                else
+                {
+                    MessageBox.Show("Số Lượng Sản Phẩm Bạn Nhập Nhiếu Hơn Số Lượng Còn Lại Trong Kho", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Sản Phẩm Đã Có Trong Chi Tiết Hóa Đơn","Thông Báo",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+
+            dataGridView_ChiTiet.DataSource = ListModel_CTHD(dsChthd);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if(dataGridView_ChiTiet.Rows.Count > 0)
+                {
+                    int ma = Convert.ToInt32(dataGridView_ChiTiet.CurrentRow.Cells[0].Value);
+                    var item = dsChthd.FirstOrDefault(m=>m.ID == ma);
+                    dsChthd.Remove(item);
+                    MessageBox.Show("Xóa Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    dataGridView_ChiTiet.DataSource = ListModel_CTHD(dsChthd);
+                }
+                else
+                {
+                    MessageBox.Show("Danh Sách Của Bạn Đang Trống", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Đường Truyền Bị Lỗi Rồi Đại Vương Ơi", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

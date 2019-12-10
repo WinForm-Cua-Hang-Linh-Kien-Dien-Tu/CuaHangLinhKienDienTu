@@ -42,6 +42,20 @@ namespace Form_Main
                     btn_ThongKe.Visible = false;
                     btn_NhanVien.Visible = false;
                 }
+                else
+                {
+                    if(item.Quyen1 == "")
+                    {
+                        btn_Quyen.Visible = false;
+                        btn_ThongKe.Visible = false;
+                        btn_NhanVien.Visible = false;
+                        btn_KhachHang.Visible = false;
+                        btn_HoaDon.Visible = false;
+                        btn_DonHang.Visible = false;
+                        btn_SanPham.Visible = false;
+                        uC_UserProfile1.BringToFront();
+                    }
+                }
             }
         }
 

@@ -63,23 +63,37 @@
             this.panel_themhoadon = new System.Windows.Forms.Panel();
             this.panel_dshoadon = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dataGridView_ChiTiet = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SANPHAM = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HOADON = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGV_CTHD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGV_HoaDon)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel_themhoadon.SuspendLayout();
             this.panel_dshoadon.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ChiTiet)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_CancelHD
             // 
             this.btn_CancelHD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_CancelHD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_CancelHD.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CancelHD.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_CancelHD.ForeColor = System.Drawing.Color.White;
-            this.btn_CancelHD.Location = new System.Drawing.Point(439, 297);
+            this.btn_CancelHD.Location = new System.Drawing.Point(147, 320);
             this.btn_CancelHD.Name = "btn_CancelHD";
-            this.btn_CancelHD.Size = new System.Drawing.Size(105, 34);
+            this.btn_CancelHD.Size = new System.Drawing.Size(114, 43);
             this.btn_CancelHD.TabIndex = 280;
             this.btn_CancelHD.Text = "Cancel";
             this.btn_CancelHD.UseVisualStyleBackColor = false;
@@ -89,11 +103,11 @@
             // 
             this.btn_SaveHD.BackColor = System.Drawing.Color.Blue;
             this.btn_SaveHD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_SaveHD.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SaveHD.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SaveHD.ForeColor = System.Drawing.Color.White;
-            this.btn_SaveHD.Location = new System.Drawing.Point(289, 297);
+            this.btn_SaveHD.Location = new System.Drawing.Point(17, 320);
             this.btn_SaveHD.Name = "btn_SaveHD";
-            this.btn_SaveHD.Size = new System.Drawing.Size(81, 34);
+            this.btn_SaveHD.Size = new System.Drawing.Size(116, 43);
             this.btn_SaveHD.TabIndex = 279;
             this.btn_SaveHD.Text = "Save";
             this.btn_SaveHD.UseVisualStyleBackColor = false;
@@ -104,7 +118,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label8.Location = new System.Drawing.Point(292, 157);
+            this.label8.Location = new System.Drawing.Point(11, 233);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(78, 19);
             this.label8.TabIndex = 276;
@@ -113,7 +127,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel6.Location = new System.Drawing.Point(296, 210);
+            this.panel6.Location = new System.Drawing.Point(15, 286);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(248, 1);
             this.panel6.TabIndex = 275;
@@ -125,7 +139,7 @@
             this.txt_ThanhTien.Enabled = false;
             this.txt_ThanhTien.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ThanhTien.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_ThanhTien.Location = new System.Drawing.Point(296, 189);
+            this.txt_ThanhTien.Location = new System.Drawing.Point(15, 265);
             this.txt_ThanhTien.Name = "txt_ThanhTien";
             this.txt_ThanhTien.ReadOnly = true;
             this.txt_ThanhTien.Size = new System.Drawing.Size(248, 19);
@@ -339,12 +353,14 @@
             // 
             // btn_TimKiemKhachHang_HoaDon
             // 
-            this.btn_TimKiemKhachHang_HoaDon.BackColor = System.Drawing.Color.White;
+            this.btn_TimKiemKhachHang_HoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_TimKiemKhachHang_HoaDon.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btn_TimKiemKhachHang_HoaDon.FlatAppearance.BorderSize = 0;
             this.btn_TimKiemKhachHang_HoaDon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btn_TimKiemKhachHang_HoaDon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btn_TimKiemKhachHang_HoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_TimKiemKhachHang_HoaDon.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TimKiemKhachHang_HoaDon.ForeColor = System.Drawing.Color.White;
             this.btn_TimKiemKhachHang_HoaDon.Location = new System.Drawing.Point(303, 10);
             this.btn_TimKiemKhachHang_HoaDon.Margin = new System.Windows.Forms.Padding(2);
             this.btn_TimKiemKhachHang_HoaDon.Name = "btn_TimKiemKhachHang_HoaDon";
@@ -385,9 +401,11 @@
             // 
             // btn_Remove_HoaDon
             // 
-            this.btn_Remove_HoaDon.BackColor = System.Drawing.Color.White;
+            this.btn_Remove_HoaDon.BackColor = System.Drawing.Color.Red;
             this.btn_Remove_HoaDon.FlatAppearance.BorderSize = 0;
+            this.btn_Remove_HoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Remove_HoaDon.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Remove_HoaDon.ForeColor = System.Drawing.Color.White;
             this.btn_Remove_HoaDon.Location = new System.Drawing.Point(729, 19);
             this.btn_Remove_HoaDon.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Remove_HoaDon.Name = "btn_Remove_HoaDon";
@@ -404,6 +422,7 @@
             this.btn_Add_HoaDon.FlatAppearance.BorderSize = 0;
             this.btn_Add_HoaDon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
             this.btn_Add_HoaDon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_Add_HoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Add_HoaDon.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Add_HoaDon.ForeColor = System.Drawing.Color.White;
             this.btn_Add_HoaDon.Location = new System.Drawing.Point(607, 19);
@@ -428,6 +447,7 @@
             // 
             // panel_themhoadon
             // 
+            this.panel_themhoadon.Controls.Add(this.groupBox1);
             this.panel_themhoadon.Controls.Add(this.btn_CancelHD);
             this.panel_themhoadon.Controls.Add(this.btn_SaveHD);
             this.panel_themhoadon.Controls.Add(this.label8);
@@ -478,6 +498,118 @@
             this.panel2.Size = new System.Drawing.Size(847, 73);
             this.panel2.TabIndex = 22;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.dataGridView_ChiTiet);
+            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.groupBox1.Location = new System.Drawing.Point(296, 142);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(535, 221);
+            this.groupBox1.TabIndex = 281;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Chi Tiết Các Mặt Hàng";
+            // 
+            // dataGridView_ChiTiet
+            // 
+            this.dataGridView_ChiTiet.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView_ChiTiet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_ChiTiet.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.MaHD,
+            this.SANPHAM,
+            this.HOADON,
+            this.MaSP,
+            this.SoLuong,
+            this.DonGia,
+            this.ThanhTien});
+            this.dataGridView_ChiTiet.Location = new System.Drawing.Point(113, 21);
+            this.dataGridView_ChiTiet.Name = "dataGridView_ChiTiet";
+            this.dataGridView_ChiTiet.Size = new System.Drawing.Size(414, 194);
+            this.dataGridView_ChiTiet.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(6, 21);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 96);
+            this.button1.TabIndex = 282;
+            this.button1.Text = "Add";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(6, 123);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(101, 92);
+            this.button2.TabIndex = 283;
+            this.button2.Text = "Delete";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "ID";
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.Visible = false;
+            // 
+            // MaHD
+            // 
+            this.MaHD.DataPropertyName = "MaHD";
+            this.MaHD.HeaderText = "MaHD";
+            this.MaHD.Name = "MaHD";
+            this.MaHD.Visible = false;
+            // 
+            // SANPHAM
+            // 
+            this.SANPHAM.DataPropertyName = "SANPHAM";
+            this.SANPHAM.HeaderText = "SANPHAM";
+            this.SANPHAM.Name = "SANPHAM";
+            this.SANPHAM.Visible = false;
+            // 
+            // HOADON
+            // 
+            this.HOADON.DataPropertyName = "HOADON";
+            this.HOADON.HeaderText = "HOADON";
+            this.HOADON.Name = "HOADON";
+            this.HOADON.Visible = false;
+            // 
+            // MaSP
+            // 
+            this.MaSP.DataPropertyName = "MaSP";
+            this.MaSP.HeaderText = "Mã Sản Phẩm";
+            this.MaSP.Name = "MaSP";
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.DataPropertyName = "SoLuong";
+            this.SoLuong.HeaderText = "Số Lượng";
+            this.SoLuong.Name = "SoLuong";
+            // 
+            // DonGia
+            // 
+            this.DonGia.DataPropertyName = "DonGia";
+            this.DonGia.HeaderText = "Đơn Giá";
+            this.DonGia.Name = "DonGia";
+            // 
+            // ThanhTien
+            // 
+            this.ThanhTien.DataPropertyName = "ThanhTien";
+            this.ThanhTien.HeaderText = "Thành Tiền";
+            this.ThanhTien.Name = "ThanhTien";
+            // 
             // UC_HoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -500,6 +632,8 @@
             this.panel_dshoadon.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ChiTiet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -541,5 +675,17 @@
         private System.Windows.Forms.Panel panel_themhoadon;
         private System.Windows.Forms.Panel panel_dshoadon;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView_ChiTiet;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaHD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SANPHAM;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HOADON;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ThanhTien;
     }
 }
